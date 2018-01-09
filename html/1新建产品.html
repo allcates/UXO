@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="description" content="不超过150个字符"/>
+	<meta name="keywords" content=""/>
+	<meta name="author" content="name, email@gmail.com"/>
+	<meta name="robots" content="index,follow"/>
+    <title>新建产品</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/myClass.css"/>
+    <link rel="stylesheet" href="js/layer/skin/layer.css"/>
+   	<script src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/layer/layer.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+
+	<div class="header gradient">
+		<img src="images/logo.png" class="logo" />
+		<div class="right">
+			<img src="images/headimg.png" class="headimg" />
+			<span class="name">蒋小雅</span>
+			<span class="ico-deng"></span>
+		</div>
+	</div>
+	
+	<div class="product">
+		<img src="images/ico-2.png" class="nopro" />
+		<h3>当前还没有测试项目，请先添加！</h3>
+		<a href="#" class="new gradient" id="newPdcBtn">新建产品</a>
+	</div>
+
+	<div class="process">
+		<h1><i class="t">操作流程</i></h1>
+		<div class="plist">
+			<span class="num"><em>1</em>添加新产品</span>
+			<span class="num"><em>2</em>添加测试项目</span>
+			<span class="num"><em>3</em>添加测试任务</span>
+			<span class="num"><em>4</em>录入测试数据</span>
+			<span class="num"><em>5</em>浏览报告</span>
+			<span class="num"><em>6</em>生成最终报告</span>
+		</div>
+	</div>
+	
+	
+	<!--弹框-->
+	<div class="mask"></div>
+	<div class="bombBox" id="newPdc">
+		<h2 class="gradient">新建产品</h2>
+		<p class="error"><i class="err"></i>测试项目名称不能为空！</p>
+		<div class="info clearBoth">
+			<span class="f_l proname">产品名称</span> 
+			<input type="text" placeholder="产品名称" class="inp f_l" />
+		</div>
+		<div class="botton botton-a">
+			<input type="button" value="保存" class="gradient conserve " />
+			<input type="button" value="取消" class="cancel" />
+		</div>
+	</div>
+	
+
+</body>

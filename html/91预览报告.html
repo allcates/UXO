@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="不超过150个字符" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="name, email@gmail.com" />
+	<meta name="robots" content="index,follow" />
+	<title>预览报告</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/myClass.css" />
+	<link rel="stylesheet" href="js/layer/skin/layer.css" />
+	<link rel="stylesheet" href="css/jquery-ui.min.css" />
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/layer/layer.js"></script>
+	<script type="text/javascript" src="js/echarts.min.js"></script>
+	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+	<div class="header gradient">
+		<img src="images/logo.png" class="logo" />
+		<div class="right">
+			<img src="images/headimg.png" class="headimg" />
+			<span class="name">蒋小雅</span>
+			<span class="ico-deng"></span>
+		</div>
+	</div>
+
+	<div class="w1280 presentation">
+		<div class="part1">
+			<p class="blue">新东方用户体验中心</p>
+			<h1 class="blue">乐词APP使用流程</h1>
+			<span class="timed">2018.05.12</span>
+			<div class="cozyPrompt">
+				<i class="tip"></i>温馨提示：该报告还未生成最终版，相关数据仅供参考，如有问题，请联系用户体验中心，谢谢~</div>
+			<a href="#" class="gradient email">生成最终报告</a>
+		</div>
+
+		<div class="part2">
+			<ul>
+				<li>产品名称：乐词 产品版本：V3.2</li>
+				<li>测试开始时间：2018.05.10 测试完成时间：2018.05.12</li>
+				<li>发起人：蓬勃 测试人员：周湘人（zhouxingran@xdf.cn）、周曦（zhouxi@xdf.cn）</li>
+				<li>备注：版本修改1.增加分享功能；2增加错词功能；3.bug修改。</li>
+			</ul>
+		</div>
+
+		<div class="whole whole-style2 clearBoth">
+			<h2 class="clearBoth">
+				<span class="tit">测试项目</span>
+				<span class="name">整体数据</span>
+				<a href="#" class="f_r compile blue">
+					<span class="icon-edit"></span>编辑</a>
+			</h2>
+		</div>
+		<div class="currency-tit mt20 mb20">
+			<i class="line"></i>属性占比</div>
+		<div class="borbom">
+			<div class="thermodyScrol2 list1 tscroll3 clearBoth">
+				<div class="info">
+					<ul>
+						<li>
+							<span>
+								<label class="label-check">
+									<div class="piaochecked on_check">
+										<input type="checkbox" class="checkbox checkedclass" />
+									</div>性别占比</label>
+							</span>
+							<div class="img" id="main" style="width:370px;height:290px">
+								<img src="images/list1.jpg" />
+							</div>
+							<p>
+								<i class="ico-point"></i>此页纹理图展示了用户对乐词的典型操作这几个区域获得停留时间较长。</p>
+						</li>
+						<li>
+							<span>
+								<label class="label-check">
+									<div class="piaochecked on_check">
+										<input type="checkbox" class="checkbox checkedclass" />
+									</div>年龄分布</label>
+							</span>
+							<div class="img" id="main1" style="width:370px;height:290px">
+								<img src="images/list1.jpg" />
+							</div>
+							<p>
+								<i class="ico-point"></i>此页纹理图展示了用户对乐词的典型操作这几个区域获得停留时间较长。</p>
+						</li>
+						<li>
+							<span>
+								<label class="label-check">
+									<div class="piaochecked">
+										<input type="checkbox" class="checkbox checkedclass" />
+									</div>组别1</label>
+							</span>
+							<div class="img" id="main2" style="width:370px;height:290px">
+								<img src="images/list1.jpg" />
+							</div>
+							<p>
+								<i class="ico-point"></i>此页纹理图展示了用户对乐词的典型操作这几个区域获得停留时间较长。</p>
+						</li>
+						<li>
+							<span>
+								<input type="checkbox" class="checkbox" />性别占比</span>
+							<div class="img">
+								<img src="images/list1.jpg" />
+							</div>
+							<p>
+								<i class="ico-point"></i>此页纹理图展示了用户对乐词的典型操作这几个区域获得停留时间较长。</p>
+						</li>
+					</ul>
+				</div>
+				<div class="btn-arrow">
+					<a href="javascript:void(0);" class="prev"></a>
+					<a href="javascript:void(0);" class="next"></a>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="borbom">
+			<ul class="list2 clearBoth">
+				<li>
+					<div class="currency-tit mb20">
+						<label class="label-check">
+							<div class="piaochecked on_check">
+								<input type="checkbox" class="checkbox checkedclass" />
+							</div>任务用时（不同性别）</label>
+						<span class="info">
+							<em class="pay_list_c1 radioon">
+								<input type="radio" name="paylist" class="radioclass">性别
+							</em>
+							<em class="pay_list_c1">
+								<input type="radio" name="paylist" class="radioclass">年龄
+							</em>
+							<em class="pay_list_c1">
+								<input type="radio" name="paylist" class="radioclass">组别
+							</em>
+						</span>
+					</div>
+					<div class="img">
+						<div id="list0" style="width:100%;height:250px"></div>
+					</div>
+					<p>
+						<i class="ico-point"></i>此页纹理图展示了用户对乐词的典型操作这几个区域获得停留时间较长。</p>
+				</li>
+				<li>
+					<div class="currency-tit mb20">
+						<label class="label-check">
+							<div class="piaochecked on_check">
+								<input type="checkbox" class="checkbox checkedclass" />
+							</div>任务错误数（不同组别）</label>
+						<span class="info">
+							<em class="pay_list_c1 radioon">
+								<input type="radio" name="paylist2" class="radioclass">性别
+							</em>
+							<em class="pay_list_c1">
+								<input type="radio" name="paylist2" class="radioclass">年龄
+							</em>
+							<em class="pay_list_c1">
+								<input type="radio" name="paylist2" class="radioclass">组别
+							</em>
+						</span>
+					</div>
+					<div class="img">
+						<div id="list1" style="width:100%;height:250px"></div>
+					</div>
+					<p>
+						<i class="ico-point"></i>此页纹理图展示了用户对乐词的典型操作这几个区域获得停留时间较长。</p>
+				</li>
+			</ul>
+		</div>
+
+		<div class="currency-tit">
+			<i class="line"></i>兴趣区热力图</div>
+
+		<div class="histogram2">
+			<div class="colorful-box">
+				<div class="focusBox">
+					<ul class="pic">
+						<li>
+							<div class="">
+								<img src="images/eye1.jpg" />
+								<img src="images/eye2.jpg" />
+								<img src="images/eye3.jpg" />
+								<img src="images/eye1.jpg" />
+								<img src="images/eye1.jpg" />
+								<img src="images/eye1.jpg" />
+							</div>
+						</li>
+						<li>
+							<div class="">
+								<img src="images/eye5.jpg" />
+								<img src="images/eye4.jpg" />
+								<img src="images/eye3.jpg" />
+								<img src="images/eye2.jpg" />
+								<img src="images/eye1.jpg" />
+								<img src="images/eye1.jpg" />
+							</div>
+						</li>
+						<li>
+							<div class="">
+								<img src="images/eye1.jpg" />
+								<img src="images/eye2.jpg" />
+								<img src="images/eye3.jpg" />
+								<img src="images/eye1.jpg" />
+								<img src="images/eye1.jpg" />
+								<img src="images/eye1.jpg" />
+							</div>
+						</li>
+					</ul>
+					<a class="prev" href="javascript:void(0)"></a>
+					<a class="next" href="javascript:void(0)"></a>
+					<ul class="hd">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="chart">
+				<span class="block" style="opacity:1.2;width:120px">
+					<i>12</i>″
+					<em>1</em>
+				</span>
+				<span class="block" style="opacity:0.3;width:30px">3″
+					<em>2</em>
+				</span>
+				<span class="block" style="opacity:0.5;width:50px">5″
+					<em>3</em>
+				</span>
+				<span class="block" style="opacity:0.9;width:90px">9″
+					<em>4</em>
+				</span>
+				<span class="block" style="opacity:0.5;width:10px">1″
+					<em>5</em>
+				</span>
+				<span class="block" style="opacity:2;width:200px">20″
+					<em>6</em>
+				</span>
+			</div>
+			<p class="description-word">
+				<i class="ico-point"></i>此页纹理图展示了用户对乐词的典型操作（下载-学习-练习-复习）中在对各页面分区的关注程度。其中4 （选择词库）、6（学习完成时间） 、7 （每天目标）、8 （单词及释义）、9（例句信息等）这几个区域获得停留时间较长。</p>
+		</div>
+
+		<div class="currency-tit">
+			<i class="line"></i>注视区热力图</div>
+
+		<div class="histogram2">
+			<div class="colorful-box">
+				<div class="focusBox">
+					<ul class="pic">
+						<li>
+							<div class="">
+								<img src="images/eye1.jpg" />
+								<img src="images/eye2.jpg" />
+								<img src="images/eye3.jpg" />
+								<img src="images/eye1.jpg" />
+								<img src="images/eye1.jpg" />
+								<img src="images/eye1.jpg" />
+							</div>
+						</li>
+						<li>
+							<div class="">
+								<img src="images/eye5.jpg" />
+								<img src="images/eye4.jpg" />
+								<img src="images/eye3.jpg" />
+								<img src="images/eye2.jpg" />
+								<img src="images/eye1.jpg" />
+								<img src="images/eye1.jpg" />
+							</div>
+						</li>
+						<li>
+							<div class="">
+								<img src="images/eye1.jpg" />
+								<img src="images/eye2.jpg" />
+								<img src="images/eye3.jpg" />
+								<img src="images/eye1.jpg" />
+								<img src="images/eye1.jpg" />
+								<img src="images/eye1.jpg" />
+							</div>
+						</li>
+					</ul>
+					<a class="prev" href="javascript:void(0)"></a>
+					<a class="next" href="javascript:void(0)"></a>
+					<ul class="hd">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="chart">
+				<span class="block" style="opacity:1.2;width:120px">
+					<i>12</i>″
+					<em>1</em>
+				</span>
+				<span class="block" style="opacity:0.3;width:30px">3″
+					<em>2</em>
+				</span>
+				<span class="block" style="opacity:0.5;width:50px">5″
+					<em>3</em>
+				</span>
+				<span class="block" style="opacity:0.9;width:90px">9″
+					<em>4</em>
+				</span>
+				<span class="block" style="opacity:0.5;width:10px">1″
+					<em>5</em>
+				</span>
+				<span class="block" style="opacity:2;width:200px">20″
+					<em>6</em>
+				</span>
+			</div>
+			<p class="description-word">
+				<i class="ico-point"></i>此页纹理图展示了用户对乐词的典型操作（下载-学习-练习-复习）中在对各页面分区的关注程度。其中4 （选择词库）、6（学习完成时间） 、7 （每天目标）、8 （单词及释义）、9（例句信息等）这几个区域获得停留时间较长。</p>
+		</div>
+
+		<div class="currency-tit">
+			<i class="line"></i>注视热词图</div>
+		<div class="hotWords-box">
+			<div class="" id="hotLook">
+				<img src="images/list3.jpg" />
+			</div>
+			<table class="table-a">
+				<tr>
+					<th scope="col" width="15%">热词／区域</th>
+					<th scope="col" width="10%">坚持绽放</th>
+					<th scope="col" width="10%">高分技巧</th>
+					<th scope="col" width="10%">音频播放</th>
+					<th scope="col" width="10%">单词区域</th>
+					<th scope="col" width="10%">复习日历</th>
+					<th scope="col" width="10%">记忆曲线</th>
+					<th scope="col" width="14%">错词本／收藏夹</th>
+					<th scope="col" width="11%">雅思红宝书</th>
+				</tr>
+				<tr>
+					<th scope="row">首次注视时长</th>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<td>7</td>
+					<td>8</td>
+				</tr>
+				<tr>
+					<th scope="row">回视</th>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<td>7</td>
+					<td>8</td>
+				</tr>
+				<tr>
+					<th scope="row">注视时长</th>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<td>7</td>
+					<td>8</td>
+				</tr>
+			</table>
+
+
+			<p class="description-word">
+				<i class="ico-point"></i>此页纹理图展示了用户对乐词的典型操作（下载-学习-练习-复习）中在对各页面分区的关注程度。其中4 （选择词库）、6（学习完成时间） 、7 （每天目标）、8 （单词及释义）、9（例句信息等）这几个区域获得停留时间较长。</p>
+		</div>
+
+		<div class="whole whole-style2">
+			<h2 class="clearBoth">
+				<span class="tit">任务一</span>
+				<span class="name">项目名称项目名称项目名称项目名称项目名称项目名称</span>
+				<a href="#" class="f_r compile blue">
+					<span class="icon-edit"></span>编辑</a>
+			</h2>
+			<div class="currency-tit mt20 clearBoth">
+				<i class="line"></i>任务描述
+				<a href="#" class="f_r blue f14 pt10">编辑</a>
+			</div>
+			<p class="t">眼动仪是心理学基础研究的重要仪器。眼动仪用于记录人在处理视觉信息时的眼动轨迹特征，广泛用于注意、视知觉、阅读等领域的研究。现有不同厂家生产的多种 型号的眼动仪，如 EyeLink眼动仪、EVM3200眼动仪、faceLAB4眼动仪、EyeTrace
+				XY 100...</p>
+			<div class="borbom"></div>
+		</div>
+
+		<div class="histogram2">
+			<ul class="missionlist clearBoth">
+				<li>
+					<h2 class="afterPost">
+						<div class="currency-tit mt10">
+							<label class="label-check">
+								<div class="piaochecked on_check">
+									<input type="checkbox" class="checkbox checkedclass" />
+								</div>任务用时（不同性别）</label>
+						</div>
+						<span class="info">
+							<span class="blue">- -</span>平均用时
+						</span>
+					</h2>
+					<div class="figure">
+						<div id="r2b0" style="width:100%;height:240px"></div>
+					</div>
+					<p class="description-word">
+						<i class="ico-point"></i>此页纹理图展示了用户对乐词的典型操作这几个区域获得停留时间较长。</p>
+				</li>
+				<li>
+					<h2 class="afterPost">
+						<div class="currency-tit mt10">
+							<label class="label-check">
+								<div class="piaochecked on_check">
+									<input type="checkbox" class="checkbox checkedclass" />
+								</div>任务错误数（不同组别）</label>
+						</div>
+						<span class="info">
+							<span class="blue">- -</span>平均用时
+						</span>
+					</h2>
+					<div class="figure">
+						<div id="r2b1" style="width:100%;height:240px"></div>
+					</div>
+					<p class="description-word">
+						<i class="ico-point"></i>此页纹理图展示了用户对乐词的典型操作这几个区域获得停留时间较长。</p>
+				</li>
+			</ul>
+
+		</div>
+
+		<div class="currency-tit">
+			<i class="line"></i>注视热力图</div>
+
+		<div class="histogram2">
+			<div class="colorful-box">
+				<div class="focusBox">
+					<ul class="pic">
+						<li>
+							<div class="">
+								<img src="images/eye1.jpg" />
+								<img src="images/eye2.jpg" />
+								<img src="images/eye3.jpg" />
+								<img src="images/eye1.jpg" />
+								<img src="images/eye1.jpg" />
+								<img src="images/eye1.jpg" />
+							</div>
+						</li>
+						<li>
+							<div class="">
+								<img src="images/eye5.jpg" />
+								<img src="images/eye4.jpg" />
+								<img src="images/eye3.jpg" />
+								<img src="images/eye2.jpg" />
+								<img src="images/eye1.jpg" />
+								<img src="images/eye1.jpg" />
+							</div>
+						</li>
+						<li>
+							<div class="">
+								<img src="images/eye1.jpg" />
+								<img src="images/eye2.jpg" />
+								<img src="images/eye3.jpg" />
+								<img src="images/eye1.jpg" />
+								<img src="images/eye1.jpg" />
+								<img src="images/eye1.jpg" />
+							</div>
+						</li>
+					</ul>
+					<a class="prev" href="javascript:void(0)"></a>
+					<a class="next" href="javascript:void(0)"></a>
+					<ul class="hd">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="chart">
+				<span class="block" style="opacity:1.2;width:120px">
+					<i>12</i>″
+					<em>1</em>
+				</span>
+				<span class="block" style="opacity:0.3;width:30px">3″
+					<em>2</em>
+				</span>
+				<span class="block" style="opacity:0.5;width:50px">5″
+					<em>3</em>
+				</span>
+				<span class="block" style="opacity:0.9;width:90px">9″
+					<em>4</em>
+				</span>
+				<span class="block" style="opacity:0.5;width:10px">1″
+					<em>5</em>
+				</span>
+				<span class="block" style="opacity:2;width:200px">20″
+					<em>6</em>
+				</span>
+			</div>
+			<p class="description-word">
+				<i class="ico-point"></i>此页纹理图展示了用户对乐词的典型操作（下载-学习-练习-复习）中在对各页面分区的关注程度。其中4 （选择词库）、6（学习完成时间） 、7 （每天目标）、8 （单词及释义）、9（例句信息等）这几个区域获得停留时间较长。</p>
+		</div>
+
+	</div>
+
+	<div class="peroration clearBoth w1280">
+		<div class="f_l pleft gradient">结束语</div>
+		<div class="f_l pright">
+			<h1>谢谢查看</h1>
+			<p class="ln">
+				希望我们的报告能对您的产品优化带来帮助，
+				<br> 如有问题，请联系我们的测试人员，
+				<br> 邮箱：xdfueo@xdf.cn；电话：23829447，再次感谢！
+			</p>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="w1280">
+			<div class="f">
+				<p>经营许可证编号：京ICP备05067667 | 京ICP证060601号| 京网文(2016)5762-750号 | 京公网安备 11010802021790号
+					<br> Copyright 2011-2016 Neworiental Corporation, All Rights Reserved</p>
+				<img src="images/logo2.png" class="logo2" />
+			</div>
+		</div>
+	</div>
+
+	<div class="backTop"></div>
+
+	<script src="js/echartsData.js"></script>
+	<script type="text/javascript">
+		hotLook();
+		jQuery(".focusBox").slide({ mainCell: ".pic", effect: "left", autoPlay: false, delayTime: 300 });
+		jQuery(".tscroll3").slide({ mainCell: "ul", autoPlay: false, effect: "left", vis: 3, scroll: 2, autoPage: true, pnLoop: false });
+		$(".backTop").click(function () {
+			$('body,html').animate({ scrollTop: 0 }, 1000);
+			return false;
+		});
+
+		//checkbox颜色
+		$(".piaochecked").on("click", function () {
+			$(this).toggleClass("on_check");
+		});
+		$(".pay_list_c1").on("click", function () {
+			$(this).addClass("radioon").siblings().removeClass("radioon");
+		});
+
+	</script>
+
+	<script src="js/echartsData.js"></script>
+	<script>
+		singleFm()
+	</script>
+</body>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="description" content="不超过150个字符"/>
+	<meta name="keywords" content=""/>
+	<meta name="author" content="name, email@gmail.com"/>
+	<meta name="robots" content="index,follow"/>
+    <title>任务列表</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/myClass.css"/>
+	<link rel="stylesheet" href="js/layer/skin/layer.css"/>
+   	<script src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/layer/layer.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+	$( function() {
+		$( "#sortable" ).sortable({
+		placeholder: "sortable-placeholder",
+		opacity: 0.8,
+		axis: "y",
+		helper: "clone"
+		});
+		$( "#sortable" ).disableSelection();
+	} );
+	</script>
+	<style>
+	.tablebox tr.sortable-placeholder{background: #24b4dc}
+	</style>
+</head>
+<body>
+
+	<div class="header gradient">
+		<img src="images/logo.png" class="logo" />
+		<div class="right">
+			<img src="images/headimg.png" class="headimg" />
+			<span class="name">蒋小雅</span>
+			<span class="ico-deng"></span>
+		</div>
+	</div>
+	
+	<div class="bodyLeft">
+			<ul class="menulist">
+				<li class="on"><a href="2.html" target="bodyRightFm"><i class="icon-num"></i>新东方官网</a><i class="icon-edit"></i><i class="icon-close"></i></li>
+				<li><a href="3.html" target="bodyRightFm"><i class="icon-num"></i>优播客</a><i class="icon-edit"></i><i class="icon-close"></i></li>
+				<li><a href="3.html" target="bodyRightFm"><i class="icon-num"></i>乐词</a><i class="icon-edit"></i><i class="icon-close"></i></li>
+				
+			</ul>
+			<a href="#" class="blue add-products">添加产品</a>
+		</div>
+
+	<div class="bodyRight listRight">
+		<div class="crumb clearBoth">
+			<h1 class="f_l">新东方APP项目</h1>
+			<a href="#" class="f_r newcase">预览报告</a>
+		</div>
+		
+		<div class="whole">
+			<h2><i></i>项目整体<em></em></h2>
+			<p class="t">项目整体数据请点击下方按钮上传或修改。</p>
+			<a href="#" class="edit">编辑数据</a>
+		</div>
+		
+		<div class="tasklist">
+			<h2><i></i>任务列表</h2>
+			<div class="r-right">
+				<a href="#" class="aboutTask blue">添加任务</a>
+				<div href="#" class="aboutTask blue drop-down">
+					批量导入任务<i class="drop-down"></i>
+					<div class="downmould">下载模板</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="tablebox tablebox-list">
+			<div class="tableDrag">
+				<ul>
+					<li class="line1">
+						<span class="column1">排序</span>
+						<span class="column2">展示顺序</span>
+						<span class="column3">任务名称</span>
+						<span class="column4">任务描述</span>
+						<span class="column5">上传数据状态</span>
+						<span class="column6">操作</span>
+					</li>
+				</ul>
+				<ul id="sortable">
+					<li>
+						<span class="column1"><i class="turn"></i></span>
+						<span class="column2 color333">1</span>
+						<span class="column3 color333 taskName">
+							任务名称
+							<a href="" class="table-edit"></a><a href="" class="table-close"></a>
+						</span>
+						<span class="column4">此处是任务一的描述内此处是是任务务</span>
+						<span class="column5"><i class="upload-no"></i></span>
+						<span class="column6"><a href="#" class="f12 blue"><i class="editmany"></i>编辑</a></span>
+					</li>
+					<li>
+						<span class="column1"><i class="turn"></i></span>
+						<span class="column2 color333">2</span>
+						<span class="column3 color333 taskName">
+							任务名称
+							<a href="" class="table-edit"></a><a href="" class="table-close"></a>
+						</span>
+						<span class="column4">此处是任务一的描述一的描述内此处是任务务</span>
+						<span class="column5"><i class="upload"></i></span>
+						<span class="column6"><a href="#" class="f12 blue"><i class="editmany"></i>编辑</a></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		$(".tableDrag li").hover(function(){
+			$(this).find(".turn").addClass("turnblue");
+			$(this).find(".upload").addClass("uploadblue");
+			$(this).find(".table-edit").show();
+			$(this).find(".table-close").show();
+		},function(){
+			$(this).find(".turn").removeClass("turnblue");
+			$(this).find(".upload").removeClass("uploadblue");
+			$(this).find(".table-edit").hide();
+			$(this).find(".table-close").hide();
+		});
+		//批量
+		var task = false;
+		$(document).on('click','.tasklist .drop-down',function(){
+			if(task==false){
+				$(".downmould").show();
+				task=true;
+			}else{
+				$(".downmould").hide();
+				task=false;
+			}
+		});
+    jQuery(".picScroll").slide({ mainCell:"ul",autoPlay:false,effect:"left", vis:6, scroll:2, autoPage:true, pnLoop:false });
+	</script>
+
+</body>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="description" content="不超过150个字符"/>
+	<meta name="keywords" content=""/>
+	<meta name="author" content="name, email@gmail.com"/>
+	<meta name="robots" content="index,follow"/>
+    <title>测试项目列表-只读权限</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/myClass.css"/>
+	<link rel="stylesheet" href="js/layer/skin/layer.css"/>
+   	<script src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/layer/layer.js"></script>
+	   <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+
+	<div class="header gradient">
+		<img src="images/logo.png" class="logo" />
+		<div class="right">
+			<img src="images/headimg.png" class="headimg" />
+			<span class="name">蒋小雅</span>
+			<span class="ico-deng"></span>
+		</div>
+	</div>
+	
+	<div class="bodyLeft">
+			<ul class="menulist">
+				<li class="on"><a href="2.html" target="bodyRightFm"><i class="icon-num"></i>新东方官网</a><i class="icon-edit"></i><i class="icon-close"></i></li>
+				<li><a href="3.html" target="bodyRightFm"><i class="icon-num"></i>优播客</a><i class="icon-edit"></i><i class="icon-close"></i></li>
+				<li><a href="3.html" target="bodyRightFm"><i class="icon-num"></i>乐词</a><i class="icon-edit"></i><i class="icon-close"></i></li>
+				
+			</ul>
+			<a href="#" class="blue add-products">添加产品</a>
+		</div>
+
+	<div class="bodyRight listRight">
+		<div class="crumb clearBoth">
+			<h1 class="f_l">测试项目列表</h1>
+			<a href="#" class="f_r newcase">新建测试项目</a>
+		</div>
+		
+		<div class="tablebox">
+			<table width="100%">
+				<tr>
+					<th scope="col" width="30%">测试项目名称</th>
+					<th scope="col" width="15%">产品版本</th>
+					<th scope="col" width="10%">状态</th>
+					<th scope="col" width="15%">发起人</th>
+					<th scope="col" width="15%">测试人</th>
+					<th scope="col" width="15%">操作</th>
+				</tr>
+				<tr>
+					<td><p class="color333">新东方官网功能走查新东方官网功能走查新东方官网功能走查新东方官网功能走查</p></td>
+					<td>1.0</td>
+					<td><i class="state-1"></i></td>
+					<td><p class="color666">磅礴</p></td>
+					<td><p class="color666">芦柑</p></td>
+					<td><a href="#" class="blue"><i class="view-report"></i>查看报告</a></td>
+				</tr>
+				<tr>
+					<td><p class="color333">新东方官网功能走查</p></td>
+					<td>1.0</td>
+					<td><i class="state-2"></i></td>
+					<td><p class="color666">磅礴</p></td>
+					<td><p class="color666">芦柑</p></td>
+					<td><a href="#" class="blue"><i class="view-report"></i>查看报告</a></td>
+				</tr>
+				<tr>
+					<td><p class="color333">新东方官网功能走查</p></td>
+					<td>1.0</td>
+					<td><i class="state"></i></td>
+					<td><p class="color666">磅礴</p></td>
+					<td><p class="color666">芦柑</p></td>
+					<td><a href="#" class="blue"><i class="view-report"></i>查看报告</a></td>
+				</tr>
+				<tr>
+					<td><p class="color333">新东方官网功能走查</p></td>
+					<td>1.0</td>
+					<td><i class="state"></i></td>
+					<td><p class="color666">磅礴</p></td>
+					<td><p class="color666">芦柑</p></td>
+					<td><a href="#" class="blue"><i class="view-report"></i>查看报告</a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	
+	<!--弹框-->
+	<div class="mask"></div>
+	<div class="bombBox bombBox-h checkout">
+		<h2 class="gradient">添加测试项目</h2>
+		<div class="info info-t clearBoth">
+			<ul>
+				<li>
+					<span class="f_l proname">测试名称</span> 
+					<input type="text" placeholder="测试项目名称" class="inp f_l" />
+				</li>
+				<li>
+					<span class="f_l proname">版本</span> 
+					<input type="text" placeholder="版本" class="inp f_l" />
+				</li>
+				<li>
+					<span class="f_l proname">测试开始时间</span> 
+					<input type="text" placeholder="测试开始时间" class="inp inptime f_l" onclick="laydate()" autocomplete="off" />
+					<i class="input-data"></i>
+				</li>
+				<li>
+					<span class="f_l proname">任务录入截止时间</span> 
+					<input type="text" placeholder="任务录入截止时间" class="inp inptime f_l" onclick="laydate()" autocomplete="off" />
+					<i class="input-data"></i>
+				</li>
+				<li>
+					<span class="f_l proname">数据录入截止时间</span> 
+					<input type="text" placeholder="数据录入截止时间" class="inp inptime f_l" onclick="laydate()" autocomplete="off" />
+					<i class="input-data"></i>
+				</li>
+				<li>
+					<span class="f_l proname">报告生成截止时间</span> 
+					<input type="text" placeholder="报告生成截止时间" class="inp inptime f_l" onclick="laydate()" autocomplete="off" />
+					<i class="input-data"></i>
+				</li>
+				<li>
+					<span class="f_l proname">发起人</span> 
+					<input type="text" placeholder="发起人（产品经理）" class="inp f_l" />
+				</li>
+				<li>
+					<span class="f_l proname">测试人</span> 
+					<input type="text" placeholder="测试人（参与测试人员，输入多人用分号隔开）" class="inp f_l" />
+				</li>
+				<li>
+					<span class="f_l proname">备注</span> 
+					<input type="text" placeholder="备注" class="inp f_l" />
+				</li>
+			</ul>
+		</div>
+		<div class="botton botton-t">
+			<input type="button" value="保存" class="gradient conserve " />
+			<input type="button" value="取消" class="cancel" />
+		</div>
+	</div>
+
+</body>

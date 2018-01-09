@@ -1,0 +1,71 @@
+/*学生公共样式*/
+@charset "utf-8";
+/* CSS Document */
+/* 浏览器重置 start */
+body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,form,fieldset,legend,input,select,textarea,button,th,td,menu,article,pre,xmp,plaintext,listing{margin:0;padding:0;}
+*{ margin:0; padding:0;}
+pre,xmp,plaintext,listing{white-space:normal;}
+article,aside,dialog,figure,footer,header,hgroup,nav,section,select,time{display:block;}
+h1,h2,h3,h4,h5,h6,input,textarea,img,select,button,label{font-size:100%;font-weight:100;}
+ul,dl,ol{list-style:none;}
+img,fieldset,input[type="submit"]{border:none;}
+input,textarea{outline:none;background:transparent;font: 14px/1.6 "Microsoft YaHei", "微软雅黑", Tahoma, Helvetica;}
+input[type='text'],input[type='search'],textarea, select{width:100%;height:100%;text-indent:1em;display:block;border:none;background-color:transparent;}
+table{border-collapse:collapse;border-spacing:0;}
+button{cursor:pointer;border:none;}
+textarea{word-wrap:break-word;/*resize:none;*/}
+a,area { blr:expression(this.onFocus=this.blur()) } /* for IE */
+:focus { outline: none; } /* for Firefox */
+a{text-decoration: none;font-style:normal;}
+/* 去除IE下拉菜单箭头 */
+select::-ms-expand{display:none;}
+/* 修改IE下radio、checkbox默认样式 */
+::-ms-check{}
+/* 去除输入框、文本域默认边框和IOS4下的内阴影 */
+input[type='text'],input[type='search'],textarea, select{-webkit-appearance:none;border:none;outline:none;}
+/* 设置Gecko内核下输入框属性placeholder中值的文件颜色 */
+input:-moz-placeholder{color:#C4C4C4;}
+/* 设置webkit内核下输入框属性placeholder中值的文件颜色 */
+::-webkit-input-placeholder{color:#C4C4C4;}
+body{font: 14px/1.0 "Microsoft YaHei", "微软雅黑", Tahoma, Helvetica;min-height:100%;font-size: 14px;color: #505356;background-color: #fff;}
+/* 设置webkit内核下文字大小不小于12px */
+html{width:100%;/*height:100%;*/}
+input,textarea{outline:none;background:transparent;font: 14px/1.0 "Microsoft YaHei", "微软雅黑", Tahoma, Helvetica;}
+input[type='text'],input[type='search'],input[type='password'],input[type='button'],textarea, select{height:100%;display:inline-block;}
+
+/*img{max-width:100%;}*/
+/* 浏览器重置 end */
+.clearBoth{*zoom:1;}
+.clearBoth:after{ overflow:hidden; visibility:hidden;display:block; content:"clear"; height:0; clear:both;}
+.inputDom span{color:#b6b6b6;font-size:14px;font-family:"微软雅黑";line-height:35px;padding-left:1em;}
+.inputDom input{display:none;}
+.fixed{position: fixed;}
+.ell{overflow:hidden;white-space:nowrap;text-overflow: ellipsis;}/*文字点点点*/
+.hide{display:none;}
+/*禁止选中*/
+.no_selection{moz-user-select: -moz-none;-moz-user-select: none;-o-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;}
+/*排版*/
+.absolute{position: absolute;}
+.relative{position: relative;}
+.fixed{position: fixed;}
+
+.f_l{float: left;}
+.f_r{float: right;}
+.f12{font-size:12px;}
+.f14{font-size:14px;}
+.pt10{ padding-top:10px;}
+.blue{color:#2ac7ca;}
+.color333{ color:#333;}
+.color666{ color:#666;}
+.red{ color:#ff2f13;}
+
+
+
+
+
+
+
+
+
+
+
