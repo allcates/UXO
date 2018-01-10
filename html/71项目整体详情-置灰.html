@@ -13,8 +13,6 @@
 	<link rel="stylesheet" href="js/layer/skin/layer.css"/>
    	<script src="js/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="js/layer/layer.js"></script>
-	<script type="text/javascript" src="js/echarts.min.js"></script>
-	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
 </head>
 <body>
@@ -101,11 +99,11 @@
 							<input type="text" placeholder="请录入说明" class="inphi-mod" />
 						</li>
 					</ul>
+				</div>
 					<div class="btn-arrow">
 						<a href="javascript:void(0);" class="prev"></a>
 						<a href="javascript:void(0);" class="next"></a>
 					</div>
-				</div>
 			</div>
 		</div>
 		<div class="histogram2">
@@ -313,9 +311,6 @@
 				task2=false;
 			}
 		});
-		jQuery(".tscroll1").slide({ mainCell:"ul",autoPlay:false,effect:"left", vis:6, scroll:2, autoPage:true, pnLoop:false });
-		jQuery(".tscroll2").slide({ mainCell:"ul",autoPlay:false,effect:"left", vis:6, scroll:2, autoPage:true, pnLoop:false });
-		jQuery(".tscroll3").slide({ mainCell:"ul",autoPlay:false,effect:"left", vis:3, scroll:2, autoPage:true, pnLoop:false });
 
 		var h = $(document).height();
 		$(".bodyLeft").height(h);

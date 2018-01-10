@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="css/base.css"/>
     <link rel="stylesheet" href="css/myClass.css"/>
 	<link rel="stylesheet" href="js/layer/skin/layer.css"/>
+	<link rel="stylesheet" href="css/jquery-ui.min.css" />
    	<script src="js/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="js/layer/layer.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
 	<script>
 	$( function() {
 		$( "#sortable" ).sortable({
@@ -27,7 +28,9 @@
 	} );
 	</script>
 	<style>
-	.tablebox tr.sortable-placeholder{background: #24b4dc}
+	.tablebox ul li.sortable-placeholder{background: #d3cff5}
+	.tablebox ul li.ui-sortable-helper{background: #fff}
+	
 	</style>
 </head>
 <body>
@@ -106,7 +109,40 @@
 							<a href="" class="table-edit"></a><a href="" class="table-close"></a>
 						</span>
 						<span class="column4">此处是任务一的描述一的描述内此处是任务务</span>
-						<span class="column5"><i class="upload"></i></span>
+						<span class="column5"><i class="upload uploadblue"></i></span>
+						<span class="column6"><a href="#" class="f12 blue"><i class="editmany"></i>编辑</a></span>
+					</li>
+					<li>
+						<span class="column1"><i class="turn"></i></span>
+						<span class="column2 color333">3</span>
+						<span class="column3 color333 taskName">
+							任务名称
+							<a href="" class="table-edit"></a><a href="" class="table-close"></a>
+						</span>
+						<span class="column4">此处是任务一的描述一的描述内此处是任务务</span>
+						<span class="column5"><i class="upload uploadblue"></i></span>
+						<span class="column6"><a href="#" class="f12 blue"><i class="editmany"></i>编辑</a></span>
+					</li>
+					<li>
+						<span class="column1"><i class="turn"></i></span>
+						<span class="column2 color333">4</span>
+						<span class="column3 color333 taskName">
+							任务名称
+							<a href="" class="table-edit"></a><a href="" class="table-close"></a>
+						</span>
+						<span class="column4">此处是任务一的描述一的描述内此处是任务务</span>
+						<span class="column5"><i class="upload uploadblue"></i></span>
+						<span class="column6"><a href="#" class="f12 blue"><i class="editmany"></i>编辑</a></span>
+					</li>
+					<li>
+						<span class="column1"><i class="turn"></i></span>
+						<span class="column2 color333">5</span>
+						<span class="column3 color333 taskName">
+							任务名称
+							<a href="" class="table-edit"></a><a href="" class="table-close"></a>
+						</span>
+						<span class="column4">此处是任务一的描述一的描述内此处是任务务</span>
+						<span class="column5"><i class="upload uploadblue"></i></span>
 						<span class="column6"><a href="#" class="f12 blue"><i class="editmany"></i>编辑</a></span>
 					</li>
 				</ul>
@@ -117,27 +153,15 @@
 	<script type="text/javascript">
 		$(".tableDrag li").hover(function(){
 			$(this).find(".turn").addClass("turnblue");
-			$(this).find(".upload").addClass("uploadblue");
+			//$(this).find(".upload").addClass("uploadblue");
 			$(this).find(".table-edit").show();
 			$(this).find(".table-close").show();
 		},function(){
 			$(this).find(".turn").removeClass("turnblue");
-			$(this).find(".upload").removeClass("uploadblue");
+			//$(this).find(".upload").removeClass("uploadblue");
 			$(this).find(".table-edit").hide();
 			$(this).find(".table-close").hide();
 		});
-		//批量
-		var task = false;
-		$(document).on('click','.tasklist .drop-down',function(){
-			if(task==false){
-				$(".downmould").show();
-				task=true;
-			}else{
-				$(".downmould").hide();
-				task=false;
-			}
-		});
-    jQuery(".picScroll").slide({ mainCell:"ul",autoPlay:false,effect:"left", vis:6, scroll:2, autoPage:true, pnLoop:false });
 	</script>
 
 </body>
