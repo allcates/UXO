@@ -93,13 +93,12 @@ input[type='button']{border:0;}
 .tableDrag li .column5{ width:11%;}
 .tableDrag ul li{ height:28px; padding:5px 8px 5px 9px;}
 .tableDrag ul li.line1{ border-bottom:1px solid #ebebeb; height:35px; line-height:35px; padding:0;}
-.tableDrag ul li:nth-child(odd){ background:#f5f9fa;}
+.tableDrag ul li:nth-child(even){ background:#f5f9fa;}
 .tableDrag ul li:hover{ background:#e9f3f3;}
-.tableDrag ul li:nth-child(1){ background:none;}
 .tableDrag ul li .taskName{ position:relative;}
 
 /*ico*/
-.turn{ display:inline-block; width:16px; height:16px; background:url(../images/icos.png) -26px 0 no-repeat; margin-left:6px; position:relative; top:3px;}
+.turn{ display:inline-block; width:16px; height:16px; background:url(../images/icos.png) -26px 0 no-repeat; margin-left:6px; position:relative; top:3px;cursor: move}
 .turnblue{ background-position:-26px -21px;}
 .editmany{ display:inline-block; width:16px; height:16px; background:url(../images/icos.png) -51px -18px no-repeat; position:relative; top:2px; margin-right:5px;}
 .upload-no{ display:inline-block; width:18px; height:18px; background:url(../images/icos.png) 0px 0px no-repeat; position:relative; top:4px;}
@@ -236,7 +235,7 @@ input[type='button']{border:0;}
 .thermodyScroll .info .xname{ color:#666; margin-top:8px;}
 .thermodyScroll ul{ }
 .thermodyScroll ul li{ float:left; margin:0 26px 0 0; width:172px; text-align:center;position: relative}
-.thermodyScroll ul li a{width: 19px;height: 19px;display: block;position: absolute;right: -5px;top: -5px;background: url(../images/close.png) no-repeat 0 0;}
+.thermodyScroll ul li a{width: 19px;height: 19px;display: block;position: absolute;right: -9px;top: -9px;background: url(../images/close.png) no-repeat 0 0;}
 .thermodyScroll ul li .inp-show{ height:34px; border:1px solid #e8e7e5; background:#fff; margin-top:10px; width:170px;}
 .thermodyScroll ul li:last-child{ margin-right:0px;} 
 .thermodyScroll ul li img{ width:172px; height:307px;cursor: move }
