@@ -248,7 +248,12 @@ option = {
         x: 'right',
         y: 'center',
         orient: 'vertical',
-        data: ['男', '女']
+        data: [
+            {name:'男',icon:'rect'},
+            {name:'女',icon:'rect'}
+        ],
+        itemWidth:10,
+        itemHeight:10
     },
     calculable: true,
     xAxis: [
@@ -261,7 +266,7 @@ option = {
     yAxis: [
         {
             type: 'value',
-            name: '任务用时'
+            name: '任务用时(min)'
         }
     ],
     grid: {
@@ -276,23 +281,23 @@ option = {
         {
             name: '男',
             type: 'bar',
-            barGap: 0,
+            barGap: 0.1,
             data: [320, 332, 123],
-            barWidth: 20
+            barWidth: 22
         },
         {
             name: '女',
             type: 'bar',
-            barGap: 0,
+            barGap: 0.1,
             data: [220, 182, 321],
-            barWidth: 20
+            barWidth: 22
         }
     ]
 };
 // 使用刚指定的配置项和数据显示图表。
 myChart.setOption(option);
 var option1 = option;
-option1.yAxis[0].name = '任务错误数';
+option1.yAxis[0].name = '任务错误数(个)';
 myChart1.setOption(option1, true);
 
 
@@ -408,7 +413,7 @@ function singleFm() {
         ],
         series: [
             {
-                name: '任务用时',
+                name: '任务用时(min)',
                 type: 'bar',
                 barWidth: '60%',
                 data: [10, 52, 200, 334, 390, 330, 220, 52, 200, 334, 390, 330, 220]
