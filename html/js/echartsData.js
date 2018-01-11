@@ -277,12 +277,15 @@ option = {
             name: '男',
             type: 'bar',
             barGap: 0,
-            data: [320, 332, 123]
+            data: [320, 332, 123],
+            barWidth: 20
         },
         {
             name: '女',
             type: 'bar',
-            data: [220, 182, 321]
+            barGap: 0,
+            data: [220, 182, 321],
+            barWidth: 20
         }
     ]
 };
