@@ -126,7 +126,11 @@ $(function () {
         });
     })
 
-
+    $('.chart .block').on('click',function(){
+        var $this=$(this),idx=$this.index();
+        $(this).parents('.charttop').find('.info li img').css({'border':'2px solid #fff'});
+        $(this).parents('.charttop').find('.info li').eq(idx).find('img').css({'border':'2px solid #999'});
+    })
 
 
 })

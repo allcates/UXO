@@ -235,11 +235,11 @@ input[type='button']{border:0;}
 .thermodyScroll .info{ margin:0 60px 0 75px; padding-top: 10px; overflow:hidden;/* width:980px;*/}
 .thermodyScroll .info .xname{ color:#666; margin-top:8px;}
 .thermodyScroll ul{ }
-.thermodyScroll ul li{ float:left; margin:0 26px 0 0; width:172px; text-align:center;position: relative}
+.thermodyScroll ul li{ float:left; margin:0 26px 0 0; width:172px; text-align:center;position: relative;}
 .thermodyScroll ul li a{width: 19px;height: 19px;display: block;position: absolute;right: -9px;top: -9px;background: url(../images/close.png) no-repeat 0 0;}
 .thermodyScroll ul li .inp-show{ height:34px; border:1px solid #e8e7e5; background:#fff; margin-top:10px; width:170px;}
 .thermodyScroll ul li:last-child{ margin-right:0px;} 
-.thermodyScroll ul li img{ width:172px; height:307px;cursor: move }
+.thermodyScroll ul li img{  height:303px;cursor: move;border: 2px solid #f9f9f9 }
 .thermodyScroll .prev,.thermodyScroll .next{ position:absolute; top:135px; display:block; width:16px; height:35px; overflow:hidden; background:url(../images/icos.png) 0px -90px no-repeat; cursor:pointer;  }
 .thermodyScroll .prev{ left:25px;}
 .thermodyScroll .next{ left:auto; right:25px; background:url(../images/icos.png) -21px -90px no-repeat; }

@@ -332,6 +332,12 @@ function hotLook() {
                 lineStyle: {
                     type: 'dashed'
                 }
+            },
+            axisLine:{
+                show:false
+            },
+            axisTick:{
+                show:false
             }
         },
         yAxis: {
@@ -340,7 +346,13 @@ function hotLook() {
                     type: 'dashed'
                 }
             },
-            scale: true
+            scale: true,
+            axisLine:{
+                show:false
+            },
+            axisTick:{
+                show:false
+            }
         },
         series: [{
             name: '热词',
@@ -351,6 +363,7 @@ function hotLook() {
             },
             label: {
                 normal: {
+                    color:'#fff',
                     show: true,
                     formatter: function (param) {
                         return param.data[3];
