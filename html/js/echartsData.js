@@ -10,7 +10,13 @@ function pieFm() {
             x: 'right',
             y: 'center',
             orient: 'vertical',
-            data: ['男', '女']
+            data: [{
+                name:'男',
+                icon:'circle'
+            }, {
+                name:'女',
+                icon:'circle'
+            }]
         },
         series: [
             {
@@ -56,7 +62,13 @@ function pieFm() {
             x: 'right',
             y: 'center',
             orient: 'vertical',
-            data: ['组1', '组2']
+            data: [{
+                name:'组1',
+                icon:'circle'
+            }, {
+                name:'组2',
+                icon:'circle'
+            }]
         },
         series: [
             {
@@ -102,7 +114,16 @@ function pieFm() {
             x: 'right',
             y: 'center',
             orient: 'vertical',
-            data: ['组1', '组2', '组3']
+            data: [{
+                name:'组1',
+                icon:'circle'
+            }, {
+                name:'组2',
+                icon:'circle'
+            }, {
+                name:'组3',
+                icon:'circle'
+            }]
         },
         series: [
             {
@@ -283,7 +304,7 @@ option = {
             type: 'bar',
             barGap: 0.1,
             data: [320, 332, 123],
-            barWidth: 22
+            barWidth: 22,icon:'rect'
         },
         {
             name: '女',
