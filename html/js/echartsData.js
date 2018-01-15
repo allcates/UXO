@@ -382,7 +382,7 @@ function singleFm() {
     var myChart = echarts.init(document.getElementById('r2b0'));
     var myChart1 = echarts.init(document.getElementById('r2b1'));
     option = {
-        color: ['#3398DB'],
+        color: ['#26bed8'],
         tooltip: {
             trigger: 'axis',
             axisPointer: {            // 坐标轴指示器，坐标轴触发有效
@@ -400,15 +400,24 @@ function singleFm() {
             {
                 type: 'category',
                 data: ['p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9', 'p10', 'p11', 'p12', 'p13'],
-                axisTick: {
-                    alignWithLabel: true
+                axisLine:{
+                    show:false
+                },
+                axisTick:{
+                    show:false
                 }
             }
         ],
         yAxis: [
             {
                 type: 'value',
-                name: '用时(s)'
+                name: '用时(s)',
+                axisLine:{
+                    show:false
+                },
+                axisTick:{
+                    show:false
+                }
             }
         ],
         series: [

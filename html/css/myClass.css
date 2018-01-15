@@ -193,7 +193,8 @@ input[type='button']{border:0;}
 .currency-tit .explain{ font-size:14px; color:#666; margin-left:10px;}
 
 
-.bodyRight .inphi-mod{ border:1px solid #e8e7e5; height:34px;width:240px;}
+.bodyRight .inphi-mod{ border:1px solid #e8e7e5; height:34px;/*width:240px;*/}
+.bodyRight .histogram1  .inphi-mod{width:240px;}
 .checkbox{ position:relative; top:2px;}
 .histogram1, .histogram2, .histogram3, .histogram4, .histogram5{ padding-bottom:30px; margin-bottom:20px; }
 .histogram1{ border-bottom:1px solid #e8e7e5;}
@@ -208,7 +209,7 @@ input[type='button']{border:0;}
 .histogram2 .missionlist li:last-child{ margin-right:0;}
 .histogram2 .missionlist li .figure{ height:240px; margin:20px 0px 8px 0;}
 .histogram2 .missionlist li .inphi-mod{ }
-.histogram2 .missionlist li .inphi-mod2{ width:92%; }
+.histogram2 .missionlist li .inphi-mod2{ /*width:92%;*/ }
 .histogram2 .missionlist li .inphi-5b{ width:50%;}
 .histogram2 .missionlist li h2{ font-size:18px; color:#333; font-family:"黑体"; position:relative;}
 .histogram2 .missionlist li h2 .info{ font-size:14px; display:inline-block; position:absolute; right:0px; top:2px;}
