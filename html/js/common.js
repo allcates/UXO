@@ -125,11 +125,14 @@ $(function () {
             return false
         });
     })
-
+    //点击时长
+    var tmDivBd;
     $('.chart .block').on('click',function(){
         var $this=$(this),idx=$this.index();
-        $(this).parents('.charttop').find('.info li img').css({'border':'2px solid #fff'});
-        $(this).parents('.charttop').find('.info li').eq(idx).find('img').css({'border':'2px solid #999'});
+        $this.parents('.charttop').find('.info li img').css({'border':'2px solid #fff'});
+        $this.parents('.charttop').find('.info li').eq(idx).find('img').css({'border':'2px solid #999'});
+        clearTimeout(tmDivBd);
+        tmDivBd=setTimeout(function(){$this.parents('.charttop').find('.info li img').css({'border':'2px solid #fff'});},500);
     })
 
 

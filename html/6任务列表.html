@@ -22,7 +22,10 @@
 		placeholder: "sortable-placeholder",
 		opacity: 0.8,
 		axis: "y",
-		helper: "clone"
+		helper: "clone",
+		update: function(event, ui) { 
+			//排序完成以后的操作
+		 }
 		});
 		$( "#sortable" ).disableSelection();
 	} );
