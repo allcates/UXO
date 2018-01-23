@@ -12,7 +12,7 @@ input[type='button']{border:0;}
 .product .new{ font-size:14px; color:#fff; display:inline-block; width:140px; height:36px; line-height:36px; text-align:center; border-radius:3px;}
 .product .news{ display:inline-block; position:relative;}
 .product .news .downmould{ position:absolute; left:18px; background:#e5eaea; height:36px; line-height:36px; border-radius:0px 0px 3px 3px; color:#666; width:140px; text-align:center; cursor:pointer; display:none;}
-.product .morething{ font-size:14px; color:#fff; display:inline-block; width:140px; height:36px; line-height:36px; text-align:center; border-radius:3px; margin-left:18px; cursor:pointer;}
+.product .morething{ font-size:14px; color:#fff; display:inline-block; width:140px; height:36px; line-height:36px; text-align:center; border-radius:3px; margin-left:18px; cursor:pointer;position: relative}
 
 .process{ text-align:center; font-size:14px; color:#666; width:780px; margin:0px auto; padding-top:135px;}
 .process h1{ font-size:18px; border-bottom:1px solid #ebebeb; width:770px;}
@@ -394,7 +394,8 @@ transform:scale(1.05);
 
 #hotLook{width: 900px;height: 350px}
 
-
+.batchFm{width: 100%;height:100%; position: absolute;top:0;left: 0;cursor: pointer}
+.batchFm input{width: 100%;height:100%; display: block; opacity: 0; cursor: pointer}
 
 
 

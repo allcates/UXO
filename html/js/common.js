@@ -44,7 +44,7 @@ $(function () {
     });
     //批量上传任务
     var task = false;
-    $(document).on('click','#batchBtn',function(){
+    $(document).on('click','#batchBtn .ico-batch',function(){
         if(task==false){
             $(".downmould").show();
             task=true;
@@ -52,6 +52,7 @@ $(function () {
             $(".downmould").hide();
             task=false;
         }
+        return false
     });
 
     //查看权限
