@@ -44,7 +44,7 @@ $(function () {
     });
     //批量上传任务
     var task = false;
-    $(document).on('click','#batchBtn .ico-batch',function(){
+    $(document).on('click','#batchBtn .ico-batch,#batchBtn .drop-down',function(){
         if(task==false){
             $(".downmould").show();
             task=true;
