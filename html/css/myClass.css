@@ -411,7 +411,13 @@ transform:scale(1.05);
 .main-div-right p{font-size:28px; line-height: 1.5;height: 126px}
 .main-div-con p{ font-size:28px; line-height: 1.5;}
 
-
-
+.main-nav{ position: fixed;top: 0;left: 0;width: 100%;height: 70px; background: #fff;border-bottom:1px solid #e1e1e1;z-index: 9 }
+.main-nav-con{ width: 1200px;margin: 0 auto;}
+.main-nav-con h3{font-size: 18px;line-height: 70px;float: left; margin-right: 8px}
+.main-nav-con p{font-size: 14px;line-height: 20px;float: left;margin-right: 8px;overflow: hidden;padding: 25px 0;height:20px;width:0;}
+.main-nav-con p.on{width: auto}
+.main-nav-con b{font-size: 12px;line-height: 20px;float: left;font-weight: normal;margin-right: 16px;padding: 25px 0;}
+.main-nav-con p span{margin: 0 8px;float: left}
+.main-nav-con p b{float: left;margin-right: 0px;padding: 0;}
 
 
