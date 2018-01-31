@@ -11,11 +11,11 @@ function pieFm() {
             y: 'center',
             orient: 'vertical',
             data: [{
-                name:'男',
-                icon:'circle'
+                name: '男',
+                icon: 'circle'
             }, {
-                name:'女',
-                icon:'circle'
+                name: '女',
+                icon: 'circle'
             }]
         },
         series: [
@@ -63,11 +63,11 @@ function pieFm() {
             y: 'center',
             orient: 'vertical',
             data: [{
-                name:'组1',
-                icon:'circle'
+                name: '组1',
+                icon: 'circle'
             }, {
-                name:'组2',
-                icon:'circle'
+                name: '组2',
+                icon: 'circle'
             }]
         },
         series: [
@@ -115,14 +115,14 @@ function pieFm() {
             y: 'center',
             orient: 'vertical',
             data: [{
-                name:'组1',
-                icon:'circle'
+                name: '组1',
+                icon: 'circle'
             }, {
-                name:'组2',
-                icon:'circle'
+                name: '组2',
+                icon: 'circle'
             }, {
-                name:'组3',
-                icon:'circle'
+                name: '组3',
+                icon: 'circle'
             }]
         },
         series: [
@@ -176,151 +176,153 @@ function pieFm() {
 
 //对比柱状图
 
+function vsFm() {
 
 
-// 基于准备好的dom，初始化echarts实例
-var myChart = echarts.init(document.getElementById('list0'));
-var myChart1 = echarts.init(document.getElementById('list1'));
-var posList = [
-    'left', 'right', 'top', 'bottom',
-    'inside',
-    'insideTop', 'insideLeft', 'insideRight', 'insideBottom',
-    'insideTopLeft', 'insideTopRight', 'insideBottomLeft', 'insideBottomRight'
-];
-var app = {};
-app.configParameters = {
-    rotate: {
-        min: -90,
-        max: 90
-    },
-    align: {
-        options: {
-            left: 'left',
-            center: 'center',
-            right: 'right'
-        }
-    },
-    verticalAlign: {
-        options: {
-            top: 'top',
-            middle: 'middle',
-            bottom: 'bottom'
-        }
-    },
-    position: {
-        options: echarts.util.reduce(posList, function (map, pos) {
-            map[pos] = pos;
-            return map;
-        }, {})
-    },
-    distance: {
-        min: 0,
-        max: 100
-    }
-};
-
-app.config = {
-    rotate: 90,
-    align: 'left',
-    verticalAlign: 'middle',
-    position: 'insideBottom',
-    distance: 15,
-    onChange: function () {
-        var labelOption = {
-            normal: {
-                rotate: app.config.rotate,
-                align: app.config.align,
-                verticalAlign: app.config.verticalAlign,
-                position: app.config.position,
-                distance: app.config.distance
-            }
-        };
-    }
-};
-
-
-var labelOption = {
-    normal: {
-        show: true,
-        position: app.config.position,
-        distance: app.config.distance,
-        align: app.config.align,
-        verticalAlign: app.config.verticalAlign,
-        rotate: app.config.rotate,
-        formatter: '{c}  {name|{a}}',
-        fontSize: 16,
-        rich: {
-            name: {
-                textBorderColor: '#fff'
-            }
-        }
-    }
-};
-
-option = {
-    color: ['#ffbf00', '#26c1d8'],
-    tooltip: {
-        trigger: 'axis',
-        axisPointer: {
-            type: 'shadow'
-        }
-    },
-    legend: {
-        x: 'right',
-        y: 'center',
-        orient: 'vertical',
-        data: [
-            {name:'男',icon:'rect'},
-            {name:'女',icon:'rect'}
-        ],
-        itemWidth:10,
-        itemHeight:10
-    },
-    calculable: true,
-    xAxis: [
-        {
-            type: 'category',
-            axisTick: { show: false },
-            data: ['任务一', '任务二', '任务三']
-        }
-    ],
-    yAxis: [
-        {
-            type: 'value',
-            name: '任务用时(min)'
-        }
-    ],
-    grid: {
-        left: '5%',
-        right: '10%',
-        top: '13%',
-        bottom: '5%',
-        containLabel: true,
-        x: 130
-    },
-    series: [
-        {
-            name: '男',
-            type: 'bar',
-            barGap: 0.1,
-            data: [320, 332, 123],
-            barWidth: 22,icon:'rect'
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('list0'));
+    var myChart1 = echarts.init(document.getElementById('list1'));
+    var posList = [
+        'left', 'right', 'top', 'bottom',
+        'inside',
+        'insideTop', 'insideLeft', 'insideRight', 'insideBottom',
+        'insideTopLeft', 'insideTopRight', 'insideBottomLeft', 'insideBottomRight'
+    ];
+    var app = {};
+    app.configParameters = {
+        rotate: {
+            min: -90,
+            max: 90
         },
-        {
-            name: '女',
-            type: 'bar',
-            barGap: 0.1,
-            data: [220, 182, 321],
-            barWidth: 22
+        align: {
+            options: {
+                left: 'left',
+                center: 'center',
+                right: 'right'
+            }
+        },
+        verticalAlign: {
+            options: {
+                top: 'top',
+                middle: 'middle',
+                bottom: 'bottom'
+            }
+        },
+        position: {
+            options: echarts.util.reduce(posList, function (map, pos) {
+                map[pos] = pos;
+                return map;
+            }, {})
+        },
+        distance: {
+            min: 0,
+            max: 100
         }
-    ]
-};
-// 使用刚指定的配置项和数据显示图表。
-myChart.setOption(option);
-var option1 = option;
-option1.yAxis[0].name = '任务错误数(个)';
-myChart1.setOption(option1, true);
+    };
 
+    app.config = {
+        rotate: 90,
+        align: 'left',
+        verticalAlign: 'middle',
+        position: 'insideBottom',
+        distance: 15,
+        onChange: function () {
+            var labelOption = {
+                normal: {
+                    rotate: app.config.rotate,
+                    align: app.config.align,
+                    verticalAlign: app.config.verticalAlign,
+                    position: app.config.position,
+                    distance: app.config.distance
+                }
+            };
+        }
+    };
+
+
+    var labelOption = {
+        normal: {
+            show: true,
+            position: app.config.position,
+            distance: app.config.distance,
+            align: app.config.align,
+            verticalAlign: app.config.verticalAlign,
+            rotate: app.config.rotate,
+            formatter: '{c}  {name|{a}}',
+            fontSize: 16,
+            rich: {
+                name: {
+                    textBorderColor: '#fff'
+                }
+            }
+        }
+    };
+
+    option = {
+        color: ['#ffbf00', '#26c1d8'],
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'shadow'
+            }
+        },
+        legend: {
+            x: 'right',
+            y: 'center',
+            orient: 'vertical',
+            data: [
+                { name: '男', icon: 'rect' },
+                { name: '女', icon: 'rect' }
+            ],
+            itemWidth: 10,
+            itemHeight: 10
+        },
+        calculable: true,
+        xAxis: [
+            {
+                type: 'category',
+                axisTick: { show: false },
+                data: ['任务一', '任务二', '任务三']
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value',
+                name: '任务用时(min)'
+            }
+        ],
+        grid: {
+            left: '5%',
+            right: '10%',
+            top: '13%',
+            bottom: '5%',
+            containLabel: true,
+            x: 130
+        },
+        series: [
+            {
+                name: '男',
+                type: 'bar',
+                barGap: 0.1,
+                data: [320, 332, 123],
+                barWidth: 22, icon: 'rect'
+            },
+            {
+                name: '女',
+                type: 'bar',
+                barGap: 0.1,
+                data: [220, 182, 321],
+                barWidth: 22
+            }
+        ]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+    var option1 = option;
+    option1.yAxis[0].name = '任务错误数(个)';
+    myChart1.setOption(option1, true);
+
+}
 
 
 
@@ -354,11 +356,11 @@ function hotLook() {
                     type: 'dashed'
                 }
             },
-            axisLine:{
-                show:false
+            axisLine: {
+                show: false
             },
-            axisTick:{
-                show:false
+            axisTick: {
+                show: false
             }
         },
         yAxis: {
@@ -368,11 +370,11 @@ function hotLook() {
                 }
             },
             scale: true,
-            axisLine:{
-                show:false
+            axisLine: {
+                show: false
             },
-            axisTick:{
-                show:false
+            axisTick: {
+                show: false
             }
         },
         series: [{
@@ -384,7 +386,7 @@ function hotLook() {
             },
             label: {
                 normal: {
-                    color:'#fff',
+                    color: '#fff',
                     show: true,
                     formatter: function (param) {
                         return param.data[3];
@@ -434,11 +436,11 @@ function singleFm() {
             {
                 type: 'category',
                 data: ['p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9', 'p10', 'p11', 'p12', 'p13'],
-                axisLine:{
-                    show:false
+                axisLine: {
+                    show: false
                 },
-                axisTick:{
-                    show:false
+                axisTick: {
+                    show: false
                 }
             }
         ],
@@ -446,11 +448,11 @@ function singleFm() {
             {
                 type: 'value',
                 name: '用时(s)',
-                axisLine:{
-                    show:false
+                axisLine: {
+                    show: false
                 },
-                axisTick:{
-                    show:false
+                axisTick: {
+                    show: false
                 }
             }
         ],

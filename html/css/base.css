@@ -37,6 +37,8 @@ input[type='text'],input[type='search'],input[type='password'],input[type='butto
 /* 浏览器重置 end */
 .clearBoth{*zoom:1;}
 .clearBoth:after{ overflow:hidden; visibility:hidden;display:block; content:"clear"; height:0; clear:both;}
+.clearfix{*zoom:1;}
+.clearfix:after{ overflow:hidden; visibility:hidden;display:block; content:"clear"; height:0; clear:both;}
 .inputDom span{color:#b6b6b6;font-size:14px;font-family:"微软雅黑";line-height:35px;padding-left:1em;}
 .inputDom input{display:none;}
 .fixed{position: fixed;}

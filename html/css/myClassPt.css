@@ -281,7 +281,6 @@ input[type='button']{border:0;}
 .otherbox{ margin-top:35px;}
 .mb20{ margin-bottom:20px;}
 
-.w1200{ width:1200px; margin:0px auto;}
 .w1280{ width:1280px; margin:0px auto;}
 .borbom{ border-bottom: 1px solid #e8e7e5; padding-bottom:27px; margin-bottom:20px;}
 .presentation{ padding-top:80px; font-family:"黑体"}
@@ -312,7 +311,6 @@ input[type='button']{border:0;}
 .list2 .currency-tit .checkbox{ top:1px;}
 
 .colorful-box{ background:#f9f9f9; border:1px solid #eee; padding:10px 0 18px 0; margin:20px 0;}
-.colorful-box-end{ background:#fff;padding:10px 0 18px 0; margin:20px 0;}
 .focusBox { position: relative; padding-left:65px; height:340px; overflow: hidden; padding-bottom:13px;}
 .focusBox .pic li{ padding:15px 0;}
 .focusBox .pic img{ width:172px; height:307px; display:inline-block; margin:0px 6px; border:1px solid #dfdfdf;
@@ -348,7 +346,7 @@ transform:scale(1.05);
 .chart .block i{ width:100%; height:84px; line-height:84px; color:#fff; text-align:center; display: block;cursor: pointer;background:#665bdd; }
 .description-word{ line-height:20px; position:relative; padding-left:23px; color:#999;}
 
-.hotWords-box{ padding-top:20px;width:900px;margin: 0 auto}
+.hotWords-box{ padding-top:20px;}
 .hotWords-box .table-a{ width:868px; border:1px solid #ebebeb; margin:25px 0; }
 .hotWords-box .table-a td{ border:1px solid #ebebeb; height:34px; color:#666; text-align:center;}
 .hotWords-box .table-a th{ height:34px; border:1px solid #ebebeb; background:#ddf6f6; color:#333; font-weight:normal;}
@@ -359,7 +357,7 @@ transform:scale(1.05);
 .cozyPrompt{ color:#ec870b; background:#ffefdb; height:28px; line-height:28px; margin-top:10px; padding-left:11px; width:625px;}
 .cozyPrompt .tip{ display:inline-block; width:15px; height:15px; background:url(../images/icos.png) -73px -62px no-repeat; position:relative; top:2px; margin-right:4px;}
 
-.peroration{ padding:37px 0; font-family:"黑体";background: #f6f6f6}
+.peroration{ border-top:2px solid #e8e7e5; padding:37px 0; font-family:"黑体"}
 .peroration .pleft{ width:148px; height:148px; border-radius:100%; font-size:26px; color:#fff; text-align:center; line-height:148px; margin-left:444px;}
 .peroration .pright{ margin:25px 0 0 16px;}
 .peroration .pright h1{ font-size:22px; color:#333; padding-bottom:13px;}
@@ -400,16 +398,10 @@ transform:scale(1.05);
 .batchFm input{width: 100%;height:100%; display: block; opacity: 0; cursor: pointer}
 
 
-.main-whole{width:1200px;margin: 0 auto;}
-.main-tt{ text-align: center}
-.main-tt p{font:22px/30px '微软雅黑'}
-.main-tt h2{font:64px/80px '微软雅黑'}
-.main-div h5{background: url(../images/tt.jpg) no-repeat left center;font-size: 14px; line-height: 16px;padding-left: 10px; margin-bottom: 20px}
-.main-div-left{ width:550px; float: left}
-.main-div-left p{font-size:28px; line-height: 1.5;height: 126px}
-.main-div-right{ width:550px; float: right}
-.main-div-right p{font-size:28px; line-height: 1.5;height: 126px}
-.main-div-con p{ font-size:28px; line-height: 1.5;}
+
+
+
+
 
 
 
