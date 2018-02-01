@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="不超过150个字符" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="name, email@gmail.com" />
+	<meta name="robots" content="index,follow" />
+	<title>最终报告</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/myClass.css" />
+	<link rel="stylesheet" href="js/layer/skin/layer.css" />
+	<link rel="stylesheet" href="css/jquery-ui.min.css" />
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/layer/layer.js"></script>
+	<script type="text/javascript" src="js/echarts.min.js"></script>
+	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<style>
+		.focusBox {
+			padding-left: 31px
+		}
+
+		.focusBox .prev {
+			left: 0
+		}
+
+		.focusBox .next {
+			right: 0
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="header gradient">
+		<img src="images/logo.png" class="logo" />
+		<div class="right">
+			<img src="images/headimg.png" class="headimg" />
+			<span class="name">蒋小雅</span>
+			<span class="ico-deng"></span>
+		</div>
+	</div>
+
+	<div class="w1200 presentation">
+		<div class="part1">
+			<p class="blue">新东方用户体验中心</p>
+			<h1 class="blue">乐词APP使用流程</h1>
+			<span class="timed">2018.05.12</span>
+			<a href="#" class="gradient email">邮电发送报告</a>
+		</div>
+
+		<div class="part2">
+			<ul>
+				<li>产品名称：乐词 产品版本：V3.2</li>
+				<li>测试开始时间：2018.05.10 测试完成时间：2018.05.12</li>
+				<li>发起人：蓬勃 测试人员：周湘人（zhouxingran@xdf.cn）、周曦（zhouxi@xdf.cn）</li>
+				<li>备注：版本修改1.增加分享功能；2增加错词功能；3.bug修改。</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="main-nav">
+		<div class="main-nav-con">
+			<h3 class="on">整体数据<i></i></h3>
+			<p class="on"><b>|</b><span>属性占比</span><b>|</b><span>性别-任务用时·任务错误数</span><b>|</b><span>组别-任务用时·任务错误数</span><b>|</b><span>兴趣区热力</span><b>|</b><span>注视热力</span><b>|</b><span>注视热词</span></p>
+			<b>|</b>
+			<h3>任务一<i></i></h3>
+			<p><b>|</b><span>任务描述</span><b>|</b><span>任务用时·任务错误数</span><b>|</b><span>注视热力图·眼动轨迹图</span></p>
+			<b>|</b>
+			<h3>结论与建议<i></i></h3>
+		</div>
+	</div>
+
+	<div class="main-whole">
+		<div class="main-tt">
+			<p>测试项目</p>
+			<h2>整体数据</h2>
+		</div>
+		<div class="main-div">
+			<h5>属性占比</h5>
+			<div class="clearfix">
+				<div class="main-div-left">
+					<p>
+						性别占比：此次参与测试的用户中男女比例对半。
+					</p>
+					<div class="main-fm">
+
+						<div id="main" style="width:100%;height:350px">
+
+						</div>
+					</div>
+				</div>
+				<div class="main-div-right">
+					<p>
+						软件曾经使用情况：此次参与测试的用户中曾有使用过背单词软件和未使用过背单词软件的。
+					</p>
+					<div class="main-fm">
+						<div id="main1" style="width:100%;height:350px">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-div">
+			<div class="clearfix">
+				<div class="main-div-left">
+					<h5>任务用时（不同性别）</h5>
+					<p>
+						在三项任务重，男性用户的任务用时都略长于女性用户用时。
+					</p>
+					<div class="main-fm">
+						<div id="list0" style="width:100%;height:250px">
+						</div>
+					</div>
+				</div>
+				<div class="main-div-right">
+					<h5>任务错误数（不同性别）</h5>
+					<p>
+						男女用户的任务错误数相近，总体持平。
+					</p>
+					<div class="main-fm">
+						<div id="list1" style="width:100%;height:250px">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-div">
+			<div class="clearfix">
+				<div class="main-div-left">
+					<h5>任务用时（不同组别）</h5>
+					<p>
+						曾试用过被单子软件的用户在多想任务用时上都略少于未曾使用过单词软件的用户，但又是不明显。
+					</p>
+					<div class="main-fm">
+						<div id="r2b0" style="width:100%;height:250px">
+						</div>
+					</div>
+				</div>
+				<div class="main-div-right">
+					<h5>任务错误数（不同性别）</h5>
+					<p>
+						曾试用过被单子软件的用户在多想任务用时上都略少于未曾使用过单词软件的用户，但又是不明显。
+					</p>
+					<div class="main-fm">
+						<div id="r2b1" style="width:100%;height:250px">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-div">
+			<h5>兴趣区热力图</h5>
+			<div class="clearfix">
+				<div class="main-div-con">
+					<p>
+						曾试用过被单子软件的用户在多想任务用时上都略少于未曾使用过单词软件的用户，但又是不明显。
+					</p>
+					<div class="main-fm">
+						<div class="histogram2">
+							<div class="colorful-box-end">
+								<div class="focusBox">
+									<ul class="pic">
+										<li>
+											<div class="">
+												<img src="images/eye1.jpg" />
+												<img src="images/eye2.jpg" />
+												<img src="images/eye3.jpg" />
+												<img src="images/eye1.jpg" />
+												<img src="images/eye1.jpg" />
+												<img src="images/eye1.jpg" />
+											</div>
+										</li>
+										<li>
+											<div class="">
+												<img src="images/eye5.jpg" />
+												<img src="images/eye4.jpg" />
+												<img src="images/eye3.jpg" />
+												<img src="images/eye2.jpg" />
+												<img src="images/eye1.jpg" />
+												<img src="images/eye1.jpg" />
+											</div>
+										</li>
+										<li>
+											<div class="">
+												<img src="images/eye1.jpg" />
+												<img src="images/eye2.jpg" />
+												<img src="images/eye3.jpg" />
+												<img src="images/eye1.jpg" />
+												<img src="images/eye1.jpg" />
+												<img src="images/eye1.jpg" />
+											</div>
+										</li>
+									</ul>
+									<a class="prev" href="javascript:void(0)"></a>
+									<a class="next" href="javascript:void(0)"></a>
+									<ul class="hd">
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+							</div>
+
+
+							<div class="chart">
+								<span class="block" style="width:120px">
+									<i style="opacity:1.2">12″</i>
+									<em>1</em>
+								</span>
+								<span class="block" style="width:30px">
+									<i style="opacity:0.3;">3″</i>
+									<em>2</em>
+								</span>
+								<span class="block" style="width:50px">
+									<i style="opacity:0.5;">5″</i>
+									<em>3</em>
+								</span>
+								<span class="block" style="width:90px">
+									<i style="opacity:0.9;">9″</i>
+									<em>4</em>
+								</span>
+								<span class="block" style="width:24px">
+									<i style="opacity:0.24;">1″</i>
+									<em>5</em>
+								</span>
+								<span class="block" style="width:200px">
+									<i style="opacity:2;">20″</i>
+									<em>6</em>
+								</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-div">
+			<h5>注视热力图</h5>
+			<div class="clearfix">
+				<div class="main-div-con">
+					<p>
+						曾试用过被单子软件的用户在多想任务用时上都略少于未曾使用过单词软件的用户，但又是不明显。
+					</p>
+					<div class="main-fm">
+						<div class="histogram2">
+							<div class="colorful-box-end">
+								<div class="focusBox">
+									<ul class="pic">
+										<li>
+											<div class="">
+												<img src="images/eye1.jpg" />
+												<img src="images/eye2.jpg" />
+												<img src="images/eye3.jpg" />
+												<img src="images/eye1.jpg" />
+												<img src="images/eye1.jpg" />
+												<img src="images/eye1.jpg" />
+											</div>
+										</li>
+										<li>
+											<div class="">
+												<img src="images/eye5.jpg" />
+												<img src="images/eye4.jpg" />
+												<img src="images/eye3.jpg" />
+												<img src="images/eye2.jpg" />
+												<img src="images/eye1.jpg" />
+												<img src="images/eye1.jpg" />
+											</div>
+										</li>
+										<li>
+											<div class="">
+												<img src="images/eye1.jpg" />
+												<img src="images/eye2.jpg" />
+												<img src="images/eye3.jpg" />
+												<img src="images/eye1.jpg" />
+												<img src="images/eye1.jpg" />
+												<img src="images/eye1.jpg" />
+											</div>
+										</li>
+									</ul>
+									<a class="prev" href="javascript:void(0)"></a>
+									<a class="next" href="javascript:void(0)"></a>
+									<ul class="hd">
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+							</div>
+
+
+							<div class="chart">
+								<span class="block" style="width:120px">
+									<i style="opacity:1.2">12″</i>
+									<em>1</em>
+								</span>
+								<span class="block" style="width:30px">
+									<i style="opacity:0.3;">3″</i>
+									<em>2</em>
+								</span>
+								<span class="block" style="width:50px">
+									<i style="opacity:0.5;">5″</i>
+									<em>3</em>
+								</span>
+								<span class="block" style="width:90px">
+									<i style="opacity:0.9;">9″</i>
+									<em>4</em>
+								</span>
+								<span class="block" style="width:24px">
+									<i style="opacity:0.24;">1″</i>
+									<em>5</em>
+								</span>
+								<span class="block" style="width:200px">
+									<i style="opacity:2;">20″</i>
+									<em>6</em>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-div">
+			<h5>注视热词图</h5>
+			<div class="clearfix">
+				<div class="main-div-con">
+					<p>
+						曾试用过被单子软件的用户在多想任务用时上都略少于未曾使用过单词软件的用户，但又是不明显。
+					</p>
+					<div class="main-fm">
+						<div class="hotWords-box">
+							<div class="" id="hotLook">
+								<img src="images/list3.jpg" />
+							</div>
+							<table class="table-a">
+								<tr>
+									<th scope="col" width="15%">热词／区域</th>
+									<th scope="col" width="10%">坚持绽放</th>
+									<th scope="col" width="10%">高分技巧</th>
+									<th scope="col" width="10%">音频播放</th>
+									<th scope="col" width="10%">单词区域</th>
+									<th scope="col" width="10%">复习日历</th>
+									<th scope="col" width="10%">记忆曲线</th>
+									<th scope="col" width="14%">错词本／收藏夹</th>
+									<th scope="col" width="11%">雅思红宝书</th>
+								</tr>
+								<tr>
+									<th scope="row">首次注视时长</th>
+									<td>1</td>
+									<td>2</td>
+									<td>3</td>
+									<td>4</td>
+									<td>5</td>
+									<td>6</td>
+									<td>7</td>
+									<td>8</td>
+								</tr>
+								<tr>
+									<th scope="row">回视</th>
+									<td>1</td>
+									<td>2</td>
+									<td>3</td>
+									<td>4</td>
+									<td>5</td>
+									<td>6</td>
+									<td>7</td>
+									<td>8</td>
+								</tr>
+								<tr>
+									<th scope="row">注视时长</th>
+									<td>1</td>
+									<td>2</td>
+									<td>3</td>
+									<td>4</td>
+									<td>5</td>
+									<td>6</td>
+									<td>7</td>
+									<td>8</td>
+								</tr>
+							</table>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="main-whole">
+		<div class="main-tt">
+			<p>核心任务</p>
+			<h2>学词模块全流程的使用</h2>
+		</div>
+		<div class="main-div">
+			<h5>任务描述</h5>
+			<div class="clearfix">
+				<div class="main-div-con">
+					<p>
+						按照您的正常学习习惯，完成今日数量的单词学习和复习的全部流程。（测试被试对于学词模块全流程的使用）。
+					</p>
+					<div class="main-fm">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-div">
+			<div class="clearfix">
+				<div class="main-div-left">
+					<h5>任务用时（不同性别）</h5>
+					<p>
+						在三项任务重，男性用户的任务用时都略长于女性用户用时。
+					</p>
+					<div class="main-fm">
+						<div id="r3b0" style="width:100%;height:250px">
+						</div>
+					</div>
+				</div>
+				<div class="main-div-right">
+					<h5>任务错误数（不同性别）</h5>
+					<p>
+						男女用户的任务错误数相近，总体持平。
+					</p>
+					<div class="main-fm">
+						<div id="r3b1" style="width:100%;height:250px">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-div">
+			<h5>注视热力图·眼动轨迹图</h5>
+			<div class="clearfix">
+				<div class="main-div-con">
+					<p>
+						曾试用过被单子软件的用户在多想任务用时上都略少于未曾使用过单词软件的用户，但又是不明显。
+						<br/> 曾试用过被单子软件的用户在多想任务用时上都略少于未曾使用过单词软件的用户，但又是不明显。
+						<br/> 曾试用过被单子软件的用户在多想任务用时上都略少于未曾使用过单词软件的用户，但又是不明显。
+						<br/> 曾试用过被单子软件的用户在多想任务用时上都略少于未曾使用过单词软件的用户，但又是不明显。
+						<br/> 曾试用过被单子软件的用户在多想任务用时上都略少于未曾使用过单词软件的用户，但又是不明显。
+						<br/>
+						<br/> 操作问题：
+						<br/> 1、学词中切换
+						<br/> 2、阿萨德发斯蒂芬
+					</p>
+					<div class="main-fm">
+						<div class="focusBox">
+							<ul class="pic">
+								<li>
+									<div class="">
+										<img src="images/eye1.jpg" />
+										<img src="images/eye2.jpg" />
+										<img src="images/eye3.jpg" />
+										<img src="images/eye1.jpg" />
+										<img src="images/eye1.jpg" />
+										<img src="images/eye1.jpg" />
+									</div>
+								</li>
+								<li>
+									<div class="">
+										<img src="images/eye5.jpg" />
+										<img src="images/eye4.jpg" />
+										<img src="images/eye3.jpg" />
+										<img src="images/eye2.jpg" />
+										<img src="images/eye1.jpg" />
+										<img src="images/eye1.jpg" />
+									</div>
+								</li>
+								<li>
+									<div class="">
+										<img src="images/eye1.jpg" />
+										<img src="images/eye2.jpg" />
+										<img src="images/eye3.jpg" />
+										<img src="images/eye1.jpg" />
+										<img src="images/eye1.jpg" />
+										<img src="images/eye1.jpg" />
+									</div>
+								</li>
+							</ul>
+							<a class="prev" href="javascript:void(0)"></a>
+							<a class="next" href="javascript:void(0)"></a>
+							<ul class="hd">
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="tips-tt">注视热力图</div>
+						<div class="focusBox">
+							<ul class="pic">
+								<li>
+									<div class="">
+										<img src="images/eye1.jpg" />
+										<img src="images/eye2.jpg" />
+										<img src="images/eye3.jpg" />
+										<img src="images/eye1.jpg" />
+										<img src="images/eye1.jpg" />
+										<img src="images/eye1.jpg" />
+									</div>
+								</li>
+								<li>
+									<div class="">
+										<img src="images/eye5.jpg" />
+										<img src="images/eye4.jpg" />
+										<img src="images/eye3.jpg" />
+										<img src="images/eye2.jpg" />
+										<img src="images/eye1.jpg" />
+										<img src="images/eye1.jpg" />
+									</div>
+								</li>
+								<li>
+									<div class="">
+										<img src="images/eye1.jpg" />
+										<img src="images/eye2.jpg" />
+										<img src="images/eye3.jpg" />
+										<img src="images/eye1.jpg" />
+										<img src="images/eye1.jpg" />
+										<img src="images/eye1.jpg" />
+									</div>
+								</li>
+							</ul>
+							<a class="prev" href="javascript:void(0)"></a>
+							<a class="next" href="javascript:void(0)"></a>
+							<ul class="hd">
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="tips-tt">眼动轨迹图</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-whole">
+		<div class="main-tt">
+			<h2>结论与建议</h2>
+		</div>
+		<div class="main-div">
+			<h5>功能和内容</h5>
+			<div class="clearfix">
+				<div class="main-div-con">
+					<p>
+						按照您的正常学习习惯，完成今日数量的单词学习和复习的全部流程。（测试被试对于学词模块全流程的使用）。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="main-div">
+			<h5>交互</h5>
+			<div class="clearfix">
+				<div class="main-div-con">
+					<p>
+						按照您的正常学习习惯，完成今日数量的单词学习和复习的全部流程。（测试被试对于学词模块全流程的使用）。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="main-div">
+			<h5>视觉</h5>
+			<div class="clearfix">
+				<div class="main-div-con">
+					<p>
+						按照您的正常学习习惯，完成今日数量的单词学习和复习的全部流程。（测试被试对于学词模块全流程的使用）。
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="peroration clearBoth">
+		<div class="w1200">
+			<div class="f_l pleft gradient">结束语</div>
+			<div class="f_l pright">
+				<h1>谢谢查看</h1>
+				<p class="ln">
+					希望我们的报告能对您的产品优化带来帮助，
+					<br> 如有问题，请联系我们的测试人员，
+					<br> 邮箱：xdfueo@xdf.cn；电话：23829447，再次感谢！
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="w1200" style="border-top:1px solid #e1e1e1">
+			<div class="f">
+				<p>经营许可证编号：京ICP备05067667 | 京ICP证060601号| 京网文(2016)5762-750号 | 京公网安备 11010802021790号
+					<br> Copyright 2011-2016 Neworiental Corporation, All Rights Reserved</p>
+				<img src="images/logo2.png" class="logo2" />
+			</div>
+		</div>
+	</div>
+
+	<div class="backTop"></div>
+
+	<script src="js/echartsData.js"></script>
+	<script type="text/javascript">
+		jQuery(".focusBox").slide({ mainCell: ".pic", effect: "left", autoPlay: false, delayTime: 300 });
+		jQuery(".tscroll3").slide({ mainCell: "ul", autoPlay: false, effect: "left", vis: 3, scroll: 2, autoPage: true, pnLoop: false });
+		$(".backTop").click(function () {
+			$('body,html').animate({ scrollTop: 0 }, 1000);
+			return false;
+		});
+
+		//checkbox颜色
+		$(".piaochecked").on("click", function () {
+			$(this).toggleClass("on_check");
+		});
+		$(".pay_list_c1").on("click", function () {
+			$(this).addClass("radioon").siblings().removeClass("radioon");
+		});
+
+	</script>
+
+	<script>
+		// 项目整体 饼状图
+		function pieFmEnd() {
+			// 指定图表的配置项和数据
+			option = {
+				tooltip: {
+					trigger: 'item',
+					formatter: "{a} <br/>{b} : {c} ({d}%)"
+				},
+				legend: {
+					x: 'right',
+					y: 'center',
+					orient: 'vertical',
+					data: [{
+						name: '男',
+						icon: 'circle'
+					}, {
+						name: '女',
+						icon: 'circle'
+					}]
+				},
+				series: [
+					{
+						name: '性别占比',
+						type: 'pie',
+						hoverOffset: 1,
+						radius: [50, 125],
+						center: ['50%', '45%'],
+						roseType: 'radius',
+						clockwise: false,
+						label: {
+							normal: {
+								show: false
+							},
+							emphasis: {
+								show: false
+							}
+						},
+						lableLine: {
+							normal: {
+								show: false
+							},
+							emphasis: {
+								show: true
+							}
+						},
+						data: [
+							{ value: 10, name: '男' },
+							{ value: 9, name: '女' }
+						]
+					}
+				],
+				color: ['#ffbf00', '#26c1d8']
+			};
+
+			// 指定图表的配置项和数据
+			option1 = {
+				tooltip: {
+					trigger: 'item',
+					formatter: "{a} <br/>{b} : {c} ({d}%)"
+				},
+				legend: {
+					x: 'right',
+					y: 'center',
+					orient: 'vertical',
+					data: [{
+						name: '组1',
+						icon: 'circle'
+					}, {
+						name: '组2',
+						icon: 'circle'
+					}]
+				},
+				series: [
+					{
+						name: '年龄分布',
+						type: 'pie',
+						hoverOffset: 1,
+						radius: [50, 125],
+						center: ['50%', '45%'],
+						roseType: 'radius',
+						clockwise: false,
+						label: {
+							normal: {
+								show: false
+							},
+							emphasis: {
+								show: false
+							}
+						},
+						lableLine: {
+							normal: {
+								show: false
+							},
+							emphasis: {
+								show: true
+							}
+						},
+						data: [
+							{ value: 10, name: '组1' },
+							{ value: 9, name: '组2' }
+						]
+					}
+				],
+				color: ['#ffbf00', '#26c1d8']
+			};
+			// 基于准备好的dom，初始化echarts实例 使用刚指定的配置项和数据显示图表。
+			echarts.init(document.getElementById('main')).setOption(option);
+			echarts.init(document.getElementById('main1')).setOption(option1);
+		}
+
+		//对比柱状图
+
+		function vsFmEnd() {
+
+
+			// 基于准备好的dom，初始化echarts实例
+			var myChart = echarts.init(document.getElementById('list0'));
+			var myChart1 = echarts.init(document.getElementById('list1'));
+			var posList = [
+				'left', 'right', 'top', 'bottom',
+				'inside',
+				'insideTop', 'insideLeft', 'insideRight', 'insideBottom',
+				'insideTopLeft', 'insideTopRight', 'insideBottomLeft', 'insideBottomRight'
+			];
+			var app = {};
+			app.configParameters = {
+				rotate: {
+					min: -90,
+					max: 90
+				},
+				align: {
+					options: {
+						left: 'left',
+						center: 'center',
+						right: 'right'
+					}
+				},
+				verticalAlign: {
+					options: {
+						top: 'top',
+						middle: 'middle',
+						bottom: 'bottom'
+					}
+				},
+				position: {
+					options: echarts.util.reduce(posList, function (map, pos) {
+						map[pos] = pos;
+						return map;
+					}, {})
+				},
+				distance: {
+					min: 0,
+					max: 100
+				}
+			};
+
+			app.config = {
+				rotate: 90,
+				align: 'left',
+				verticalAlign: 'middle',
+				position: 'insideBottom',
+				distance: 15,
+				onChange: function () {
+					var labelOption = {
+						normal: {
+							rotate: app.config.rotate,
+							align: app.config.align,
+							verticalAlign: app.config.verticalAlign,
+							position: app.config.position,
+							distance: app.config.distance
+						}
+					};
+				}
+			};
+
+
+			var labelOption = {
+				normal: {
+					show: true,
+					position: app.config.position,
+					distance: app.config.distance,
+					align: app.config.align,
+					verticalAlign: app.config.verticalAlign,
+					rotate: app.config.rotate,
+					formatter: '{c}  {name|{a}}',
+					fontSize: 16,
+					rich: {
+						name: {
+							textBorderColor: '#fff'
+						}
+					}
+				}
+			};
+
+			option = {
+				color: ['#ffbf00', '#26c1d8'],
+				tooltip: {
+					trigger: 'axis',
+					axisPointer: {
+						type: 'shadow'
+					}
+				},
+				legend: {
+					x: 'right',
+					y: 'center',
+					orient: 'vertical',
+					data: [
+						{ name: '男', icon: 'rect' },
+						{ name: '女', icon: 'rect' }
+					],
+					itemWidth: 10,
+					itemHeight: 10
+				},
+				calculable: true,
+				xAxis: [
+					{
+						type: 'category',
+						axisTick: { show: false },
+						data: ['任务一', '任务二', '任务三']
+					}
+				],
+				yAxis: [
+					{
+						type: 'value',
+						name: '任务用时(min)'
+					}
+				],
+				grid: {
+					left: '5%',
+					right: '10%',
+					top: '13%',
+					bottom: '5%',
+					containLabel: true,
+					x: 130
+				},
+				series: [
+					{
+						name: '男',
+						type: 'bar',
+						barGap: 0.1,
+						data: [320, 332, 123],
+						barWidth: 22, icon: 'rect'
+					},
+					{
+						name: '女',
+						type: 'bar',
+						barGap: 0.1,
+						data: [220, 182, 321],
+						barWidth: 22
+					}
+				]
+			};
+			// 使用刚指定的配置项和数据显示图表。
+			myChart.setOption(option);
+			var option1 = option;
+			option1.yAxis[0].name = '任务错误数(个)';
+			myChart1.setOption(option1, true);
+
+		}
+		function singleFmEnd() {
+			option = {
+				color: ['#26bed8'],
+				tooltip: {
+					trigger: 'axis',
+					axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+						type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+					}
+				},
+				grid: {
+					left: '3%',
+					right: '4%',
+					bottom: '3%',
+					top: '15%',
+					containLabel: true
+				},
+				xAxis: [
+					{
+						type: 'category',
+						data: ['p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9', 'p10', 'p11', 'p12', 'p13'],
+						axisLine: {
+							show: false
+						},
+						axisTick: {
+							show: false
+						}
+					}
+				],
+				yAxis: [
+					{
+						type: 'value',
+						name: '用时(s)',
+						axisLine: {
+							show: false
+						},
+						axisTick: {
+							show: false
+						}
+					}
+				],
+				series: [
+					{
+						name: '任务用时(min)',
+						type: 'bar',
+						barWidth: '60%',
+						data: [10, 52, 200, 334, 390, 330, 220, 52, 200, 334, 390, 330, 220]
+					}
+				]
+			};
+			// 基于准备好的dom，初始化echarts实例
+			// 使用刚指定的配置项和数据显示图表。
+			echarts.init(document.getElementById('r2b0')).setOption(option);
+			var option1 = option;
+			option1.yAxis[0].name = '数量(个)'
+			option1.series[0].name = '错误数'
+			echarts.init(document.getElementById('r2b1')).setOption(option1);
+			echarts.init(document.getElementById('r3b0')).setOption(option);
+			echarts.init(document.getElementById('r3b1')).setOption(option1);
+		}
+
+
+
+
+		pieFmEnd();
+		vsFmEnd();
+		singleFmEnd();
+
+		hotLook();
+	</script>
+</body>
