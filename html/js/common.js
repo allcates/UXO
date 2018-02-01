@@ -136,6 +136,28 @@ $(function () {
         tmDivBd=setTimeout(function(){$this.parents('.charttop').find('.info li img').css({'border':'2px solid #fff'});},500);
     })
 
+    //滚动
+    $(window).scroll(function(){
+        if($(window).scrollTop()>($('.main-whole').offset().top-100)){
+            $('.main-nav').show();
+        }else{
+            $('.main-nav').hide();
+        }
+    })
+
+    $('.main-nav h3').on('mouseover',function(){
+        $(this).siblings('h3').removeClass('on');
+        $(this).addClass('on');
+        $(this).siblings('p').removeClass('on');
+        $(this).next('p').addClass('on');
+    })
+
+    $('.main-nav p span').on('click',function(){
+        var idx=$('.main-nav p span').index($(this));
+        var ft = $('.main-div').eq(idx).offset().top;
+        $('html,body').animate({scrollTop:ft-80});
+    })
+    
 
 })
 
