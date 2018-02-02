@@ -284,7 +284,7 @@ input[type='button']{border:0;}
 .w1200{ width:1200px; margin:0px auto;}
 .w1280{ width:1280px; margin:0px auto;}
 .borbom{ border-bottom: 1px solid #e8e7e5; padding-bottom:27px; margin-bottom:20px;}
-.presentation{ padding-top:80px; font-family:"黑体"}
+.presentation{ padding-top:120px; font-family:"黑体";margin-bottom: 45px}
 .presentation .part1{ border-bottom:1px solid #e8e7e5; padding-bottom:8px; margin-bottom:8px; position:relative;}
 .presentation .part1 h1{ font-size:34px; padding:10px 0 13px 0;}
 .presentation .part1 .timed{ color:#999;}
@@ -403,13 +403,14 @@ transform:scale(1.05);
 .main-whole{width:1200px;margin: 0 auto;}
 .main-tt{ text-align: center}
 .main-tt p{font:22px/30px '微软雅黑'}
-.main-tt h2{font:64px/80px '微软雅黑'}
-.main-div h5{background: url(../images/tt.jpg) no-repeat left center;font-size: 14px; line-height: 16px;padding-left: 10px; margin-bottom: 20px}
+.main-tt h2{font:64px/100px '微软雅黑'}
+.main-div{margin-bottom: 100px}
+.main-div h5{background: url(../images/tt.jpg) no-repeat left center;font-size: 14px; line-height: 16px;padding-left: 10px; margin-bottom: 30px}
 .main-div-left{ width:550px; float: left}
-.main-div-left p{font-size:28px; line-height: 1.5;height: 126px}
+.main-div-left p{font-size:24px; line-height: 1.5;height: 126px}
 .main-div-right{ width:550px; float: right}
-.main-div-right p{font-size:28px; line-height: 1.5;height: 126px}
-.main-div-con p{ font-size:28px; line-height: 1.5;}
+.main-div-right p{font-size:24px; line-height: 1.5;height: 126px}
+.main-div-con p{ font-size:24px; line-height: 1.5;}
 
 .main-nav{ position: fixed;top: 0;left: 0;width: 100%;height: 70px; background: #fff;border-bottom:1px solid #e1e1e1;z-index: 9;display: none;box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.2); }
 .main-nav-con{ width: 1200px;margin: 0 auto;}
