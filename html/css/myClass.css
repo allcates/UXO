@@ -313,7 +313,7 @@ input[type='button']{border:0;}
 
 .colorful-box{ background:#f9f9f9; border:1px solid #eee; padding:10px 0 18px 0; margin:20px 0;}
 .colorful-box-end{ background:#fff;padding:10px 0 18px 0; margin:20px 0;}
-.focusBox { position: relative; padding-left:45px; height:340px; overflow: hidden; padding-bottom:13px;}
+.focusBox { position: relative; padding-left:43px; height:340px; overflow: hidden; padding-bottom:13px;}
 .focusBox .pic li{ padding:15px 0;overflow: hidden}
 .focusBox .pic img{ width:172px; height:307px; display:inline-block; margin:0px 6px; border:1px solid #dfdfdf;
 transition:All 0.2s ease-in-out;
@@ -425,4 +425,4 @@ transform:scale(1.05);
 .main-nav-con p span{margin: 0 8px;float: left;cursor: pointer;}
 .main-nav-con p b{float: left;margin-right: 0px;padding: 0;}
 
-.tips-tt{text-align: center;margin-top: 10px}
+.tips-tt{text-align: center;margin-top: 10px;font-size:15px;margin-bottom: 50px}
