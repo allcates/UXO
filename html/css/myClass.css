@@ -313,13 +313,14 @@ input[type='button']{border:0;}
 
 .colorful-box{ background:#f9f9f9; border:1px solid #eee; padding:10px 0 18px 0; margin:20px 0;}
 .colorful-box-end{ background:#fff;padding:10px 0 18px 0; margin:20px 0;}
-.focusBox { position: relative; padding-left:65px; height:340px; overflow: hidden; padding-bottom:13px;}
-.focusBox .pic li{ padding:15px 0;}
+.focusBox { position: relative; padding-left:45px; height:340px; overflow: hidden; padding-bottom:13px;}
+.focusBox .pic li{ padding:15px 0;overflow: hidden}
 .focusBox .pic img{ width:172px; height:307px; display:inline-block; margin:0px 6px; border:1px solid #dfdfdf;
 transition:All 0.2s ease-in-out;
 -webkit-transition:All 0.2s ease-in-out;
 -moz-transition:All 0.2s ease-in-out;
 -o-transition:All 0.2s ease-in-out;
+float: left;
 }
 .focusBox .pic img:hover{ box-shadow:0px 3px 8px #b1b1b1;
 transform:scale(1.05);
@@ -328,8 +329,8 @@ transform:scale(1.05);
 -o-transform:scale(1.05);
 -ms-transform:scale(1.05);
 }
-.focusBox .hd { overflow:hidden; zoom:1; position:absolute; bottom:0; left:50%; z-index:3;}
-.focusBox .hd li{float:left; line-height:15px; text-align:center; font-size:12px; width:12px; height:12px; cursor:pointer; overflow:hidden; background:#dcdcdc; margin-left:14px; border-radius:100%;}
+.focusBox .hd { overflow:hidden; zoom:1; position:absolute; bottom:0; width:100%;left:0; z-index:3; text-align: center}
+.focusBox .hd li{ display: inline-block; line-height:15px; text-align:center; font-size:12px; width:12px; height:12px; cursor:pointer; overflow:hidden; background:#dcdcdc; margin:0 5px; border-radius:100%;}
 .focusBox .hd .on{ background:#2ac7ca; }
 .focusBox .prev, .focusBox .next { display:inline-block; position:absolute; top:135px; display:block; width:16px; height:35px; overflow:hidden; background:url(../images/icos.png) 0px -90px no-repeat; cursor:pointer; }
 .focusBox .prev { background-image:url(../images/icos.png); background-position:0 -90px; left:20px }
@@ -424,4 +425,4 @@ transform:scale(1.05);
 .main-nav-con p span{margin: 0 8px;float: left;cursor: pointer;}
 .main-nav-con p b{float: left;margin-right: 0px;padding: 0;}
 
-
+.tips-tt{text-align: center;margin-top: 10px}
