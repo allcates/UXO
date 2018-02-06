@@ -145,7 +145,7 @@ $(function () {
         }
     })
 
-    $('.main-nav h3').on('mouseover',function(){
+    $('.main-nav h3').on('click',function(){
         $(this).siblings('h3').removeClass('on');
         $(this).addClass('on');
         $(this).siblings('p').removeClass('on');
@@ -155,6 +155,8 @@ $(function () {
     $('.main-nav p span').on('click',function(){
         var idx=$('.main-nav p span').index($(this));
         var ft = $('.main-div').eq(idx).offset().top;
+        $('.main-nav p span').removeClass('on');
+        $(this).addClass('on');
         $('html,body').animate({scrollTop:ft-80});
     })
     
