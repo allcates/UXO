@@ -136,14 +136,7 @@ $(function () {
         tmDivBd=setTimeout(function(){$this.parents('.charttop').find('.info li img').css({'border':'2px solid #fff'});},500);
     })
 
-    //滚动
-    $(window).scroll(function(){
-        if($(window).scrollTop()>($('.main-whole').offset().top-100)){
-            $('.main-nav').show();
-        }else{
-            $('.main-nav').hide();
-        }
-    })
+    
 
     $('.main-nav h3').on('click',function(){
         $(this).siblings('h3').removeClass('on');
