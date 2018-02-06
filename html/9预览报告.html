@@ -948,5 +948,13 @@
 		singleFmEnd();
 
 		hotLook();
+		//滚动
+		$(window).scroll(function(){
+        if($(window).scrollTop()>($('.main-whole').offset().top-100)){
+            $('.main-nav').show();
+        }else{
+            $('.main-nav').hide();
+        }
+    })
 	</script>
 </body>
