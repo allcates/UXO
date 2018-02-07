@@ -78,13 +78,27 @@ $(function () {
     },function(){
         $(this).find(".table-edit").hide();
     });
-    $(".table-edit").on('click',function(){
+    $(".tablebox .table-edit").on('click',function(){
         $(".mask").show();
         $('#newPro').show();
         return false
     })
 
+    $(".tableDrag .table-edit").on('click',function(){
+        $(".mask").show();
+        $('#editTask').show();
+        return false
+    })
+    $(document).on('click', '#editTask .cancel', function () {
+        $(".mask").hide();
+        $("#editTask").hide();
+    });
 
+    $("#addTask").on('click',function(){
+        $(".mask").show();
+        $('#newTask').show();
+        return false
+    })
     //返回顶部
     $(window).scroll(function () {
         if ($(window).scrollTop() > 100) {

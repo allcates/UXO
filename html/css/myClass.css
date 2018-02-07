@@ -85,22 +85,26 @@ input[type='button']{border:0;}
 .tablebox-list th{ padding:0;}
 .tablebox-list td{ padding-left:0;}
 
-.tableDrag ul li span{ display:inline-block; height:28px; }
-.tableDrag li .column1{ width:4%;}
-.tableDrag li .column2{ width:8%;}
-.tableDrag li .column3{ width:28%;}
-.tableDrag li .column4{ width:38%;}
-.tableDrag li .column5{ width:11%;}
+.tableDrag ul li span{ display:inline-block; height:28px; vertical-align: middle;line-height: 28px; }
+.tableDrag li .column1{ width:5%;}
+.tableDrag li .column2{ width:25%;}
+.tableDrag li .column3{ width:40%;}
+.tableDrag li .column4{ width:10%;text-align: center}
+.tableDrag li .column5{ width:10%;text-align: center}
+.tableDrag li .column6{ }
 .tableDrag ul li{ height:28px; padding:5px 8px 5px 9px;}
-.tableDrag ul li.line1{ border-bottom:1px solid #ebebeb; height:35px; line-height:35px; padding:0;}
+.tableDrag ul li.line1{ border-bottom:1px solid #ebebeb; height:35px; line-height:35px; padding:0 9px 0 8px;}
 .tableDrag ul li:nth-child(even){ background:#f5f9fa;}
 .tableDrag ul li:hover{ background:#e9f3f3;}
 .tableDrag ul li .taskName{ position:relative;}
+.tableDrag ul li.close .taskName{color:#999}
 
 /*ico*/
 .turn{ display:inline-block; width:16px; height:16px; background:url(../images/icos.png) -26px 0 no-repeat; margin-left:6px; position:relative; top:3px;cursor: move}
 .turnblue{ background-position:-26px -21px;}
 .editmany{ display:inline-block; width:16px; height:16px; background:url(../images/icos.png) -51px -18px no-repeat; position:relative; top:2px; margin-right:5px;}
+.openclose{display:inline-block; width:28px; height:18px; background:url(../images/openclose.png) 0 0 no-repeat;position:relative; top:5px;cursor: pointer}
+.openclose2{display:inline-block; width:28px; height:18px; background:url(../images/openclose.png) -30px 0 no-repeat;position:relative; top:5px;cursor: pointer}
 .upload-no{ display:inline-block; width:18px; height:18px; background:url(../images/icos.png) 0px 0px no-repeat; position:relative; top:4px;}
 .upload{ display:inline-block; width:18px; height:18px; background:url(../images/icos.png) 0px -20px no-repeat; position:relative; top:4px;}
 .uploadblue{ background-position:0 -40px;}
@@ -119,6 +123,8 @@ input[type='button']{border:0;}
 .icon-close{ display:inline-block; width:16px; height:16px; background:url(../images/icos.png) -50px -40px no-repeat;}
 .table-edit{ display:inline-block; width:16px; height:16px; background:url(../images/icos.png) -51px 0 no-repeat; position:absolute; right:45px; top:0px; display:none; cursor:pointer;}
 .table-close{ display:inline-block; width:16px; height:16px; background:url(../images/icos.png) -50px -39px no-repeat; position:absolute; right:20px; top:-1px; display:none; cursor:pointer;}
+.tableDrag ul li .table-edit{ display:block; width:16px; height:16px; background:url(../images/icos.png) -51px 0 no-repeat; position:absolute; right:45px; top:5px; display:none; cursor:pointer;}
+.tableDrag ul li .table-close{ display:block; width:16px; height:17px; background:url(../images/icos.png) -50px -39px no-repeat; position:absolute; right:20px; top:3px; display:none; cursor:pointer;}
 .icon-add{ display:inline-block; width:67px; height:67px; background:url(../images/add.png) no-repeat;}
 .ico-point{ width:15px; height:15px; display:inline-block; background:url(../images/icos.png) -50px -62px no-repeat; position:absolute; top:3px; left:0px;}
 
@@ -429,3 +435,20 @@ transform:scale(1.05);
 .tips-tt{text-align: center;margin-top: 10px;font-size:15px;margin-bottom: 50px}
 
 .main-div .histogram2{ border: 0 none;}
+
+.verdict0{ padding: 15px 0; color: #999;font-size: 12px;}
+.verdict{ padding: 15px 0; color: #333;font-size: 14px;line-height: 1.75em}
+
+.newVerdict{width: 485px;height: 360px}
+.newVerdict textarea{width: 425px;height: 210px;border: 1px solid #e8e7e5;padding:5px 10px;line-height: 1.5em;color: #333; text-indent: 0;margin-bottom: 13px}
+
+
+
+
+
+
+
+
+
+
+
