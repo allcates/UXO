@@ -35,8 +35,8 @@
 	<script>
 		$(function () {
 			$(".sortable").sortable({
+				items: "li:not(.add)",
 				placeholder: "ui-state-highlight",
-				cancel: ".add",
 				handle: "img",
 				opacity: 0.8,
 				axis: "x",
