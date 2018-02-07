@@ -947,6 +947,11 @@
 					$('.main-nav-con p span').eq(idx).parent('p').prev('h3').addClass('on');
 				}
 			})
+			if($(window).scrollTop()+$(window).height()>=$(document).height()){
+				$('.main-nav-con p span').removeClass('on');
+				$('.main-nav-con h3').removeClass('on');
+				$('.main-nav-con h3').eq(-1).addClass('on');
+			}
 		})
 		$(function(){
 			if($(window).scrollTop()>($('.main-whole').offset().top-100)){

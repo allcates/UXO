@@ -146,6 +146,7 @@ $(function () {
         var ft = $('.main-div').eq(-1).offset().top;
         if($('.main-nav h3').index($(this))==$('.main-nav h3').length-1){
             $('html,body').animate({scrollTop:ft-80});
+            $('.main-nav p span').removeClass('on');
         }
     })
 
