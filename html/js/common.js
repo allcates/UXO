@@ -143,6 +143,10 @@ $(function () {
         $(this).addClass('on');
         $(this).siblings('p').removeClass('on');
         $(this).next('p').addClass('on');
+        var ft = $('.main-div').eq(-1).offset().top;
+        if($('.main-nav h3').index($(this))==$('.main-nav h3').length-1){
+            $('html,body').animate({scrollTop:ft-80});
+        }
     })
 
     $('.main-nav p span').on('click',function(){
@@ -153,6 +157,10 @@ $(function () {
         $('html,body').animate({scrollTop:ft-80});
     })
     
+    $('.main-nav').on('mouseleave',function(){
+        $('.main-nav-con p span.on').parent('p').prev('h3').addClass('on').siblings('h3').removeClass('on');
+        $('.main-nav-con p span.on').parent('p').addClass('on').siblings('p').removeClass('on');
+    })
 
 })
 

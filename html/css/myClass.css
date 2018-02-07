@@ -417,13 +417,13 @@ transform:scale(1.05);
 .main-nav-con{ width: 1200px;margin: 0 auto;}
 .main-nav-con h3{font-size: 18px;line-height: 70px;float: left; margin-right: 8px; cursor: pointer}
 .main-nav-con h3.on{position: relative;color: #27c9d5;font-weight: bold}
-.main-nav-con h3 i{display: none;position: absolute;bottom: 0;width: 30px;height: 3px;background: #27c9d5; left:50%;margin-left:-15px;}
+.main-nav-con h3 i{display: none;position: absolute;bottom: 0;width: 40px;height: 2px;background: #27c9d5; left:50%;margin-left:-20px;}
 .main-nav-con h3.on i{display:block}
 .main-nav-con p{font-size: 14px;line-height: 22px;float: left;margin-right: 8px;overflow: hidden;padding: 25px 0;height:20px;width:0;color:#999}
 .main-nav-con p.on{width: auto}
 .main-nav-con b{font-size: 12px;line-height: 20px;float: left;font-weight: normal;margin-right: 16px;padding: 25px 0;}
 .main-nav-con p span{margin: 0 8px;float: left;cursor: pointer;}
-.main-nav-con p span.on{color:#27c9d5;font-weight: bold;}
+.main-nav-con p span.on{color:#27c9d5;}
 .main-nav-con p b{float: left;margin-right: 0px;padding: 0;}
 
 .tips-tt{text-align: center;margin-top: 10px;font-size:15px;margin-bottom: 50px}

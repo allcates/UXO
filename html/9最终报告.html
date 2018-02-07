@@ -72,7 +72,7 @@
 			<h3>任务一<i></i></h3>
 			<p><b>|</b><span>任务描述</span><b>|</b><span>任务用时·任务错误数</span><b>|</b><span>注视热力图·眼动轨迹图</span></p>
 			<b>|</b>
-			<h3>结论与建议</h3>
+			<h3>结论与建议<i></i></h3>
 		</div>
 	</div>
 
@@ -933,6 +933,22 @@
 		hotLook();
 		//滚动
 		$(window).scroll(function(){
+			if($(window).scrollTop()>($('.main-whole').offset().top-100)){
+				$('.main-nav').show();
+			}else{
+				$('.main-nav').hide();
+			}
+			$('.main-div').each(function(){
+				if($(window).scrollTop()>=($(this).offset().top-$('.main-nav').height()-50)&&$(window).scrollTop()<=($(this).offset().top-$('.main-nav').height()+$(this).height())){
+					var idx=$('.main-div').index($(this));
+					$('.main-nav-con p span').removeClass('on');
+					$('.main-nav-con p span').eq(idx).addClass('on');
+					$('.main-nav-con h3').removeClass('on');
+					$('.main-nav-con p span').eq(idx).parent('p').prev('h3').addClass('on');
+				}
+			})
+		})
+		$(function(){
 			if($(window).scrollTop()>($('.main-whole').offset().top-100)){
 				$('.main-nav').show();
 			}else{
