@@ -7,9 +7,10 @@ function pieFm() {
             formatter: "{a} <br/>{b} : {c} ({d}%)"
         },
         legend: {
-            x: 'right',
             y: 'center',
+            right:'85',
             orient: 'vertical',
+            align:'left',
             data: [{
                 name: '男',
                 icon: 'circle'
@@ -23,8 +24,8 @@ function pieFm() {
                 name: '性别占比',
                 type: 'pie',
                 hoverOffset: 1,
-                radius: [50, 125],
-                center: ['50%', '45%'],
+                radius: [65, 165],
+                center: ['40%', '50%'],
                 roseType: 'radius',
                 clockwise: false,
                 label: {
@@ -49,7 +50,7 @@ function pieFm() {
                 ]
             }
         ],
-        color: ['#ffbf00', '#26c1d8']
+        color: [ '#26c1d8','#ffbf00']
     };
 
     // 指定图表的配置项和数据
@@ -59,9 +60,10 @@ function pieFm() {
             formatter: "{a} <br/>{b} : {c} ({d}%)"
         },
         legend: {
-            x: 'right',
+            right:'85',
             y: 'center',
             orient: 'vertical',
+            align:'left',
             data: [{
                 name: '组1',
                 icon: 'circle'
@@ -75,8 +77,8 @@ function pieFm() {
                 name: '年龄分布',
                 type: 'pie',
                 hoverOffset: 1,
-                radius: [50, 125],
-                center: ['50%', '45%'],
+                radius: [65, 165],
+                center: ['40%', '50%'],
                 roseType: 'radius',
                 clockwise: false,
                 label: {
@@ -101,7 +103,7 @@ function pieFm() {
                 ]
             }
         ],
-        color: ['#ffbf00', '#26c1d8']
+        color: [ '#26c1d8','#ffbf00']
     };
 
     // 指定图表的配置项和数据
@@ -163,15 +165,9 @@ function pieFm() {
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('main'));
     var myChart1 = echarts.init(document.getElementById('main1'));
-    var myChart2 = echarts.init(document.getElementById('main2'));
-    var myChart3 = echarts.init(document.getElementById('main3'));
-    var myChart4 = echarts.init(document.getElementById('main4'));
     // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
     myChart1.setOption(option1);
-    myChart2.setOption(option2);
-    myChart3.setOption(option2);
-    myChart4.setOption(option2);
 }
 
 //对比柱状图
@@ -269,6 +265,7 @@ function vsFm() {
         legend: {
             x: 'right',
             y: 'center',
+            align:'left',
             orient: 'vertical',
             data: [
                 { name: '男', icon: 'rect' },
@@ -282,13 +279,25 @@ function vsFm() {
             {
                 type: 'category',
                 axisTick: { show: false },
+                axisLine: {
+                    lineStyle:{
+                        color:'#c8c8c8'
+                    }
+                },
                 data: ['任务一', '任务二', '任务三']
             }
         ],
         yAxis: [
             {
+                scale: true,
+                axisLine: {
+                    show: false
+                },
                 type: 'value',
-                name: '任务用时(min)'
+                name: '任务用时(min)',
+                axisTick: {
+                    show: false
+                }
             }
         ],
         grid: {
@@ -305,14 +314,14 @@ function vsFm() {
                 type: 'bar',
                 barGap: 0.1,
                 data: [320, 332, 123],
-                barWidth: 22, icon: 'rect'
+                barMaxWidth: 30, icon: 'rect'
             },
             {
                 name: '女',
                 type: 'bar',
                 barGap: 0.1,
                 data: [220, 182, 321],
-                barWidth: 22
+                barMaxWidth: 30
             }
         ]
     };
