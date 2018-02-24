@@ -8,7 +8,7 @@ function pieFm() {
         },
         legend: {
             y: 'center',
-            right:'85',
+            right:'35',
             orient: 'vertical',
             align:'left',
             data: [{
@@ -60,7 +60,7 @@ function pieFm() {
             formatter: "{a} <br/>{b} : {c} ({d}%)"
         },
         legend: {
-            right:'85',
+            right:'35',
             y: 'center',
             orient: 'vertical',
             align:'left',
