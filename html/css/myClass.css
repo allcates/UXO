@@ -245,20 +245,24 @@ input[type='button']{border:0;}
 .histogram-bg .geway{ text-align:center; margin:20px 0;}
 .histogram-bg .geway span{ display:inline-block; width:53px; height:83px; background:#a8a8a8;}
 
-.thermodyScroll{ position:relative; overflow:hidden;  }
-.thermodyScroll .info{ margin:0 35px 0; padding-top: 10px; overflow:hidden;/* width:980px;*/}
+.thermodyScroll{ position:relative; overflow:hidden;padding-bottom: 30px;  }
+.thermodyScroll .info{ margin:0 35px 0; padding-top: 10px; overflow:hidden;/* width:980px;*/height:311px;}
 .thermodyScroll .info .xname{ color:#666; margin-top:8px;}
-.thermodyScroll ul{ position: relative; }
-.thermodyScroll ul li{ float:left; margin:0 5px 0; width:172px; text-align:center;position: relative;}
-.thermodyScroll ul li a{width: 19px;height: 19px;display: block;position: absolute;right: -5px;top: -9px;background: url(../images/close.png) no-repeat 0 0;}
-.thermodyScroll ul li .inp-show{ height:34px; border:1px solid #e8e7e5; background:#fff; margin-top:10px; width:170px;}
-.thermodyScroll ul li:last-child{ margin-right:0px;} 
-.thermodyScroll ul li img{  height:303px;cursor: move;border: 2px solid #f9f9f9 }
+.thermodyScroll .info ul{ position: relative; }
+.thermodyScroll .info li{ float:left; margin:0 5px 0; /*width:170px;*/text-align:center;position: relative;}
+.thermodyScroll .info li a{width: 19px;height: 19px;display: block;position: absolute;right: -5px;top: -9px;background: url(../images/close.png) no-repeat 0 0;}
+.thermodyScroll .info li .inp-show{ height:34px; border:1px solid #e8e7e5; background:#fff; margin-top:10px; width:170px;}
+.thermodyScroll .info li:last-child{ margin-right:0px;} 
+.thermodyScroll .info li img{  height:303px;cursor: move;border: 1px solid #e0e0e0 }
 .thermodyScroll .prev,.thermodyScroll .next{ position:absolute; top:135px; display:block; width:16px; height:35px; overflow:hidden; background:url(../images/icos.png) 0px -90px no-repeat; cursor:pointer;  }
 .thermodyScroll .prev{ left:0px;}
 .thermodyScroll .next{ left:auto; right:0px; background:url(../images/icos.png) -21px -90px no-repeat; }
 .thermodyScroll .prevStop{ background:url(../images/icos.png) -44px -90px no-repeat; cursor:default;}
 .thermodyScroll .nextStop{ background:url(../images/icos.png) -67px -90px no-repeat; cursor:default;}
+
+.thermodyScroll .hd { overflow:hidden; zoom:1; position:absolute; bottom:0; width:100%;left:0; z-index:3; text-align: center}
+.thermodyScroll .hd li{ display: inline-block; line-height:15px; text-align:center; font-size:12px; width:12px; height:12px; cursor:pointer; overflow:hidden; background:#dcdcdc; margin:0 5px; border-radius:100%;}
+.thermodyScroll .hd .on{ background:#2ac7ca; }
 
 .thermodyScrol2{ position:relative; overflow:hidden;  }
 .thermodyScrol2 .info{ margin:0 60px 0 75px; overflow:hidden;/* width:980px;*/}
@@ -350,6 +354,7 @@ transform:scale(1.05);
 .focusBox .next { background-image:url(../images/icos.png); background-position:-21px -90px; right:20px }
 .focusBox .prev:hover,
 .focusBox .next:hover { filter:alpha(opacity=60); -moz-opacity:.6; opacity:.6 }
+
 
 .mt20{ margin-top:20px;}
 .mb20{ margin-bottom:20px;}

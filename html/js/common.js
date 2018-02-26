@@ -115,7 +115,7 @@ $(function () {
         var $this = $(this);
         var leftBtn = $this.find('.prev'),
             rightBtn = $this.find('.next'),
-            list = $this.find('ul');
+            list = $this.find('.info ul');
         list.width(list.find('li').length * list.find('li').outerWidth(true));
         rightBtn.on('click', function () {
             var wt = $this.find('.info').width();//内部定义为了适应resizes
@@ -144,10 +144,10 @@ $(function () {
     var tmDivBd;
     $('.chart .block').on('click',function(){
         var $this=$(this),idx=$this.index();
-        $this.parents('.charttop').find('.info li img').css({'border':'2px solid #fff'});
-        $this.parents('.charttop').find('.info li').eq(idx).find('img').css({'border':'2px solid #999'});
+        $this.parents('.charttop').find('.info li img').css({'border':'1px solid #e0e0e0'});
+        $this.parents('.charttop').find('.info li').eq(idx).find('img').css({'border':'1px solid #999'});
         clearTimeout(tmDivBd);
-        tmDivBd=setTimeout(function(){$this.parents('.charttop').find('.info li img').css({'border':'2px solid #fff'});},500);
+        tmDivBd=setTimeout(function(){$this.parents('.charttop').find('.info li img').css({'border':'1px solid #e0e0e0'});},500);
     })
 
     
