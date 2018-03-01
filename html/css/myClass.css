@@ -469,7 +469,7 @@ transform:scale(1.05);
 .newVerdict textarea{width: 425px;height: 210px;border: 1px solid #e8e7e5;padding:5px 10px;line-height: 1.5em;color: #333; text-indent: 0;margin-bottom: 13px}
 
 
-.imgHtml{position: fixed;z-index:999;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,0.2);background-repeat: no-repeat;background-position: center center;}
+.imgHtml{position: fixed;z-index:999;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,0.7);background-repeat: no-repeat;background-position: center center;}
 
 
 

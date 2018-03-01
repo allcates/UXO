@@ -16,11 +16,13 @@
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="js/layer/layer.js"></script>
 	<script type="text/javascript" src="js/echarts.min.js"></script>
-	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 	<style>
-		body{color:rgb(17, 17, 17)}
+		body {
+			color: rgb(17, 17, 17)
+		}
+
 		/*.focusBox {
 			padding-left: 31px
 		}
@@ -66,13 +68,39 @@
 
 	<div class="main-nav">
 		<div class="main-nav-con">
-			<h3 class="on">整体数据<i></i></h3>
-			<p class="on"><b>|</b><span>属性占比</span><b>|</b><span>性别-任务用时·任务错误数</span><b>|</b><span>组别-任务用时·任务错误数</span><b>|</b><span>兴趣区热力</span><b>|</b><span>注视热力</span><b>|</b><span>注视热词</span></p>
+			<h3 class="on">整体数据
+				<i></i>
+			</h3>
+			<p class="on">
+				<b>|</b>
+				<span>属性占比</span>
+				<b>|</b>
+				<span>性别-任务用时·任务错误数</span>
+				<b>|</b>
+				<span>组别-任务用时·任务错误数</span>
+				<b>|</b>
+				<span>兴趣区热力</span>
+				<b>|</b>
+				<span>注视热力</span>
+				<b>|</b>
+				<span>注视热词</span>
+			</p>
 			<b>|</b>
-			<h3>任务一<i></i></h3>
-			<p><b>|</b><span>任务描述</span><b>|</b><span>任务用时·任务错误数</span><b>|</b><span>注视热力图·眼动轨迹图</span></p>
+			<h3>任务一
+				<i></i>
+			</h3>
+			<p>
+				<b>|</b>
+				<span>任务描述</span>
+				<b>|</b>
+				<span>任务用时·任务错误数</span>
+				<b>|</b>
+				<span>注视热力图·眼动轨迹图</span>
+			</p>
 			<b>|</b>
-			<h3>结论与建议<i></i></h3>
+			<h3>结论与建议
+				<i></i>
+			</h3>
 		</div>
 	</div>
 
@@ -165,46 +193,32 @@
 					<div class="main-fm">
 						<div class="histogram2">
 							<div class="colorful-box-end">
+
 								<div class="focusBox">
-									<ul class="pic">
-										<li>
-											<div class="">
-												<img src="images/eye1.jpg" />
-												<img src="images/eye2.jpg" />
-												<img src="images/eye3.jpg" />
-												<img src="images/eye1.jpg" />
-												<img src="images/eye1.jpg" />
-												<img src="images/eye1.jpg" />
-											</div>
-										</li>
-										<li>
-											<div class="">
-												<img src="images/eye5.jpg" />
-												<img src="images/eye4.jpg" />
-												<img src="images/eye3.jpg" />
-												<img src="images/eye2.jpg" />
-												<img src="images/eye1.jpg" />
-												<img src="images/eye1.jpg" />
-											</div>
-										</li>
-										<li>
-											<div class="">
-												<img src="images/eye1.jpg" />
-												<img src="images/eye2.jpg" />
-												<img src="images/eye3.jpg" />
-												<img src="images/eye1.jpg" />
-												<img src="images/eye1.jpg" />
-												<img src="images/eye1.jpg" />
-											</div>
-										</li>
-									</ul>
+									<div class="tempWrap">
+										<ul class="pic">
+											<li imgurl="images/eye3.jpg" style="background-image:url(images/eye3.jpg)"></li>
+											<li imgurl="images/eye4.jpg" style="background-image:url(images/eye4.jpg)"></li>
+											<li imgurl="images/eye5.jpg" style="background-image:url(images/eye5.jpg)"></li>
+											<li imgurl="images/eye1.jpg" style="background-image:url(images/eye1.jpg)"></li>
+											<li imgurl="images/eye2.jpg" style="background-image:url(images/eye2.jpg)"></li>
+											<li imgurl="images/eye3.jpg" style="background-image:url(images/eye3.jpg)"></li>
+											<li imgurl="images/eye4.jpg" style="background-image:url(images/eye4.jpg)"></li>
+											<li imgurl="images/eye5.jpg" style="background-image:url(images/eye5.jpg)"></li>
+											<li imgurl="images/eye1.jpg" style="background-image:url(images/eye1.jpg)"></li>
+											<li imgurl="images/eye2.jpg" style="background-image:url(images/eye2.jpg)"></li>
+											<li imgurl="images/eye3.jpg" style="background-image:url(images/eye3.jpg)"></li>
+											<li imgurl="images/eye4.jpg" style="background-image:url(images/eye4.jpg)"></li>
+											<li imgurl="images/eye5.jpg" style="background-image:url(images/eye5.jpg)"></li>
+										</ul>
+									</div>
 									<a class="prev" href="javascript:void(0)"></a>
 									<a class="next" href="javascript:void(0)"></a>
-									<ul class="hd">
-										<li></li>
-										<li></li>
-										<li></li>
-									</ul>
+									<!--ul class="hd">
+												<li></li>
+												<li></li>
+												<li></li>
+											</ul-->
 								</div>
 							</div>
 
@@ -252,45 +266,30 @@
 						<div class="histogram2">
 							<div class="colorful-box-end">
 								<div class="focusBox">
-									<ul class="pic">
-										<li>
-											<div class="">
-												<img src="images/eye1.jpg" />
-												<img src="images/eye2.jpg" />
-												<img src="images/eye3.jpg" />
-												<img src="images/eye1.jpg" />
-												<img src="images/eye1.jpg" />
-												<img src="images/eye1.jpg" />
-											</div>
-										</li>
-										<li>
-											<div class="">
-												<img src="images/eye5.jpg" />
-												<img src="images/eye4.jpg" />
-												<img src="images/eye3.jpg" />
-												<img src="images/eye2.jpg" />
-												<img src="images/eye1.jpg" />
-												<img src="images/eye1.jpg" />
-											</div>
-										</li>
-										<li>
-											<div class="">
-												<img src="images/eye1.jpg" />
-												<img src="images/eye2.jpg" />
-												<img src="images/eye3.jpg" />
-												<img src="images/eye1.jpg" />
-												<img src="images/eye1.jpg" />
-												<img src="images/eye1.jpg" />
-											</div>
-										</li>
-									</ul>
+									<div class="tempWrap">
+										<ul class="pic">
+											<li imgurl="images/eye3.jpg" style="background-image:url(images/eye3.jpg)"></li>
+											<li imgurl="images/eye4.jpg" style="background-image:url(images/eye4.jpg)"></li>
+											<li imgurl="images/eye5.jpg" style="background-image:url(images/eye5.jpg)"></li>
+											<li imgurl="images/eye1.jpg" style="background-image:url(images/eye1.jpg)"></li>
+											<li imgurl="images/eye2.jpg" style="background-image:url(images/eye2.jpg)"></li>
+											<li imgurl="images/eye3.jpg" style="background-image:url(images/eye3.jpg)"></li>
+											<li imgurl="images/eye4.jpg" style="background-image:url(images/eye4.jpg)"></li>
+											<li imgurl="images/eye5.jpg" style="background-image:url(images/eye5.jpg)"></li>
+											<li imgurl="images/eye1.jpg" style="background-image:url(images/eye1.jpg)"></li>
+											<li imgurl="images/eye2.jpg" style="background-image:url(images/eye2.jpg)"></li>
+											<li imgurl="images/eye3.jpg" style="background-image:url(images/eye3.jpg)"></li>
+											<li imgurl="images/eye4.jpg" style="background-image:url(images/eye4.jpg)"></li>
+											<li imgurl="images/eye5.jpg" style="background-image:url(images/eye5.jpg)"></li>
+										</ul>
+									</div>
 									<a class="prev" href="javascript:void(0)"></a>
 									<a class="next" href="javascript:void(0)"></a>
-									<ul class="hd">
-										<li></li>
-										<li></li>
-										<li></li>
-									</ul>
+									<!--ul class="hd">
+											<li></li>
+											<li></li>
+											<li></li>
+										</ul-->
 								</div>
 							</div>
 
@@ -451,87 +450,57 @@
 					</p>
 					<div class="main-fm">
 						<div class="focusBox">
-							<ul class="pic">
-								<li>
-									<div class="">
-										<img src="images/eye1.jpg" />
-										<img src="images/eye2.jpg" />
-										<img src="images/eye3.jpg" />
-										<img src="images/eye1.jpg" />
-										<img src="images/eye1.jpg" />
-										<img src="images/eye1.jpg" />
-									</div>
-								</li>
-								<li>
-									<div class="">
-										<img src="images/eye5.jpg" />
-										<img src="images/eye4.jpg" />
-										<img src="images/eye3.jpg" />
-										<img src="images/eye2.jpg" />
-										<img src="images/eye1.jpg" />
-										<img src="images/eye1.jpg" />
-									</div>
-								</li>
-								<li>
-									<div class="">
-										<img src="images/eye1.jpg" />
-										<img src="images/eye2.jpg" />
-										<img src="images/eye3.jpg" />
-										<img src="images/eye1.jpg" />
-										<img src="images/eye1.jpg" />
-										<img src="images/eye1.jpg" />
-									</div>
-								</li>
-							</ul>
+							<div class="tempWrap">
+								<ul class="pic">
+									<li imgurl="images/eye3.jpg" style="background-image:url(images/eye3.jpg)"></li>
+									<li imgurl="images/eye4.jpg" style="background-image:url(images/eye4.jpg)"></li>
+									<li imgurl="images/eye5.jpg" style="background-image:url(images/eye5.jpg)"></li>
+									<li imgurl="images/eye1.jpg" style="background-image:url(images/eye1.jpg)"></li>
+									<li imgurl="images/eye2.jpg" style="background-image:url(images/eye2.jpg)"></li>
+									<li imgurl="images/eye3.jpg" style="background-image:url(images/eye3.jpg)"></li>
+									<li imgurl="images/eye4.jpg" style="background-image:url(images/eye4.jpg)"></li>
+									<li imgurl="images/eye5.jpg" style="background-image:url(images/eye5.jpg)"></li>
+									<li imgurl="images/eye1.jpg" style="background-image:url(images/eye1.jpg)"></li>
+									<li imgurl="images/eye2.jpg" style="background-image:url(images/eye2.jpg)"></li>
+									<li imgurl="images/eye3.jpg" style="background-image:url(images/eye3.jpg)"></li>
+									<li imgurl="images/eye4.jpg" style="background-image:url(images/eye4.jpg)"></li>
+									<li imgurl="images/eye5.jpg" style="background-image:url(images/eye5.jpg)"></li>
+								</ul>
+							</div>
 							<a class="prev" href="javascript:void(0)"></a>
 							<a class="next" href="javascript:void(0)"></a>
-							<ul class="hd">
-								<li></li>
-								<li></li>
-								<li></li>
-							</ul>
+							<!--ul class="hd">
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul-->
 						</div>
 						<div class="tips-tt">注视热力图</div>
 						<div class="focusBox">
-							<ul class="pic">
-								<li>
-									<div class="">
-										<img src="images/eye1.jpg" />
-										<img src="images/eye2.jpg" />
-										<img src="images/eye3.jpg" />
-										<img src="images/eye1.jpg" />
-										<img src="images/eye1.jpg" />
-										<img src="images/eye1.jpg" />
-									</div>
-								</li>
-								<li>
-									<div class="">
-										<img src="images/eye5.jpg" />
-										<img src="images/eye4.jpg" />
-										<img src="images/eye3.jpg" />
-										<img src="images/eye2.jpg" />
-										<img src="images/eye1.jpg" />
-										<img src="images/eye1.jpg" />
-									</div>
-								</li>
-								<li>
-									<div class="">
-										<img src="images/eye1.jpg" />
-										<img src="images/eye2.jpg" />
-										<img src="images/eye3.jpg" />
-										<img src="images/eye1.jpg" />
-										<img src="images/eye1.jpg" />
-										<img src="images/eye1.jpg" />
-									</div>
-								</li>
-							</ul>
+							<div class="tempWrap">
+								<ul class="pic">
+									<li imgurl="images/eye3.jpg" style="background-image:url(images/eye3.jpg)"></li>
+									<li imgurl="images/eye4.jpg" style="background-image:url(images/eye4.jpg)"></li>
+									<li imgurl="images/eye5.jpg" style="background-image:url(images/eye5.jpg)"></li>
+									<li imgurl="images/eye1.jpg" style="background-image:url(images/eye1.jpg)"></li>
+									<li imgurl="images/eye2.jpg" style="background-image:url(images/eye2.jpg)"></li>
+									<li imgurl="images/eye3.jpg" style="background-image:url(images/eye3.jpg)"></li>
+									<li imgurl="images/eye4.jpg" style="background-image:url(images/eye4.jpg)"></li>
+									<li imgurl="images/eye5.jpg" style="background-image:url(images/eye5.jpg)"></li>
+									<li imgurl="images/eye1.jpg" style="background-image:url(images/eye1.jpg)"></li>
+									<li imgurl="images/eye2.jpg" style="background-image:url(images/eye2.jpg)"></li>
+									<li imgurl="images/eye3.jpg" style="background-image:url(images/eye3.jpg)"></li>
+									<li imgurl="images/eye4.jpg" style="background-image:url(images/eye4.jpg)"></li>
+									<li imgurl="images/eye5.jpg" style="background-image:url(images/eye5.jpg)"></li>
+								</ul>
+							</div>
 							<a class="prev" href="javascript:void(0)"></a>
 							<a class="next" href="javascript:void(0)"></a>
-							<ul class="hd">
+							<!--ul class="hd">
 								<li></li>
 								<li></li>
 								<li></li>
-							</ul>
+							</ul-->
 						</div>
 						<div class="tips-tt">眼动轨迹图</div>
 					</div>
@@ -603,8 +572,6 @@
 
 	<script src="js/echartsData.js"></script>
 	<script type="text/javascript">
-		jQuery(".focusBox").slide({ mainCell: ".pic", effect: "left", autoPlay: false, delayTime: 300 });
-		jQuery(".tscroll3").slide({ mainCell: "ul", autoPlay: false, effect: "left", vis: 3, scroll: 2, autoPage: true, pnLoop: false });
 		$(".backTop").click(function () {
 			$('body,html').animate({ scrollTop: 0 }, 1000);
 			return false;
@@ -949,12 +916,12 @@
 
 		hotLook();
 		//滚动
-		$(window).scroll(function(){
-        if($(window).scrollTop()>($('.main-whole').offset().top-100)){
-            $('.main-nav').show();
-        }else{
-            $('.main-nav').hide();
-        }
-    })
+		$(window).scroll(function () {
+			if ($(window).scrollTop() > ($('.main-whole').offset().top - 100)) {
+				$('.main-nav').show();
+			} else {
+				$('.main-nav').hide();
+			}
+		})
 	</script>
 </body>
