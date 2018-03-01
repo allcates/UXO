@@ -236,7 +236,8 @@ input[type='button']{border:0;}
 .histogram4{ border-bottom:1px solid #e8e7e5;}
 
 .eyelist{}
-.eyelist ul li.add .filebox{ position:relative; border:1px solid #ebebeb; background:#fff; height:305px; }
+.eyelist ul li.add .filebox{ position:relative; background:#fff;width:100%;height: 100%; }
+.eyelist ul li.add .filebox:hover{background: #fcfcfc}
 .eyelist ul li.add .filebox .icon-add{ position:absolute; left:53px; top:120px;}
 .eyelist ul li.add .filebox .file-add{ color: transparent; opacity:0; cursor:pointer; position:absolute; left:0; top:0; width:172px; height:307px;}
 .eyelist .dragSorting{ color:#666; margin:-9px 10px 17px 0;}
@@ -331,15 +332,15 @@ input[type='button']{border:0;}
 
 .colorful-box{ background:#f9f9f9; border:1px solid #eee; padding:10px 0 18px 0; margin:20px 0;}
 .colorful-box-end{ background:#fff;padding:10px 0 18px 0; margin:20px 0;}
-.focusBox { position: relative; padding-left:43px; height:340px; overflow: hidden; padding-bottom:13px;}
-.focusBox .pic li{ padding:15px 0;overflow: hidden;float: left}
-.focusBox .pic img{ width:172px; height:307px; display:inline-block; margin:0px 6px; border:1px solid #dfdfdf;
-transition:All 0.2s ease-in-out;
--webkit-transition:All 0.2s ease-in-out;
--moz-transition:All 0.2s ease-in-out;
--o-transition:All 0.2s ease-in-out;
-}
-.focusBox .pic img:hover{ box-shadow:0px 3px 8px #b1b1b1;
+.focusBox { position: relative; /*padding-left:43px;height:340px;*/ overflow: hidden; padding-bottom:13px;}
+.focusBox .tempWrap{margin:0 30px;height: 312px;padding:15px 0;overflow: hidden;position: relative}
+.focusBox ul.pic{position: absolute}
+.focusBox ul.pic li{ overflow: hidden; float:left;border:1px solid #dfdfdf;width:170px; height:310px;margin:0px 9px;background-position: center center; background-size: contain;background-repeat: no-repeat;background-color:rgba(0,0,0,0.1);
+    transition:All 0.2s ease-in-out;
+    -webkit-transition:All 0.2s ease-in-out;
+    -moz-transition:All 0.2s ease-in-out;
+    -o-transition:All 0.2s ease-in-out; cursor: pointer }
+.focusBox ul.pic li:hover{ box-shadow:0px 3px 8px #b1b1b1;
 transform:scale(1.05);
 -webkit-transform:scale(1.05);
 -moz-transform:scale(1.05);
@@ -354,7 +355,6 @@ transform:scale(1.05);
 .focusBox .next { background-image:url(../images/icos.png); background-position:-21px -90px; right:20px }
 .focusBox .prev:hover,
 .focusBox .next:hover { filter:alpha(opacity=60); -moz-opacity:.6; opacity:.6 }
-
 
 .mt20{ margin-top:20px;}
 .mb20{ margin-bottom:20px;}
@@ -469,7 +469,7 @@ transform:scale(1.05);
 .newVerdict textarea{width: 425px;height: 210px;border: 1px solid #e8e7e5;padding:5px 10px;line-height: 1.5em;color: #333; text-indent: 0;margin-bottom: 13px}
 
 
-
+.imgHtml{position: fixed;z-index:999;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,0.2);background-repeat: no-repeat;background-position: center center;}
 
 
 

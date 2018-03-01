@@ -140,6 +140,36 @@ $(function () {
             return false
         });
     })
+    //滑动插件 报告页
+    $('.focusBox').each(function () {
+        var $this = $(this);
+        var leftBtn = $this.find('.prev'),
+            rightBtn = $this.find('.next'),
+            list = $this.find('.tempWrap ul');
+        list.width(list.find('li').length * list.find('li').outerWidth(true));
+        rightBtn.on('click', function () {
+            var wt = $this.find('.tempWrap').width();//内部定义为了适应resizes
+            if (-(list.position().left - 2 * wt) >= list.width()) {//如果到最右
+                list.stop().animate({ 'left': -(list.width() - wt) });
+                rightBtn.addClass('hide');
+            } else {
+                list.stop().animate({ 'left': list.position().left - wt/*+list.find('li').outerWidth(true)*/ });
+            }
+            leftBtn.removeClass('hide');
+            return false
+        });
+        leftBtn.on('click', function () {
+            var wt = $this.find('.tempWrap').width();
+            if (-(list.position().left) <= wt) {//如果到最左
+                list.stop().animate({ 'left': 0 });
+                leftBtn.addClass('hide');
+            } else {
+                list.stop().animate({ 'left': list.position().left + wt });
+            }
+            rightBtn.removeClass('hide');
+            return false
+        });
+    })
     //点击时长
     var tmDivBd;
     $('.chart .block').on('click',function(){
@@ -150,7 +180,13 @@ $(function () {
         tmDivBd=setTimeout(function(){$this.parents('.charttop').find('.info li img').css({'border':'1px solid #e0e0e0'});},500);
     })
 
-    
+    //点击图片
+    $('.focusBox .pic li').on('click',function(){
+        var imgUrl=$(this).attr('imgUrl');
+        var imgHtml='<div class="imgHtml" style="background-image:url('+imgUrl+');"></div>';
+        $('body').append(imgHtml);
+        $('.imgHtml').click(function(){$(this).remove()})
+    })
 
     $('.main-nav h3').on('click',function(){
         $(this).siblings('h3').removeClass('on');
