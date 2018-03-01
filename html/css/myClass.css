@@ -307,7 +307,7 @@ input[type='button']{border:0;}
 .presentation .part1{ border-bottom:1px solid #e8e7e5; padding-bottom:8px; margin-bottom:8px; position:relative;}
 .presentation .part1 h1{ font-size:34px; padding:10px 0 13px 0;}
 .presentation .part1 .timed{ color:#999;}
-.presentation .part1 .email{ color:#fff; padding:10px 20px; border-radius:3px; font-size:14px; position:absolute; right:0; bottom:32px;}
+.presentation .part1 .email{ color:#fff; padding:10px 20px; border-radius:3px; font-size:14px; position:absolute; right:0; top:22px;}
 .presentation .part2{ padding-bottom:8px;}
 .presentation .part2 li{ padding-bottom:9px; color:#666;}
 .presentation .whole-style2 .name{ padding-left:20px;}
@@ -382,7 +382,7 @@ transform:scale(1.05);
 .peroration .pleft{ width:148px; height:148px; border-radius:100%; font-size:26px; color:#fff; text-align:center; line-height:148px; margin-left:444px;}
 .peroration .pright{ margin:25px 0 0 16px;}
 .peroration .pright h1{ font-size:22px; color:#333; padding-bottom:13px;}
-.peroration .pright .ln{ line-height:22px;}
+.peroration .pright .ln{ line-height:22px;color:#666}
 
 .footer{ background:#f6f6f6; height:80px;}
 .footer .f{ position:relative;}

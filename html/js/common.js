@@ -44,47 +44,47 @@ $(function () {
     });
     //批量上传任务
     var task = false;
-    $(document).on('click','#batchBtn .ico-batch,#batchBtn .drop-down',function(){
-        if(task==false){
+    $(document).on('click', '#batchBtn .ico-batch,#batchBtn .drop-down', function () {
+        if (task == false) {
             $(".downmould").show();
-            task=true;
-        }else{
+            task = true;
+        } else {
             $(".downmould").hide();
-            task=false;
+            task = false;
         }
         return false
     });
 
     //查看权限
-    $(document).on('click','.look-permiss',function(){
+    $(document).on('click', '.look-permiss', function () {
         $(".mask").show();
         $("#per").show();
     });
-    $(document).on('click','#per .cancel',function(){
+    $(document).on('click', '#per .cancel', function () {
         $(".mask").hide();
         $("#per").hide();
     });
-    $(".jurisdiction .listimg li").hover(function(){
+    $(".jurisdiction .listimg li").hover(function () {
         $(this).find(".close").show();
-    },function(){
+    }, function () {
         $(this).find(".close").hide();
     });
-    $(document).on('click','.jurisdiction .listimg .close',function(){
+    $(document).on('click', '.jurisdiction .listimg .close', function () {
         $(this).parent().remove();
     });
-    
-    $(".tablebox .taskName").hover(function(){
+
+    $(".tablebox .taskName").hover(function () {
         $(this).find(".table-edit").show();
-    },function(){
+    }, function () {
         $(this).find(".table-edit").hide();
     });
-    $(".tablebox .table-edit").on('click',function(){
+    $(".tablebox .table-edit").on('click', function () {
         $(".mask").show();
         $('#newPro').show();
         return false
     })
 
-    $(".tableDrag .table-edit").on('click',function(){
+    $(".tableDrag .table-edit").on('click', function () {
         $(".mask").show();
         $('#editTask').show();
         return false
@@ -94,7 +94,7 @@ $(function () {
         $("#editTask").hide();
     });
 
-    $("#addTask").on('click',function(){
+    $("#addTask").on('click', function () {
         $(".mask").show();
         $('#newTask').show();
         return false
@@ -123,7 +123,7 @@ $(function () {
                 list.stop().animate({ 'left': -(list.width() - wt) });
                 rightBtn.addClass('hide');
             } else {
-                list.stop().animate({ 'left': list.position().left - wt+list.find('li').outerWidth(true) });
+                list.stop().animate({ 'left': list.position().left - wt + list.find('li').outerWidth(true) });
             }
             leftBtn.removeClass('hide');
             return false
@@ -172,46 +172,76 @@ $(function () {
     })
     //点击时长
     var tmDivBd;
-    $('.chart .block').on('click',function(){
-        var $this=$(this),idx=$this.index();
-        $this.parents('.charttop').find('.info li img').css({'border':'1px solid #e0e0e0'});
-        $this.parents('.charttop').find('.info li').eq(idx).find('img').css({'border':'1px solid #999'});
+    $('.chart .block').on('click', function () {
+        var $this = $(this), idx = $this.index();
+        $this.parents('.charttop').find('.info li img').css({ 'border': '1px solid #e0e0e0' });
+        $this.parents('.charttop').find('.info li').eq(idx).find('img').css({ 'border': '1px solid #999' });
         clearTimeout(tmDivBd);
-        tmDivBd=setTimeout(function(){$this.parents('.charttop').find('.info li img').css({'border':'1px solid #e0e0e0'});},500);
+        tmDivBd = setTimeout(function () { $this.parents('.charttop').find('.info li img').css({ 'border': '1px solid #e0e0e0' }); }, 500);
     })
 
     //点击图片
-    $('.focusBox .pic li').on('click',function(){
-        var imgUrl=$(this).attr('imgUrl');
-        var imgHtml='<div class="imgHtml" style="background-image:url('+imgUrl+');"></div>';
+    $('.focusBox .pic li').on('click', function () {
+        var imgUrl = $(this).attr('imgUrl');
+        var imgHtml = '<div class="imgHtml" style="background-image:url(' + imgUrl + ');"></div>';
         $('body').append(imgHtml);
-        $('.imgHtml').click(function(){$(this).remove()})
+        $('.imgHtml').click(function () { $(this).remove() })
     })
-
-    $('.main-nav h3').on('click',function(){
+    //导航
+    $('.main-nav h3').on('click', function () {
         $(this).siblings('h3').removeClass('on');
         $(this).addClass('on');
         $(this).siblings('p').removeClass('on');
         $(this).next('p').addClass('on');
         var ft = $('.main-div').eq(-1).offset().top;
-        if($('.main-nav h3').index($(this))==$('.main-nav h3').length-1){
-            $('html,body').animate({scrollTop:ft-80});
+        if ($('.main-nav h3').index($(this)) == $('.main-nav h3').length - 1) {
+            $('html,body').animate({ scrollTop: ft - 80 });
             $('.main-nav p span').removeClass('on');
         }
     })
 
-    $('.main-nav p span').on('click',function(){
-        var idx=$('.main-nav p span').index($(this));
+    $('.main-nav p span').on('click', function () {
+        var idx = $('.main-nav p span').index($(this));
         var ft = $('.main-div').eq(idx).offset().top;
         $('.main-nav p span').removeClass('on');
         $(this).addClass('on');
-        $('html,body').animate({scrollTop:ft-80});
+        $('html,body').animate({ scrollTop: ft - 80 });
     })
-    
-    $('.main-nav').on('mouseleave',function(){
+
+    $('.main-nav').on('mouseleave', function () {
         $('.main-nav-con p span.on').parent('p').prev('h3').addClass('on').siblings('h3').removeClass('on');
         $('.main-nav-con p span.on').parent('p').addClass('on').siblings('p').removeClass('on');
     })
+
+    //滚动
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > ($('.main-whole').offset().top - 100)) {
+            $('.main-nav').show();
+        } else {
+            $('.main-nav').hide();
+        }
+        $('.main-div').each(function () {
+            if ($(window).scrollTop() >= ($(this).offset().top - $('.main-nav').height() - 50) && $(window).scrollTop() <= ($(this).offset().top - $('.main-nav').height() + $(this).height())) {
+                var idx = $('.main-div').index($(this));
+                $('.main-nav-con p span').removeClass('on');
+                $('.main-nav-con p span').eq(idx).addClass('on');
+                $('.main-nav-con h3').removeClass('on');
+                $('.main-nav-con p span').eq(idx).parent('p').prev('h3').addClass('on');
+                $('.main-nav-con p').removeClass('on');
+                $('.main-nav-con p span').eq(idx).parent('p').addClass('on');
+            }
+        })
+        if ($(window).scrollTop() + $(window).height() >= $(document).height()) {
+            $('.main-nav-con p span').removeClass('on');
+            $('.main-nav-con h3').removeClass('on');
+            $('.main-nav-con h3').eq(-1).addClass('on');
+        }
+    })
+    if ($(window).scrollTop() > ($('.main-whole').offset().top - 100)) {
+        $('.main-nav').show();
+    } else {
+        $('.main-nav').hide();
+    }
 
 })
 
