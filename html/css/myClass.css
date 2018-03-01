@@ -246,14 +246,14 @@ input[type='button']{border:0;}
 .histogram-bg .geway span{ display:inline-block; width:53px; height:83px; background:#a8a8a8;}
 
 .thermodyScroll{ position:relative; overflow:hidden;padding-bottom: 30px;  }
-.thermodyScroll .info{ margin:0 35px 0; padding-top: 10px; overflow:hidden;/* width:980px;*/height:311px;}
+.thermodyScroll .info{ margin:0 35px 0; padding-top: 10px; overflow:hidden;/* width:980px;*/height:312px;position: relative}
 .thermodyScroll .info .xname{ color:#666; margin-top:8px;}
 .thermodyScroll .info ul{ position: relative; }
-.thermodyScroll .info li{ float:left; margin:0 5px 0; /*width:170px;*/text-align:center;position: relative;}
+.thermodyScroll .info li{ float:left; margin:0 5px 0; width:170px;text-align:center;position: relative;height:310px;border: 1px solid #e0e0e0;background-position: center center; background-size: contain;background-repeat: no-repeat;background-color:rgba(0,0,0,0.1)}
 .thermodyScroll .info li a{width: 19px;height: 19px;display: block;position: absolute;right: -5px;top: -9px;background: url(../images/close.png) no-repeat 0 0;}
 .thermodyScroll .info li .inp-show{ height:34px; border:1px solid #e8e7e5; background:#fff; margin-top:10px; width:170px;}
 .thermodyScroll .info li:last-child{ margin-right:0px;} 
-.thermodyScroll .info li img{  height:303px;cursor: move;border: 1px solid #e0e0e0 }
+.thermodyScroll .info li img{  height:303px;cursor: move; }
 .thermodyScroll .prev,.thermodyScroll .next{ position:absolute; top:135px; display:block; width:16px; height:35px; overflow:hidden; background:url(../images/icos.png) 0px -90px no-repeat; cursor:pointer;  }
 .thermodyScroll .prev{ left:0px;}
 .thermodyScroll .next{ left:auto; right:0px; background:url(../images/icos.png) -21px -90px no-repeat; }
@@ -426,6 +426,7 @@ transform:scale(1.05);
 .main-tt h2{font:64px/100px '微软雅黑'}
 .main-div{margin-bottom: 100px}
 .main-div h5{background: url(../images/tt.jpg) no-repeat left center;font-size: 16px; line-height: 16px;padding-left: 10px; margin-bottom: 30px}
+.main-div-txt{font-size:26px; line-height: 40px; color:#111}
 .main-div-left{ width:550px; float: left}
 .main-div-left p{font-size:24px; line-height: 1.5;height: 126px}
 .main-div-left .ipt{font-size:14px; padding: 10px 5px; line-height: 16px;height: 16px;border:1px solid #e8e7e5;color: #999;margin-bottom: 55px}
@@ -452,6 +453,10 @@ transform:scale(1.05);
 .main-nav-con p span{margin: 0 8px;float: left;cursor: pointer;}
 .main-nav-con p span.on{color:#27c9d5;}
 .main-nav-con p b{float: left;margin-right: 0px;padding: 0;}
+
+.main-edit-btn{width: 109px;height:36px;border:1px solid #aae9ea;background: url(../images/edit.png) no-repeat 29px 10px;font:14px/36px '微软雅黑'; text-indent: 50px;border-radius: 3px; color:#2ac7ca;margin: 0 auto 50px;display: block }
+.main-edit-btn:hover{background-color:#fafafa }
+
 
 .tips-tt{text-align: center;margin-top: 10px;font-size:15px;margin-bottom: 50px}
 

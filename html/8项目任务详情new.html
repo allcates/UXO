@@ -8,7 +8,7 @@
 	<meta name="keywords" content="" />
 	<meta name="author" content="name, email@gmail.com" />
 	<meta name="robots" content="index,follow" />
-	<title>项目整体详情</title>
+	<title>项目任务详情</title>
 	<link rel="stylesheet" href="css/base.css" />
 	<link rel="stylesheet" href="css/myClass.css" />
 	<link rel="stylesheet" href="js/layer/skin/layer.css" />
@@ -37,6 +37,7 @@
 			$(".sortable").sortable({
 				items: "li:not(.add)",
 				placeholder: "ui-state-highlight",
+				handle: "img",
 				opacity: 0.8,
 				axis: "x",
 				helper: "clone"
@@ -110,37 +111,16 @@
 		<div class="main-ct">
 		<div class="main-whole-fst">
 				<div class="main-tt">
-					<p>测试项目</p>
-					<h2>整体数据</h2>
+					<p>任务一</p>
+					<h2>学词模块全流程的使用</h2>
 				</div>
 				<a href="#" class="main-edit-btn">
 					编辑
 				</a>
 				<div class="main-div">
-					<h5>属性占比</h5>
-					<div class="clearfix">
-						<div class="main-div-left">
-							<div class="ipt">
-								<input type="text" value="" placeholder="请录入说明">
-							</div>
-							<div class="main-fm">
-		
-								<div id="main" style="width:100%;height:350px">
-		
-								</div>
-							</div>
-						</div>
-						<div class="main-div-right">
-							<div class="ipt">
-								<input type="text" value="" placeholder="请录入说明">
-							</div>
-							<div class="main-fm">
-								<div id="main1" style="width:100%;height:350px">
-		
-								</div>
-							</div>
-						</div>
-					</div>
+					<h5>任务描述</h5>
+					<p class="main-div-txt">按照您的正常学习习惯，完成今日数量的单词学习和复习的全部流程。（测试被试对
+						于学词模块全流程的使用）。</p>
 				</div>
 				<div class="main-div">
 					<div class="clearfix">
@@ -150,7 +130,7 @@
 								<input type="text" value="" placeholder="请录入说明">
 							</div>
 							<div class="main-fm">
-								<div id="list0" style="width:100%;height:250px">
+								<div id="r2b0" style="width:100%;height:250px">
 								</div>
 							</div>
 						</div>
@@ -160,7 +140,7 @@
 								<input type="text" value="" placeholder="请录入说明">
 							</div>
 							<div class="main-fm">
-								<div id="list1" style="width:100%;height:250px">
+								<div id="r2b1" style="width:100%;height:250px">
 								</div>
 							</div>
 						</div>
@@ -168,7 +148,7 @@
 				</div>
 				<div class="main-div">
 					<div class="clearfix" style="position:relative">
-						<h5>兴趣区热力图</h5>
+						<h5>注视热力图<span>·</span>眼动轨迹图</h5>
 						<div class="button-pattern">
 							<div class="info-a">
 								<i class="ico-add"></i>&nbsp;&nbsp;上传图片
@@ -191,35 +171,35 @@
 														<ul class="clearBoth sortable ui-sortable">
 															
 															
-															<li style="background-image:url(images/eye3.jpg)">
+															<li>
 																<a href="javascript:void(0)"></a>
+																<img src="images/eye3.jpg" class="ui-sortable-handle">
 															</li>
-															<li style="background-image:url(images/eye4.jpg)">
+															<li>
 																<a href="javascript:void(0)"></a>
+																<img src="images/eye4.jpg" class="ui-sortable-handle">
 															</li>
-															<li style="background-image:url(images/eye5.jpg)">
+															<li>
 																<a href="javascript:void(0)"></a>
+																<img src="images/eye4.jpg" class="ui-sortable-handle">
 															</li>
-															<li style="background-image:url(images/eye2.jpg)">
+															<li style="display: list-item;">
 																<a href="javascript:void(0)"></a>
+																<img src="images/eye1.jpg" class="ui-sortable-handle">
+															</li><li>
+																<a href="javascript:void(0)"></a>
+																<img src="images/eye4.jpg" class="ui-sortable-handle">
 															</li>
-															<li style="background-image:url(images/eye2.jpg)">
+															<li>
 																<a href="javascript:void(0)"></a>
+																<img src="images/eye4.jpg" class="ui-sortable-handle">
 															</li>
-															<li style="background-image:url(images/eye3.jpg)">
+															<li style="display: list-item;">
 																<a href="javascript:void(0)"></a>
-															</li>
-															<li style="background-image:url(images/eye4.jpg)">
+																<img src="images/eye2.jpg" class="ui-sortable-handle">
+															</li><li>
 																<a href="javascript:void(0)"></a>
-															</li>
-															<li style="background-image:url(images/eye5.jpg)">
-																<a href="javascript:void(0)"></a>
-															</li>
-															<li style="background-image:url(images/eye1.jpg)">
-																<a href="javascript:void(0)"></a>
-															</li>
-															<li style="background-image:url(images/eye2.jpg)">
-																<a href="javascript:void(0)"></a>
+																<img src="images/eye4.jpg" class="ui-sortable-handle">
 															</li>
 															<li class="add">
 																<div class="filebox">
@@ -240,77 +220,11 @@
 													</ul-->
 												</div>
 											</div>
-											<div class="histogram-bg">
-												<div class="geway">
-													<span></span>
-													<span></span>
-													<span></span>
-													<span></span>
-													<span></span>
-													<span></span>
-												</div>
-												<div class="chart">
-													<span class="block" style="width:120px">
-														<i style="opacity:1.2">12″</i>
-														<em>1</em>
-													</span>
-													<span class="block" style="width:30px">
-														<i style="opacity:0.3;">3″</i>
-														<em>2</em>
-													</span>
-													<span class="block" style="width:50px">
-														<i style="opacity:0.5;">5″</i>
-														<em>3</em>
-													</span>
-													<span class="block" style="width:90px">
-														<i style="opacity:0.9;">9″</i>
-														<em>4</em>
-													</span>
-													<span class="block" style="width:24px">
-														<i style="opacity:0.1;">1″</i>
-														<em>5</em>
-													</span>
-													<span class="block" style="width:200px">
-														<i style="opacity:2;">20″</i>
-														<em>6</em>
-													</span>
-													<span class="block" style="width:24px"><!--UI要求最低24px-->
-														<i style="opacity:0.1;">1″</i>
-														<em>7</em>
-													</span>
-													<span class="block" style="width:24px">
-														<i style="opacity:0.2;">2″</i>
-														<em>8</em>
-													</span>
-												</div>
-											</div>
+											
 										</div>
 
-
-
-
-								
-		
 							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="main-div">
-					<div class="clearfix" style="position:relative">
-						<h5>注视热力图</h5>
-						<div class="button-pattern">
-							<div class="info-a">
-								<i class="ico-add"></i>&nbsp;&nbsp;上传图片
-								<input type="file" value="上传" class="uploads">
-							</div>
-						</div>
-					</div>
-					<div class="clearfix">
-						<div class="main-div-con">
-							<div class="ipt">
-								<input type="text" value="" placeholder="请录入说明">
-							</div>
+							<div class="tips-tt">注视热力图</div>
 							<div class="main-fm">
  
 									<div class="charttop">
@@ -318,6 +232,38 @@
 												<div class="thermodyScroll tscroll1 sfScroll">
 													<div class="info">
 														<ul class="clearBoth sortable ui-sortable">
+															
+															
+															<li>
+																<a href="javascript:void(0)"></a>
+																<img src="images/eye3.jpg" class="ui-sortable-handle">
+															</li>
+															<li>
+																<a href="javascript:void(0)"></a>
+																<img src="images/eye4.jpg" class="ui-sortable-handle">
+															</li>
+															<li>
+																<a href="javascript:void(0)"></a>
+																<img src="images/eye4.jpg" class="ui-sortable-handle">
+															</li>
+															<li style="display: list-item;">
+																<a href="javascript:void(0)"></a>
+																<img src="images/eye1.jpg" class="ui-sortable-handle">
+															</li><li>
+																<a href="javascript:void(0)"></a>
+																<img src="images/eye4.jpg" class="ui-sortable-handle">
+															</li>
+															<li>
+																<a href="javascript:void(0)"></a>
+																<img src="images/eye4.jpg" class="ui-sortable-handle">
+															</li>
+															<li style="display: list-item;">
+																<a href="javascript:void(0)"></a>
+																<img src="images/eye2.jpg" class="ui-sortable-handle">
+															</li><li>
+																<a href="javascript:void(0)"></a>
+																<img src="images/eye4.jpg" class="ui-sortable-handle">
+															</li>
 															<li class="add">
 																<div class="filebox">
 																	<span class="icon-add"></span>
@@ -337,61 +283,15 @@
 													</ul-->
 												</div>
 											</div>
-											<div class="histogram-bg">
-												<div class="geway">
-													<span></span>
-													<span></span>
-													<span></span>
-													<span></span>
-													<span></span>
-													<span></span>
-												</div>
-												<div class="chart">
-													<span class="block" style="width:120px">
-														<i style="opacity:1.2">12″</i>
-														<em>1</em>
-													</span>
-													<span class="block" style="width:30px">
-														<i style="opacity:0.3;">3″</i>
-														<em>2</em>
-													</span>
-													<span class="block" style="width:50px">
-														<i style="opacity:0.5;">5″</i>
-														<em>3</em>
-													</span>
-													<span class="block" style="width:90px">
-														<i style="opacity:0.9;">9″</i>
-														<em>4</em>
-													</span>
-													<span class="block" style="width:24px">
-														<i style="opacity:0.1;">1″</i>
-														<em>5</em>
-													</span>
-													<span class="block" style="width:200px">
-														<i style="opacity:2;">20″</i>
-														<em>6</em>
-													</span>
-													<span class="block" style="width:24px"><!--UI要求最低24px-->
-														<i style="opacity:0.1;">1″</i>
-														<em>7</em>
-													</span>
-													<span class="block" style="width:24px">
-														<i style="opacity:0.2;">2″</i>
-														<em>8</em>
-													</span>
-												</div>
-											</div>
+											
 										</div>
 
-
-
-
-								
-		
 							</div>
+							<div class="tips-tt">眼动轨迹图</div>
 						</div>
 					</div>
 				</div>
+
 				
 			</div>
 
@@ -431,7 +331,6 @@
 	</script>
 	<script src="js/echartsData.js"></script>
 	<script>
-		vsFm();
-	pieFm();
+	singleFm();
 	</script>
 </body>

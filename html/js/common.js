@@ -123,7 +123,7 @@ $(function () {
                 list.stop().animate({ 'left': -(list.width() - wt) });
                 rightBtn.addClass('hide');
             } else {
-                list.stop().animate({ 'left': list.position().left - wt });
+                list.stop().animate({ 'left': list.position().left - wt+list.find('li').outerWidth(true) });
             }
             leftBtn.removeClass('hide');
             return false
