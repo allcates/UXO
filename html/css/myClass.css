@@ -339,13 +339,20 @@ input[type='button']{border:0;}
     transition:All 0.2s ease-in-out;
     -webkit-transition:All 0.2s ease-in-out;
     -moz-transition:All 0.2s ease-in-out;
-    -o-transition:All 0.2s ease-in-out; cursor: pointer }
+    -o-transition:All 0.2s ease-in-out; cursor: pointer; }
 .focusBox ul.pic li:hover{ box-shadow:0px 3px 8px #b1b1b1;
 transform:scale(1.05);
 -webkit-transform:scale(1.05);
 -moz-transform:scale(1.05);
 -o-transform:scale(1.05);
 -ms-transform:scale(1.05);
+}
+.focusBox ul.pic li.on{box-shadow:0px 3px 8px #b1b1b1;
+    transform:scale(1.05);
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -o-transform:scale(1.05);
+    -ms-transform:scale(1.05);
 }
 .focusBox .hd { overflow:hidden; zoom:1; position:absolute; bottom:0; width:100%;left:0; z-index:3; text-align: center}
 .focusBox .hd li{ display: inline-block; line-height:15px; text-align:center; font-size:12px; width:12px; height:12px; cursor:pointer; overflow:hidden; background:#dcdcdc; margin:0 5px; border-radius:100%;}

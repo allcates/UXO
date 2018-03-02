@@ -170,14 +170,13 @@ $(function () {
             return false
         });
     })
-    //点击时长
+    //鼠标悬浮时长
     var tmDivBd;
-    $('.chart .block').on('click', function () {
+    $('.chart .block').on('mouseover', function () {
         var $this = $(this), idx = $this.index();
-        $this.parents('.charttop').find('.info li img').css({ 'border': '1px solid #e0e0e0' });
-        $this.parents('.charttop').find('.info li').eq(idx).find('img').css({ 'border': '1px solid #999' });
-        clearTimeout(tmDivBd);
-        tmDivBd = setTimeout(function () { $this.parents('.charttop').find('.info li img').css({ 'border': '1px solid #e0e0e0' }); }, 500);
+        $this.parents('.colorful-box-end').find('.tempWrap li').eq(idx).addClass('on');
+    }).on('mouseleave',function () {
+        $('.tempWrap li').removeClass('on');
     })
 
     //点击图片
@@ -185,7 +184,7 @@ $(function () {
         var imgUrl = $(this).attr('imgUrl');
         var imgHtml = '<div class="imgHtml" style="background-image:url(' + imgUrl + ');"></div>';
         $('body').append(imgHtml);
-        $('.imgHtml').click(function () { $(this).remove() })
+        $('.imgHtml').click(function () { $(this).remove() });
     })
     //导航
     $('.main-nav h3').on('click', function () {
