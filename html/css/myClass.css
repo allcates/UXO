@@ -417,6 +417,7 @@ transform:scale(1.05);
 .pay_list_c1 {width:14px;height:14px; cursor: pointer;margin-left: 5px;background: url(../images/icos.png) -103px -109px no-repeat;}
 .radioclass {opacity: 0;cursor: pointer;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter: alpha(opacity=0);}
 .radioon {background-position:-103px -130px;}
+.label-check-con{text-align: center;margin: 30px 100px 0 0;}
 .label-check{ cursor:pointer;}
 
 
