@@ -174,7 +174,6 @@ $(function () {
         });
     })
     //鼠标悬浮时长
-    var tmDivBd;
     $('.chart .block').on('mouseover', function () {
         var $this = $(this), idx = $this.index();
         $this.parents('.colorful-box-end').find('.tempWrap li').eq(idx).addClass('on');

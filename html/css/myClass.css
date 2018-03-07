@@ -357,7 +357,7 @@ transform:scale(1.05);
 .focusBox .hd { overflow:hidden; zoom:1; position:absolute; bottom:0; width:100%;left:0; z-index:3; text-align: center}
 .focusBox .hd li{ display: inline-block; line-height:15px; text-align:center; font-size:12px; width:12px; height:12px; cursor:pointer; overflow:hidden; background:#dcdcdc; margin:0 5px; border-radius:100%;}
 .focusBox .hd .on{ background:#2ac7ca; }
-.focusBox .prev, .focusBox .next { display:inline-block; position:absolute; top:135px; display:block; width:16px; height:35px; overflow:hidden; background:url(../images/icos.png) 0px -90px no-repeat; cursor:pointer; }
+.focusBox .prev, .focusBox .next { display:inline-block; position:absolute; top:160px; display:block; width:16px; height:35px; overflow:hidden; background:url(../images/icos.png) 0px -90px no-repeat; cursor:pointer; }
 .focusBox .prev { background-image:url(../images/icos.png); background-position:0 -90px; left:20px }
 .focusBox .next { background-image:url(../images/icos.png); background-position:-21px -90px; right:20px }
 .focusBox .prev:hover,
