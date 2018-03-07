@@ -186,8 +186,18 @@ $(function () {
     $('.focusBox .pic li').on('click', function () {
         var imgUrl = $(this).attr('imgUrl');
         var imgHtml = '<div class="imgHtml" style="background-image:url(' + imgUrl + ');"></div>';
-        $('body').append(imgHtml);
-        $('.imgHtml').click(function () { $(this).remove() });
+        //$('body').append(imgHtml);
+        //$('.imgHtml').click(function () { $(this).remove() });
+        //页面层-佟丽娅
+        layer.open({
+            type: 1,
+            title: false,
+            closeBtn: 0,
+            area: ['auto','auto'],
+            skin: 'layui-layer-nobg', //没有背景色
+            shadeClose: true,
+            content: '<img src="'+imgUrl+'"/>'
+        });
     })
     //导航
     $('.main-nav h3').on('click', function () {
