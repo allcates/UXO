@@ -193,7 +193,6 @@ $(function () {
             type: 1,
             title: false,
             closeBtn: 0,
-            area: ['auto','auto'],
             skin: 'layui-layer-nobg', //没有背景色
             shadeClose: true,
             content: '<img src="'+imgUrl+'"/>'
