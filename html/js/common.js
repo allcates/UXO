@@ -173,10 +173,15 @@ $(function () {
             return false
         });
     })
-    //鼠标悬浮时长
+    //鼠标悬浮到时长块
     $('.chart .block').on('mouseover', function () {
-        var $this = $(this), idx = $this.index();
-        $this.parents('.colorful-box-end').find('.tempWrap li').eq(idx).addClass('on');
+        var $this = $(this), idx = $this.index(),idxLi=$this.parents('.colorful-box-end').find('.tempWrap li').eq(idx),list=$this.parents('.colorful-box-end').find('.tempWrap ul');
+        idxLi.addClass('on');
+        if(idxLi.position().left>=($('.focusBox .tempWrap').width()-list.position().left)/*&&idxLi.position().left<(2*$('.focusBox .tempWrap').width()-list.position().left)*/){
+            list.stop().animate({ 'left': list.position().left - idxLi.position().left});
+        }else if(idxLi.position().left<-list.position().left){
+            list.stop().animate({ 'left': -idxLi.position().left});
+        }
     }).on('mouseleave', function () {
         $('.tempWrap li').removeClass('on');
     })
