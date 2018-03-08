@@ -46,10 +46,22 @@ $(function () {
     var task = false;
     $(document).on('click', '#batchBtn .ico-batch,#batchBtn .drop-down', function () {
         if (task == false) {
-            $(".downmould").show();
+            $(this).next('.downmould').show();
             task = true;
         } else {
-            $(".downmould").hide();
+            $(this).next('.downmould').hide();
+            task = false;
+        }
+        return false
+    });
+    //批量上传任务2
+    var task = false;
+    $(document).on('click', '#batchBtn2 .drop-down', function () {
+        if (task == false) {
+            $(this).next('.downmould').show();
+            task = true;
+        } else {
+            $(this).next('.downmould').hide();
             task = false;
         }
         return false

@@ -74,7 +74,7 @@ input[type='button']{border:0;}
 .tasklist .r-right{ position:absolute; right:0; bottom:9px;}
 .tasklist .aboutTask{ font-family:"黑体"; border:1px solid #2ac7ca; border-radius:3px; padding:5px 12px; display:inline-block; margin-left:5px; }
 .tasklist .drop-down{ position:relative; cursor:pointer;}
-.tasklist .drop-down .downmould{ position:absolute; left:0; top:25px; background:#e5eaea; width:123px; height:24px; color:#666; font-weight:normal; border-radius:0px 0px 3px 3px; text-align:center; line-height:24px; display:none;}
+.tasklist .drop-down .downmould{ position:absolute; left:0; top:25px; background:#c9f1f1;border:1px solid #aae9ea; width:123px; height:24px; color:#666; font-weight:normal; border-radius:0px 0px 3px 3px; text-align:center; line-height:24px; display:none;}
 .tasklist .aboutTask .drop-down{ width:11px; height:6px; display:inline-block; background:url(../images/icos.png) -26px -44px no-repeat; position:relative; left:4px; top:-1px; }
 .tasklist-plan2{ margin-top:0; border-bottom:0; font-size:14px; top:-20px;}
 .tasklist-plan2 .aboutTask{ padding:10px 20px; border:1px solid #aae9ea;}
@@ -480,7 +480,7 @@ transform:scale(1.05);
 .imgHtml{position: fixed;z-index:999;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,0.7);background-repeat: no-repeat;background-position: center center;}
 .imgHtmlImg{position: absolute;max-width: 100%; max-height: 100%;}
 
-
+.hook-btn{top:-10px;position: relative}
 
 
 
