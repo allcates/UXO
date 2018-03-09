@@ -189,9 +189,9 @@ $(function () {
     $('.chart .block').on('mouseover', function () {
         var $this = $(this), idx = $this.index(),idxLi=$this.parents('.colorful-box-end').find('.tempWrap li').eq(idx),list=$this.parents('.colorful-box-end').find('.tempWrap ul');
         idxLi.addClass('on');
-        if(idxLi.position().left>=($('.focusBox .tempWrap').width()-list.position().left)/*&&idxLi.position().left<(2*$('.focusBox .tempWrap').width()-list.position().left)*/){
-            list.stop().animate({ 'left': list.position().left - idxLi.position().left});
-        }else if(idxLi.position().left<-list.position().left){
+        if(idxLi.position().left>=($('.focusBox .tempWrap').width()-list.position().left)){//li在右边隐藏ing
+            list.stop().animate({ 'left': - idxLi.position().left+5*190});
+        }else if(idxLi.position().left<-list.position().left){//li在左边隐藏ing
             list.stop().animate({ 'left': -idxLi.position().left});
         }
     }).on('mouseleave', function () {
@@ -204,7 +204,7 @@ $(function () {
         var imgHtml = '<div class="imgHtml" style="background-image:url(' + imgUrl + ');"></div>';
         //$('body').append(imgHtml);
         //$('.imgHtml').click(function () { $(this).remove() });
-        //页面层-佟丽娅
+        //页面层
         layer.open({
             type: 1,
             title: false,
