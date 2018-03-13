@@ -26,7 +26,8 @@ input[type='button']{border:0;}
 .bodyLeft .menulist li{ padding:0 0 0 10px; height:40px; line-height:40px; cursor:pointer; position:relative;}
 .bodyLeft .menulist li:hover{background: #efefef}
 .bodyLeft .menulist li a{ display: block;width: 170px;height: 40px; color: #666}
-.bodyLeft .menulist li .icon-num{ display:inline-block; width:4px; height:21px; background:#27c9d5; margin-right:10px; position:relative; top:5px; opacity:0;}
+.bodyLeft .menulist li a span{float: left; width: 105px;overflow: hidden;height: 40px; }
+.bodyLeft .menulist li .icon-num{float: left; width:4px; height:21px; background:#27c9d5; margin-right:10px; position:relative; top:10px; opacity:0;}
 .bodyLeft .menulist li .icon-edit{ position:absolute; right:32px; top:13px; display:none;}
 .bodyLeft .menulist li .icon-close{ position:absolute; right:6px; top:12px; display:none;}
 .bodyLeft .menulist li.on{ background:#fff;}
