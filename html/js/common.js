@@ -43,26 +43,48 @@ $(function () {
         $("#newTask").show();
     });
     //批量上传任务
-    var task = false;
-    $(document).on('click', '#batchFm .ico-batch,#batchBtn .ico-batch,#batchBtn .drop-down', function () {
-        if (task == false) {
+    var task1 = false;
+    $(document).on('click', '#batchFm .ico-batch', function () {
+        if (task1 == false) {
             $(this).addClass('ico-batch-on').next('.downmould').show();
-            task = true;
+            task1 = true;
         } else {
             $(this).removeClass('ico-batch-on').next('.downmould').hide();
-            task = false;
+            task1 = false;
+        }
+        return false
+    });
+    var task2 = false;
+    $(document).on('click', '#batchBtn .ico-batch', function () {
+        if (task2 == false) {
+            $(this).addClass('ico-batch-on').next('.downmould').show();
+            task2 = true;
+        } else {
+            $(this).removeClass('ico-batch-on').next('.downmould').hide();
+            task2 = false;
         }
         return false
     });
     //批量上传任务2
-    var task = false;
-    $(document).on('click', '#batchBtn2 .drop-down', function () {
-        if (task == false) {
-            $(this).next('.downmould').show();
-            task = true;
+    var task3 = false;
+    $(document).on('click', '#batchBtn .drop-down', function () {
+        if (task3 == false) {
+            $(this).addClass('drop-down-on').next('.downmould').show();
+            task3 = true;
         } else {
-            $(this).next('.downmould').hide();
-            task = false;
+            $(this).removeClass('drop-down-on').next('.downmould').hide();
+            task3 = false;
+        }
+        return false
+    });
+    var task4 = false;
+    $(document).on('click', '#batchBtn2 .drop-down', function () {
+        if (task4 == false) {
+            $(this).addClass('drop-down-on').next('.downmould').show();
+            task4 = true;
+        } else {
+            $(this).removeClass('drop-down-on').next('.downmould').hide();
+            task4 = false;
         }
         return false
     });
