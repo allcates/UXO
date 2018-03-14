@@ -46,10 +46,10 @@ $(function () {
     var task = false;
     $(document).on('click', '#batchFm .ico-batch,#batchBtn .ico-batch,#batchBtn .drop-down', function () {
         if (task == false) {
-            $(this).next('.downmould').show();
+            $(this).addClass('ico-batch-on').next('.downmould').show();
             task = true;
         } else {
-            $(this).next('.downmould').hide();
+            $(this).removeClass('ico-batch-on').next('.downmould').hide();
             task = false;
         }
         return false
