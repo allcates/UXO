@@ -46,12 +46,13 @@ input[type='button']{border:0;}
 .crumb .back .b{ display:inline-block; width:6px; height:11px; background:url(../images/icos.png) -156px -2px no-repeat; margin-right:5px;}
 
 .tablebox{ color:#999;padding-top:20px; font-family:"黑体";}
-.tablebox th{ color:#999; font-weight:normal; text-align:left; border-bottom:1px solid #ebebeb; padding:0 8px 0px 9px; height:35px;}
+.tablebox th{ color:#999; font-weight:normal; text-align:left; border-bottom:1px solid #ebebeb; padding:0 8px 0px 9px; height:35px; white-space: nowrap;}
 .tablebox td{ padding:5px 8px 5px 9px; height:28px; }
+.tablebox td.els{overflow: hidden; text-overflow:ellipsis; white-space: nowrap;max-width: 65px;}
 .tablebox tr:nth-child(odd){ background:#f5f9fa;}
 .tablebox tr:hover{ background:#e9f3f3;}
 .tablebox tr:nth-child(1){ background:none;}
-.tablebox .taskName2{ position:relative; padding-right:20px;white-space: nowrap;}
+.tablebox .taskName2{ position:relative; padding-right:10px;max-width:290px;overflow: hidden; text-overflow:ellipsis; white-space: nowrap;}
 .tablebox .taskName2 .table-edit{ right:0;}
 
 
@@ -130,6 +131,7 @@ input[type='button']{border:0;}
 .placeholder{ display:inline-block; width:19px; height:16px; position:relative; top:1px; margin-right:4px;}
 .ico-batch{ width:36px; height:36px; display:inline-block; background:url(../images/icos_s1.png) center center no-repeat; position: absolute; top:0px; right:0px;}
 .ico-batch-on{ background:url(../images/icos_s2.png) center center no-repeat;}
+.status-bar{min-width: 270px;}
 .status-bar a{ display:inline-block; margin:0 2px;}
 .icon-edit{ display:inline-block; width:16px; height:15px; background:url(../images/icos.png) -51px 0px no-repeat;}
 .icon-close{ display:inline-block; width:16px; height:16px; background:url(../images/icos.png) -50px -40px no-repeat;}
