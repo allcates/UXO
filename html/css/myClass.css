@@ -101,7 +101,7 @@ input[type='button']{border:0;}
 .tableDrag ul li span{ display:inline-block; height:28px; vertical-align: middle;line-height: 28px; }
 .tableDrag li .column1{ width:5%;}
 .tableDrag li .column2{ width:25%;}
-.tableDrag li .column3{ width:40%;}
+.tableDrag li .column3{ width:40%;overflow: hidden; text-overflow:ellipsis; white-space: nowrap;}
 .tableDrag li .column4{ width:10%;text-align: center}
 .tableDrag li .column5{ width:10%;text-align: center}
 .tableDrag li .column6{ }
