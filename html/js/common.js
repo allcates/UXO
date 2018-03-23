@@ -44,7 +44,9 @@ $(function () {
     });
     //批量上传任务
     var task1 = false;
-    $(document).on('click', '#batchFm .ico-batch', function () {
+    $(document).on('click', '#batchFm .ico-batch', function (e) {
+        e.cancelBubble = true;
+        e.stopPropagation();
         if (task1 == false) {
             $(this).addClass('ico-batch-on').next('.downmould').show();
             task1 = true;
@@ -55,7 +57,9 @@ $(function () {
         return false
     });
     var task2 = false;
-    $(document).on('click', '#batchBtn .ico-batch', function () {
+    $(document).on('click', '#batchBtn .ico-batch', function (e) {
+        e.cancelBubble = true;
+        e.stopPropagation();
         if (task2 == false) {
             $(this).addClass('ico-batch-on').next('.downmould').show();
             task2 = true;
@@ -67,7 +71,9 @@ $(function () {
     });
     //批量上传任务2
     var task3 = false;
-    $(document).on('click', '#batchBtn .drop-down', function () {
+    $(document).on('click', '#batchBtn .drop-down', function (e) {
+        e.cancelBubble = true;
+        e.stopPropagation();
         if (task3 == false) {
             $(this).addClass('drop-down-on').next('.downmould').show();
             task3 = true;
@@ -78,7 +84,9 @@ $(function () {
         return false
     });
     var task4 = false;
-    $(document).on('click', '#batchBtn2 .drop-down', function () {
+    $(document).on('click', '#batchBtn2 .drop-down', function (e) {
+        e.cancelBubble = true;
+        e.stopPropagation();
         if (task4 == false) {
             $(this).addClass('drop-down-on').next('.downmould').show();
             task4 = true;
@@ -88,7 +96,12 @@ $(function () {
         }
         return false
     });
-
+    $(document).on('click', function (e) {
+        task1 = false;task2 = false;task3 = false;task4 = false;
+        $('#batchBtn .drop-down,#batchBtn2 .drop-down').removeClass('drop-down-on');
+        $('#batchFm .ico-batch,#batchBtn .ico-batch').removeClass('ico-batch-on');
+        $('.downmould').hide();
+    });
     //查看权限
     $(document).on('click', '.look-permiss', function () {
         $(".mask").show();
