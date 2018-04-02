@@ -482,7 +482,7 @@ transform:scale(1.05);
 .main-div .histogram2{ border: 0 none;}
 
 .verdict0{ padding: 15px 0; color: #999;font-size: 12px;}
-.verdict{ padding: 15px 0; color: #333;font-size: 14px;line-height: 1.75em}
+.verdict{ padding: 15px 0; color: #333;font-size: 14px;line-height: 1.75em; word-wrap:break-word;}
 .verdict p{ word-wrap:break-word}
 
 .newVerdict{width: 485px;height: 360px}
