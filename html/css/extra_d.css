@@ -1,0 +1,269 @@
+﻿input:focus, textarea:focus {
+    border-color: rgba(52, 151, 219, 0.6);
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(52, 152, 219, 0.6);
+}
+
+input.has-error, input.has-error:focus, textarea.has-error, textarea.has-error:focus {
+    border-color: #c0392b;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0392b;
+}
+
+.bombBox .info li {
+    padding: 3px;
+}
+
+.bombBox .error {
+    display: none;
+}
+
+.bombBox .info {
+    position: relative;
+}
+
+.inpnumlimit {
+    padding-left:8px;
+    padding-right: 60px;
+    box-sizing: border-box;
+}
+
+.textnum {
+    text-align: right;
+    color: #ccc;
+    position: absolute;
+    right: 38px;
+    width: 50px;
+    padding-right:8px;
+    height: 34px;
+    line-height: 34px;
+}
+#newPdc .textnum {
+    right:44px;
+}
+
+#newPro .inpnumlimit {
+    padding-right:0; width:317px;
+}
+#newPro .inpnumlimit.remark {
+    padding-right: 60px;
+}
+.textnum label {
+    font-weight: 500;
+}
+
+.confirmTip-mask {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    filter: alpha(opacity=60);
+    background-color: #777;
+    z-index: 1002;
+    left: 0px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3f000000',endColorstr='#3f000000');
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-top: 100px;
+    color: #000000
+}
+
+.confirmTip-mask .tipwrap {
+    display: none;
+    box-shadow: 1px 1px 2px 1px #CCCCCC;
+    border-radius: 3px;
+    background-color: #ffffff;
+    padding: 15px;
+    position: absolute;
+    opacity: 1.0;
+}
+
+.confirmTip-mask .tipwrap em {
+    display: block;
+    border-width: 10px;
+    position: absolute;
+    top: -20px;
+    border-style: dashed dashed solid;
+    border-color: transparent transparent #ccc;
+    font-size: 0;
+    line-height: 0;
+}
+
+.confirmTip-mask .tipwrap span {
+    display: block;
+    border-width: 10px;
+    position: absolute;
+    top: -19px;
+    border-style: dashed dashed solid;
+    border-color: transparent transparent #FFF;
+    font-size: 0;
+    line-height: 0;
+}
+
+
+.confirmTip-mask .tipwrap .title {
+    height: 38px;
+    line-height: 30px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.confirmTip-mask .tipwrap .btnbox {
+    text-align: center;
+}
+
+.confirmTip-mask .tipwrap .btnbox button {
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 0 18px;
+    font-size: 12px;
+}
+
+.confirmTip-mask .tipwrap .btnbox .yes {
+    border: 1px #3498db solid;
+    background-color: #3498db;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.confirmTip-mask .tipwrap .btnbox .no {
+    border: 1px #E7EBEE solid;
+    background-color: #fff;
+    color: #666;
+    margin-left: 5px;
+}
+
+.tablebox tr:hover .table-close {
+    display: block;
+}
+
+.tablebox tr.on .table-close, .tablebox tr.on .table-edit {
+    display: block;
+}
+
+.ipt {
+    position: relative;
+}
+
+    .ipt .textnum {
+        line-height: normal;
+        right: 5px;
+        width: 46px;
+    }
+/* 分页 */
+.div-page {
+    text-align: center;
+    margin-top:30px;
+}
+.page-box {
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+}
+.page-num {
+    float: left;
+    height: 31px;
+    line-height: 31px;
+    margin: 20px 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.page-num label {
+    color: #27c6d6;
+    margin: 0 3px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pagination {
+    float: left;
+    display: inline-block;
+    margin: 20px 0;
+    padding-left: 0;
+    border-radius: 4px
+}
+
+.pagination > li {
+    display: inline
+}
+
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    float: left;
+    margin-left: -1px;
+    padding: 6px 9pt;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #27c6d6;
+    text-decoration: none;
+    line-height: 1.42857143
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+    margin-left: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px
+}
+
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px
+}
+
+.pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus, .pagination > li > span:hover {
+    z-index: 3;
+    border-color: #ddd;
+    background-color: #eee;
+    color: #23527c
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    z-index: 2;
+    border-color: #27c6d6;
+    background-color: #27c6d6;
+    color: #fff;
+    cursor: default
+}
+
+.pagination > .disabled > a, .pagination > .disabled > a:focus, .pagination > .disabled > a:hover, .pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover {
+    border-color: #ddd;
+    background-color: #fff;
+    color: #777;
+    cursor: not-allowed
+}
+
+.pagination-lg > li > a, .pagination-lg > li > span {
+    padding: 10px 1pc;
+    font-size: 18px;
+    line-height: 1.3333333
+}
+
+.pagination-lg > li:first-child > a, .pagination-lg > li:first-child > span {
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px
+}
+
+.pagination-lg > li:last-child > a, .pagination-lg > li:last-child > span {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px
+}
+
+.pagination-sm > li > a, .pagination-sm > li > span {
+    padding: 5px 10px;
+    font-size: 9pt;
+    line-height: 1.5
+}
+
+.pagination-sm > li:first-child > a, .pagination-sm > li:first-child > span {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px
+}
+
+.pagination-sm > li:last-child > a, .pagination-sm > li:last-child > span {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px
+}
+
