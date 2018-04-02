@@ -28,7 +28,7 @@ input[type='button']{border:0;}
 .bodyLeft .menulist li{ padding:0 0 0 10px; height:40px; line-height:40px; cursor:pointer; position:relative;}
 .bodyLeft .menulist li:hover{background: #efefef}
 .bodyLeft .menulist li a{ display: block;width: 170px;height: 40px; color: #666}
-.bodyLeft .menulist li a span{float: left; width: 127px;overflow: hidden;height: 40px; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.bodyLeft .menulist li a span{float: left; width: 106px;overflow: hidden;height: 40px; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .bodyLeft .menulist li .icon-num{float: left; width:4px; height:21px; background:#27c9d5; margin-right:10px; position:relative; top:10px; opacity:0;}
 .bodyLeft .menulist li .icon-edit{ position:absolute; right:32px; top:13px; display:none;}
 .bodyLeft .menulist li .icon-close{ position:absolute; right:6px; top:12px; display:none;}
@@ -206,7 +206,7 @@ width: 137px;}
 .picScroll ul{ overflow:hidden; zoom:1; }
 .picScroll ul li{ float:left; margin:0 6px; width:122px; overflow:hidden; display:inline; }
 .picScroll ul li img{ width:122px; height:124px; }
-.picScroll .prev,.picScroll .next{ position:absolute; top:28px; display:block; width:16px; height:16px; overflow:hidden; background:url(../images/icos.png) -152px -23px no-repeat; cursor:pointer;  }
+.picScroll .prev,.picScroll .next{ position:absolute; top:37px; display:block; width:16px; height:16px; overflow:hidden; background:url(../images/icos.png) -152px -23px no-repeat; cursor:pointer;  }
 .picScroll .prev{ left:20px;}
 .picScroll .next{ left:auto; right:20px; background:url(../images/icos.png) -177px -23px no-repeat; }
 .picScroll .prevStop{ background:url(../images/icos.png) -152px 0 no-repeat; cursor:default;}
@@ -447,8 +447,9 @@ transform:scale(1.05);
 .main-div-txt{font-size:26px; line-height: 40px; color:#111}
 .main-div-left{ width:550px; float: left;margin-bottom: 100px;}
 .main-div-left:nth-child(even){margin-left: 100px}
-.main-div-left p{font-size:24px; line-height: 1.5; min-height:126px}
+.main-div-left p{font-size:24px; line-height: 1.5; min-height:126px; padding-bottom:10px;}
 .main-div-left .ipt{font-size:14px; padding: 10px 5px; line-height: 16px;height: 16px;border:1px solid #e8e7e5;color: #999;margin-bottom: 55px}
+.main-div-left .ipt input{ height:34px; position: relative;top: -9px;}
 .main-div-right{ width:550px; float: right}
 .main-div-right p{font-size:24px; line-height: 1.5;height: 126px}
 .main-div-right .ipt{font-size:14px; padding: 10px 5px; line-height: 16px;height: 16px;border:1px solid #e8e7e5;color: #999;margin-bottom: 55px}
@@ -481,9 +482,10 @@ transform:scale(1.05);
 
 .main-div .histogram2{ border: 0 none;}
 
-.verdict0{ padding: 15px 0; color: #999;font-size: 12px;}
+.verdict0{ padding: 15px 0; color: #999;font-size: 12px; word-wrap:break-word;}
 .verdict{ padding: 15px 0; color: #333;font-size: 14px;line-height: 1.75em; word-wrap:break-word;}
 .verdict p{ word-wrap:break-word}
+.verdict0 p{ word-wrap:break-word}
 
 .newVerdict{width: 485px;height: 360px}
 .newVerdict textarea{width: 425px;height: 210px;border: 1px solid #e8e7e5;padding:5px 10px;line-height: 1.5em;color: #333; text-indent: 0;margin-bottom: 13px; resize:none;}  
