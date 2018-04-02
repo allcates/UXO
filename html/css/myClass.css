@@ -28,7 +28,7 @@ input[type='button']{border:0;}
 .bodyLeft .menulist li{ padding:0 0 0 10px; height:40px; line-height:40px; cursor:pointer; position:relative;}
 .bodyLeft .menulist li:hover{background: #efefef}
 .bodyLeft .menulist li a{ display: block;width: 170px;height: 40px; color: #666}
-.bodyLeft .menulist li a span{float: left; width: 105px;overflow: hidden;height: 40px; }
+.bodyLeft .menulist li a span{float: left; width: 127px;overflow: hidden;height: 40px; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .bodyLeft .menulist li .icon-num{float: left; width:4px; height:21px; background:#27c9d5; margin-right:10px; position:relative; top:10px; opacity:0;}
 .bodyLeft .menulist li .icon-edit{ position:absolute; right:32px; top:13px; display:none;}
 .bodyLeft .menulist li .icon-close{ position:absolute; right:6px; top:12px; display:none;}
@@ -54,7 +54,7 @@ input[type='button']{border:0;}
 .tablebox tr:nth-child(odd){ background:#f5f9fa;}
 .tablebox tr:hover{ background:#e9f3f3;}
 .tablebox tr:nth-child(1){ background:none;}
-.tablebox .taskName2{ position:relative; padding-right:50px;max-width:250px;overflow: hidden; text-overflow:ellipsis; white-space: nowrap;}
+.tablebox .taskName2{ position:relative; padding-right:50px;max-width:200px;overflow: hidden; text-overflow:ellipsis; white-space: nowrap;}
 .tablebox .taskName2 .table-edit{ right:0;}
 
 
@@ -104,7 +104,7 @@ width: 137px;}
 
 .tableDrag ul li span{ display:inline-block; height:28px; vertical-align: middle;line-height: 28px; }
 .tableDrag li .column1{ width:5%;}
-.tableDrag li .column2{ width:25%;}
+.tableDrag li .column2{ width:16%; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding-right: 60px;}
 .tableDrag li .column3{ width:40%;overflow: hidden; text-overflow:ellipsis; white-space: nowrap;}
 .tableDrag li .column4{ width:10%;text-align: center}
 .tableDrag li .column5{ width:10%;text-align: center}
@@ -183,7 +183,7 @@ width: 137px;}
 .bombBox .peoplelist h5 .f_r{ font-weight:normal; color:#999;}
 .bombBox .peoplelist ul li{ float:left; text-align:center; width:50px; margin:0px 10px; position:relative; padding-top:10px;}
 .bombBox .peoplelist ul li .headimg{ width:50px; height:50px; border-radius:100%;}
-.bombBox .peoplelist ul li p{ margin-top:4px;}
+.bombBox .peoplelist ul li p{ margin-top:4px; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 50px;}
 .bombBox .peoplelist ul li .close{ display:inline-block; width:19px; height:19px; background:url(../images/icos.png) -118px -42px no-repeat; position:absolute; right:0px; top:5px; cursor:pointer; display:none;}
 .bombBox .peoplelist .listimg{ position:relative; margin-bottom:8px; padding-bottom:0;}
 .bombBox .peoplelist .listimg ul{ margin:10px 20px 20px 30px; color:#666;}
@@ -486,7 +486,7 @@ transform:scale(1.05);
 .verdict p{ word-wrap:break-word}
 
 .newVerdict{width: 485px;height: 360px}
-.newVerdict textarea{width: 425px;height: 210px;border: 1px solid #e8e7e5;padding:5px 10px;line-height: 1.5em;color: #333; text-indent: 0;margin-bottom: 13px}  
+.newVerdict textarea{width: 425px;height: 210px;border: 1px solid #e8e7e5;padding:5px 10px;line-height: 1.5em;color: #333; text-indent: 0;margin-bottom: 13px; resize:none;}  
 
 
 .imgHtml{position: fixed;z-index:999;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,0.7);background-repeat: no-repeat;background-position: center center;}
