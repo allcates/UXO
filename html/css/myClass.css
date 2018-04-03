@@ -1,4 +1,4 @@
-
+textarea{resize:none}
 #newPro .inpnumlimit{ padding-right:0; width:317px;}
 input{outline:none;}
 .header{ height:60px; background:#25bada; position:relative; position:absolute; left:0; width:100%; top:0; z-index:1;}
@@ -176,7 +176,7 @@ width: 137px;}
 .bombBox-3 .info .inp{ width:240px; padding-right:83px;}
 .bombBox .info-4 li .proname{ width:60px;}
 .bombBox .info-4 li.litextarea{ height:185px;}
-.bombBox .info-4 li .inp4{ width:350px;}
+.bombBox .info-4 li .inp4{ width:352px; box-sizing: inherit;}
 .bombBox .info-a{ margin-bottom:40px;}
 
 .bombBox .peoplelist h5{ overflow:hidden; font-family:"黑体"; font-weight:bold; border-bottom:1px solid #e8e7e5; margin:10px 20px 0px 20px; padding:10px 10px;}
@@ -197,7 +197,7 @@ width: 137px;}
     background:-o-linear-gradient(left, rgba(39,201,214,1), rgba(35, 170, 222, 1));}
 .moreText{ overflow: hidden;text-overflow:ellipsis;white-space: nowrap; width:400px;}
 
-.textarea{ border:1px solid #e8e7e5; width:352px; height:165px; padding:5px 10px 10px 10px; line-height:22px; color:#333; text-indent: 0em;}
+.textarea{ border:1px solid #e8e7e5; width:352px; height:165px; padding:5px 10px 10px 10px; line-height:22px; color:#333; text-indent: 0em; resize: none;}
 .input-data{width:24px;height:28px;display:inline-block;position:absolute;right:28px;top:4px; cursor:pointer;}
 .input-data{background:url(../images/dataIcon.png) center center no-repeat;}
 
@@ -260,7 +260,13 @@ width: 137px;}
 .thermodyScroll .info{ margin:0 35px 0; padding-top: 10px; overflow:hidden;/* width:980px;*/height:312px;position: relative}
 .thermodyScroll .info .xname{ color:#666; margin-top:8px;}
 .thermodyScroll .info ul{ position: relative; }
-.thermodyScroll .info li{ float:left; margin:0 5px 0; width:170px;text-align:center;position: relative;height:310px;border: 1px solid #e0e0e0;background-position: center center; background-size: contain;background-repeat: no-repeat;background-color:rgba(0,0,0,0.1)}
+.thermodyScroll .info li{ float:left; margin:0 5px 0; width:170px;text-align:center;position: relative;height:310px;border: 1px solid #e0e0e0;background-position: center center; background-size: contain;background-repeat: no-repeat;background-color:rgba(0,0,0,0.1); cursor: pointer;}
+.thermodyScroll .info li:hover{ box-shadow: 0px 3px 8px #b1b1b1;
+/*transform: scale(1.05);
+-webkit-transform: scale(1.05);
+-moz-transform: scale(1.05);
+-o-transform: scale(1.05);
+-ms-transform: scale(1.05);*/}
 .thermodyScroll .info li a{width: 19px;height: 19px;display: block;position: absolute;right: -5px;top: -9px;background: url(../images/close.png) no-repeat 0 0;}
 .thermodyScroll .info li .inp-show{ height:34px; border:1px solid #e8e7e5; background:#fff; margin-top:10px; width:170px;}
 .thermodyScroll .info li:last-child{ margin-right:0px;} 

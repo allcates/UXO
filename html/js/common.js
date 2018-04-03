@@ -234,7 +234,7 @@ $(function () {
     })
 
     //点击图片
-    $('.focusBox .pic li').on('click', function () {
+    $('.focusBox .pic li, .eyelist .sortable li').on('click', function () {
         var imgUrl = $(this).attr('imgUrl');
         var imgHtml = '<div class="imgHtml" style="background-image:url(' + imgUrl + ');"></div>';
         //$('body').append(imgHtml);
