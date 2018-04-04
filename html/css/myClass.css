@@ -504,7 +504,7 @@ transform:scale(1.05);
 .imgHtmlImg{position: absolute;max-width: 100%; max-height: 100%;}
 
 .hook-btn{/*top:-10px;*/position: relative}
-
-
+.thermodyScroll .hide{display:none;}
+.focusBox .hide{ display:none;}
 
 
