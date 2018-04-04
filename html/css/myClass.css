@@ -44,6 +44,7 @@ input[type='button']{border:0;}
 .crumb{ border-bottom:3px solid #e8e7e5; padding-top:30px; height:43px; position:relative;}
 .crumb h1{ font-size:24px; color:#333; font-family:"黑体"; position:relative; top:10px;}
 .crumb .newcase{ background:#27c6d6; font-size:14px; color:#fff; padding:10px 20px; border-radius:3px; margin:0px 0px 10px 10px;}
+
 .crumb .back{ position:absolute; left:0; color:#666; font-size:14px; top:12px;}
 .crumb .back .b{ display:inline-block; width:6px; height:11px; background:url(../images/icos.png) -156px -2px no-repeat; margin-right:5px;}
 
@@ -348,8 +349,8 @@ width: 137px;}
 
 .colorful-box{ background:#f9f9f9; border:1px solid #eee; padding:10px 0 18px 0; margin:20px 0;}
 .colorful-box-end{ background:#fff;padding:10px 0 18px 0; margin:20px 0;}
-.focusBox { position: relative; /*padding-left:43px;height:340px;*/ overflow: hidden; padding-bottom:13px;}
-.focusBox .tempWrap{margin:0 30px;height: 312px;padding:15px 0;overflow: hidden;position: relative}
+.focusBox { position: relative; /*padding-left:43px;height:340px;*/ overflow: hidden; padding-bottom:13px; width:1020px; margin:0 auto;}
+.focusBox .tempWrap{margin:0 30px;height: 312px;padding:15px 0;overflow: hidden;position: relative; width:940px;}
 .focusBox ul.pic{position: absolute}
 .focusBox ul.pic li{ overflow: hidden; float:left;border:1px solid #dfdfdf;width:170px; height:310px;margin:0px 9px;background-position: center center; background-size: contain;background-repeat: no-repeat;background-color:rgba(0,0,0,0.1);
     transition:All 0.2s ease-in-out;
