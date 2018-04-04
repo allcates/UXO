@@ -350,7 +350,7 @@ width: 137px;}
 .colorful-box{ background:#f9f9f9; border:1px solid #eee; padding:10px 0 18px 0; margin:20px 0;}
 .colorful-box-end{ background:#fff;padding:10px 0 18px 0; margin:20px 0;}
 .focusBox { position: relative; /*padding-left:43px;height:340px;*/ overflow: hidden; padding-bottom:13px; width:1020px; margin:0 auto;}
-.focusBox .tempWrap{margin:0 30px;height: 312px;padding:15px 0;overflow: hidden;position: relative; width:940px;}
+.focusBox .tempWrap{margin:0 30px;height: 312px;padding:15px 0;overflow: hidden;position: relative; width:941px;}
 .focusBox ul.pic{position: absolute}
 .focusBox ul.pic li{ overflow: hidden; float:left;border:1px solid #dfdfdf;width:170px; height:310px;margin:0px 9px;background-position: center center; background-size: contain;background-repeat: no-repeat;background-color:rgba(0,0,0,0.1);
     transition:All 0.2s ease-in-out;
@@ -375,8 +375,8 @@ transform:scale(1.05);
 .focusBox .hd li{ display: inline-block; line-height:15px; text-align:center; font-size:12px; width:12px; height:12px; cursor:pointer; overflow:hidden; background:#dcdcdc; margin:0 5px; border-radius:100%;}
 .focusBox .hd .on{ background:#2ac7ca; }
 .focusBox .prev, .focusBox .next { display:inline-block; position:absolute; top:160px; display:block; width:16px; height:35px; overflow:hidden; background:url(../images/icos.png) 0px -90px no-repeat; cursor:pointer; }
-.focusBox .prev { background-image:url(../images/icos.png); background-position:0 -90px; left:20px }
-.focusBox .next { background-image:url(../images/icos.png); background-position:-21px -90px; right:20px }
+.focusBox .prev { background-image:url(../images/icos.png); background-position:0 -90px; left:5px }
+.focusBox .next { background-image:url(../images/icos.png); background-position:-21px -90px; right:16px }
 .focusBox .prev:hover,
 .focusBox .next:hover { filter:alpha(opacity=60); -moz-opacity:.6; opacity:.6 }
 
