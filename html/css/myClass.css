@@ -55,7 +55,7 @@ input[type='button']{border:0;}
 .tablebox tr:nth-child(odd){ background:#f5f9fa;}
 .tablebox tr:hover{ background:#e9f3f3;}
 .tablebox tr:nth-child(1){ background:none;}
-.tablebox .taskName2{ position:relative; padding-right:50px;max-width:200px;overflow: hidden; text-overflow:ellipsis; white-space: nowrap;}
+.tablebox .taskName2{ position:relative; padding-right:50px;max-width:200px;overflow: hidden; text-overflow:ellipsis; white-space: nowrap; min-height:16px;}
 .tablebox .taskName2 .table-edit{ right:0;}
 
 
@@ -140,7 +140,7 @@ width: 137px;}
 .status-bar a{ display:inline-block; margin:0 2px;}
 .icon-edit{ display:inline-block; width:16px; height:15px; background:url(../images/icos.png) -51px 0px no-repeat;}
 .icon-close{ display:inline-block; width:16px; height:16px; background:url(../images/icos.png) -50px -40px no-repeat;}
-.table-edit{ display:inline-block; width:16px; height:16px; background:url(../images/icos.png) -51px 0 no-repeat; position:absolute; right:45px; top:1px; display:none; cursor:pointer;}
+.table-edit{ display:inline-block; width:16px; height:15px; background:url(../images/icos.png) -51px 0 no-repeat; position:absolute; right:45px; top:0; display:none; cursor:pointer;}
 .table-close{ display:inline-block; width:16px; height:16px; background:url(../images/icos.png) -50px -40px no-repeat; position:absolute; right:20px; display:none; cursor:pointer;}
 .tableDrag ul li .table-edit{ display:block; width:16px; height:16px; background:url(../images/icos.png) -51px 0 no-repeat; position:absolute; right:45px; top:5px; display:none; cursor:pointer;}
 .tableDrag ul li .table-close{ display:block; width:16px; height:17px; background:url(../images/icos.png) -50px -39px no-repeat; position:absolute; right:20px; top:3px; display:none; cursor:pointer;}
