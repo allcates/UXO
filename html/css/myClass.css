@@ -30,7 +30,7 @@ input[type='button']{border:0;}
 .bodyLeft .menulist li a{ display: block;width: 170px;height: 40px; color: #666}
 .bodyLeft .menulist li a span{float: left; width: 106px;overflow: hidden;height: 40px; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .bodyLeft .menulist li .icon-num{float: left; width:4px; height:21px; background:#27c9d5; margin-right:10px; position:relative; top:10px; opacity:0;}
-.bodyLeft .menulist li .icon-edit{ position:absolute; right:32px; top:13px; display:none;}
+.bodyLeft .menulist li .icon-edit{ position:absolute; right:27px; top:13px; display:none;}
 .bodyLeft .menulist li .icon-close{ position:absolute; right:6px; top:12px; display:none;}
 .bodyLeft .menulist li.on{ background:#fff;}
 .bodyLeft .menulist li.on .icon-num{ opacity:1;}
