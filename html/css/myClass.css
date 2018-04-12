@@ -168,7 +168,7 @@ width: 137px;}
 .bombBox .info-t li .proname{ width:120px; text-align:right; color:#666;}
 .bombBox .botton-t{ margin-left:24px;}
 .bombBox-h{ width:484px; height:535px; margin-top:-267px;}
-.bombBox-h2{ width:484px; height:364px; margin-top:-182px;}
+.bombBox-h2{ width:484px; height:370px; margin-top:-182px;}
 
 .bombBox-3{ width:484px; margin-left:-242px; height:296px; margin-top:-148px;}
 .bombBox-3 .info{ margin-top:20px; position:relative;}
@@ -454,14 +454,14 @@ transform:scale(1.05);
 .main-nav{ position: fixed;top:10%;right:33px;z-index: 9;display: none; }
 .main-nav-con{ margin: 0 auto;}
 .main-nav-con h3{font-size: 18px;margin-right: 8px; cursor: pointer; text-align:right;}
-.main-nav-con h3 em{ opacity:0; font-size:12px; background:#23aade; color:#fff; padding:3px 10px 2px 10px; font-style:normal; position:relative; right: 13px;top: -4px; opacity:0;}
+.main-nav-con h3 em{ opacity:0; font-size:12px; background:#23aade; color:#fff; padding:3px 10px 2px 10px; font-style:normal; position:relative; right: 15px;top: -4px; opacity:0;}
 .main-nav-con h3 em .arrow-right{ width:0; height:0;  border-top:11px solid transparent;border-bottom: 11px solid transparent; border-left: 11px solid #27c8d6; position:absolute; right:-11px; top:0;}
 .main-nav-con h3.on em{ opacity:1;}
 .main-nav-con h3.on{position: relative;color: #27c9d5;font-weight: bold}
 .main-nav-con h3 .dot{ width:16px; height:16px; background:#ddd; border-radius:100%; display:inline-block;}
 .main-nav-con h3.on .dot{background:#27c5d6;}
-.main-nav-con p{font-size: 14px;display:none;}
-.main-nav-con p span em{opacity:0; font-style:normal; font-size:12px; background:#23aade; color:#fff; padding:3px 10px 2px 10px; position:relative;top: 1px;right: 13px;}
+.main-nav-con p{font-size: 14px;display:none; margin: 2px 0 4px 0;}
+.main-nav-con p span em{opacity:0; font-style:normal; font-size:12px; background:#23aade; color:#fff; padding:0 8px 0 10px;height: 22px;display: inline-block;line-height: 22px; position:relative;top: 1px;right: 19px; border-radius:2px 0 0 2px;}
 .main-nav-con p span em .arrow-right{ width:0; height:0;  border-top:11px solid transparent;border-bottom: 11px solid transparent; border-left: 11px solid #27c8d6; position:absolute; right:-11px; top:0;}
 .main-nav-con h3 .gradient{ filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#23aade,endcolorstr=#27c9d5,gradientType=1);
     -ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#23aade,endcolorstr=#27c9d5,gradientType=1);	
@@ -479,7 +479,7 @@ transform:scale(1.05);
 .main-nav-con p .dot-i{ width:8px; height:8px; background:#ddd; border-radius:100%; display:inline-block; position: relative;left: -4px;}
 .main-nav-con p.on{width: auto; display:block;}
 .main-nav-con b{font-size: 12px;line-height: 20px;float: left;font-weight: normal;margin-right: 16px;padding: 25px 0;}
-.main-nav-con p span{margin:4px 8px 5px 8px; cursor: pointer; text-align:right; display:block;}
+.main-nav-con p span{margin:0 8px 0 8px; cursor: pointer; text-align:right; display:block;}
 .main-nav-con p span.on{color:#27c9d5; }
 .main-nav-con p span.on .dot-i{background:#27c5d6;}
 .main-nav-con p b{float: left;margin-right: 0px;padding: 0;}
