@@ -42,7 +42,7 @@ input.has-error, input.has-error:focus, textarea.has-error, textarea.has-error:f
 }
 
 #newPro .inpnumlimit {
-    padding-right:0; width:317px;
+    padding-right:50px; width:317px;
 }
 #newPro .inpnumlimit.remark {
     padding-right: 60px;
