@@ -177,7 +177,7 @@ width: 137px;}
 .bombBox-3 .info .inp{ width:240px; padding-right:83px;}
 .bombBox .info-4 li .proname{ width:60px;}
 .bombBox .info-4 li.litextarea{ height:185px;}
-.bombBox .info-4 li .inp4{ width:352px; box-sizing: inherit;}
+.bombBox .info-4 li .inp4{ box-sizing: inherit; padding-right:67px;}
 .bombBox .info-a{ margin-bottom:40px;}
 
 .bombBox .peoplelist h5{ overflow:hidden; font-family:"黑体"; font-weight:bold; border-bottom:1px solid #e8e7e5; margin:10px 20px 0px 20px; padding:10px 10px;}
