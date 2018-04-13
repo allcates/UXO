@@ -28,7 +28,7 @@ input[type='text'],input[type='search'],textarea, select{-webkit-appearance:none
 input:-moz-placeholder{color:#C4C4C4;}
 /* 设置webkit内核下输入框属性placeholder中值的文件颜色 */
 ::-webkit-input-placeholder{color:#C4C4C4;}
-body{font: 14px/1.0 "Microsoft YaHei", "微软雅黑", Tahoma, Helvetica;min-height:100%;font-size: 14px;color: #505356;background-color: #fff;}
+body{font: 14px/1.0 Arial,'PingFangSC-Regular', "Microsoft YaHei", Tahoma, Helvetica;min-height:100%;font-size: 14px;color: #505356;background-color: #fff;}
 /* 设置webkit内核下文字大小不小于12px */
 html{width:100%;/*height:100%;*/}
 input,textarea{outline:none;background:transparent;font: 14px/1.0 "Microsoft YaHei", "微软雅黑", Tahoma, Helvetica;}

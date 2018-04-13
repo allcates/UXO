@@ -36,19 +36,19 @@ input[type='button']{border:0;}
 .bodyLeft .menulist li.on .icon-num{ opacity:1;}
 .bodyLeft .menulist li a:hover .icon-edit, .bodyLeft .menulist li a:hover .icon-close{ display:block;}
 .bodyLeft .menulist li .redot{ display:inline-block; width:4px; height:4px; border-radius:100%; background:#ee3e36; position:relative; top:-8px; left:7px;}
-.bodyRight{margin-left:210px; font-family:"黑体";padding-right: 10px }
+.bodyRight{margin-left:210px; padding-right: 10px }
 .bodyBox{ position:relative;}
 .add-products{ display:inline-block; border:1px solid #b8eaec; border-radius:4px; position:fixed; bottom:15px; left:15px; padding:10px 46px; background:#fff;}
 
 .listRight{ padding-top:60px;}
 .crumb{ border-bottom:3px solid #e8e7e5; padding-top:30px; height:43px; position:relative;}
-.crumb h1{ font-size:24px; color:#333; font-family:"黑体"; position:relative; top:10px;}
+.crumb h1{ font-size:24px; color:#333;position:relative; top:10px;}
 .crumb .newcase{ background:#27c6d6; font-size:14px; color:#fff; padding:10px 20px; border-radius:3px; margin:0px 0px 10px 10px;}
 
 .crumb .back{ position:absolute; left:0; color:#666; font-size:14px; top:12px;}
 .crumb .back .b{ display:inline-block; width:6px; height:11px; background:url(../images/icos.png) -156px -2px no-repeat; margin-right:5px;}
 
-.tablebox{ color:#999;padding-top:20px; font-family:"黑体";}
+.tablebox{ color:#999;padding-top:20px; }
 .tablebox th{ color:#999; font-weight:normal; text-align:left; border-bottom:1px solid #ebebeb; padding:0 8px 0px 9px; height:35px; white-space: nowrap;}
 .tablebox td{ padding:5px 8px 5px 9px; height:28px; }
 .tablebox td.els{overflow: hidden; text-overflow:ellipsis; white-space: nowrap;max-width: 65px;}
@@ -60,14 +60,14 @@ input[type='button']{border:0;}
 
 
 .whole{ margin-top:20px; border-bottom:1px solid #ebebeb; padding-bottom:20px;}
-.whole h2{ font-size:20px; color:#333; font-family:"黑体";}
+.whole h2{ font-size:20px; color:#333;}
 .whole h2 i{ display:inline-block; width:4px; height:21px; background:#28ccd4; position:relative; top:4px; margin-right:5px;}
 .whole h2 em{ display:inline-block; width:18px; height:18px; background:url(../images/icos.png) 0 0px no-repeat; position:relative; top:2px; left:9px;}
 .whole h2 em.on{ background:url(../images/icos.png) 0 -20px no-repeat;}
 .whole .t{ font-size:12px; color:#999; padding:10px 0 14px 0;}
 .whole .edit{ font-size:14px; color:#1ebec1;}
 .whole-style2{ border-bottom:0; padding-bottom:0;}
-.whole-style2 h2{ height:42px; background:#ddf6f6; color:#10b7ba; font-family:"黑体"; font-size:18px; }
+.whole-style2 h2{ height:42px; background:#ddf6f6; color:#10b7ba;font-size:18px; }
 .whole-style2 h2 .tit{ display:inline-block; width:132px; height:46px; padding-right:10px; line-height:46px; text-align:center; font-size:24px; background:url(../images/titbg.png) no-repeat; color:#fff; position:relative; top:-2px;}
 .whole-style2 h2 .name{ position:relative; top:-4px; }
 .whole-style2 .t{ font-size:14px; margin-top:10px; padding-bottom:6px; line-height:20px;}
@@ -75,10 +75,10 @@ input[type='button']{border:0;}
 .whole-style2 .compile .icon-edit{ position:relative; top:2px; margin-right:4px;}
 
 .tasklist{ margin-top:35px; border-bottom:1px solid #ebebeb; padding-bottom:8px; position:relative;}
-.tasklist h2{ font-size:20px; color:#333; font-family:"黑体";}
+.tasklist h2{ font-size:20px; color:#333; }
 .tasklist h2 i{ display:inline-block; width:4px; height:21px; background:#28ccd4; position:relative; top:4px; margin-right:5px;}
 .tasklist .r-right{ position:absolute; right:0; bottom:9px;}
-.tasklist .aboutTask{ font-family:"黑体"; border:1px solid #2ac7ca; border-radius:3px; padding:8px 12px; padding-right: 25px; display:inline-block; margin-left:5px; }
+.tasklist .aboutTask{ border:1px solid #2ac7ca; border-radius:3px; padding:8px 12px; padding-right: 25px; display:inline-block; margin-left:5px; }
 .tasklist .drop-down{ position:relative; cursor:pointer;}
 .tasklist .drop-down .downmould{ position:absolute; left:-1px; top:30px; background:#c9f1f1;border:1px solid #aae9ea; width:100%; height:28px; color:#666; font-weight:normal; border-radius:0px 0px 3px 3px; text-align:center; line-height:24px; display:none;}
 .tasklist .drop-down .downmould a{color:#22bdc0; position:relative; top:2px;}
@@ -149,7 +149,7 @@ width: 137px;}
 
 /*弹框*/
 .mask{ z-index:99; width:100%; height:100%; position:fixed; top:0; left:0; background:#000; opacity:0.6; display:none;}
-.bombBox{ width:424px; height:242px; border-radius:3px; background:#fff; position: fixed; left:50%; top:50%; margin-left:-212px; margin-top:-121px; font-family:"黑体"; display:none; z-index:99;}
+.bombBox{ width:424px; height:242px; border-radius:3px; background:#fff; position: fixed; left:50%; top:50%; margin-left:-212px; margin-top:-121px; display:none; z-index:99;}
 .bombBox .error{ background:#ffe1dd; color:#ff2f13; font-size:14px; position:absolute; top:60px; left:20px; line-height:28px; height:28px; padding-left:10px; width:375px;}
 .bombBox .error .err{ width:15px; height:16px; display:inline-block; background:url(../images/icos.png) -118px -20px no-repeat; position:relative; top:3px; margin-right:3px;}
 .bombBox .info{ margin:65px 0 0 18px;}
@@ -181,7 +181,7 @@ width: 137px;}
 .bombBox .info-a{ margin-bottom:40px;}
 
 
-.bombBox .peoplelist h5{ overflow:hidden; font-family:"黑体"; font-weight:bold; border-bottom:1px solid #e8e7e5; margin:10px 20px 0px 20px; padding:10px 10px;}
+.bombBox .peoplelist h5{ overflow:hidden; font-weight:bold; border-bottom:1px solid #e8e7e5; margin:10px 20px 0px 20px; padding:10px 10px;}
 .bombBox .peoplelist h5 .f_r{ font-weight:normal; color:#999;}
 .bombBox .peoplelist ul li{ float:left; text-align:center; width:50px; margin:0px 10px; position:relative; padding-top:10px;}
 .bombBox .peoplelist ul li .headimg{ width:50px; height:50px; border-radius:100%;}
@@ -207,7 +207,7 @@ width: 137px;}
 .picScroll .prevStop{ background:url(../images/icos.png) -152px 0 no-repeat; cursor:default;}
 .picScroll .nextStop{ background:url(../images/icos.png) -177px 0 no-repeat; cursor:default;}
 
-.currency-tit{ color:#2ac7ca; font-size:20px; font-family:"黑体";}
+.currency-tit{ color:#2ac7ca; font-size:20px; }
 .currency-tit .line{ display:inline-block; width:4px; height:22px; background:#28ccd5; position:relative; top:4px; margin-right:5px;}
 .currency-tit .explain{ font-size:14px; color:#666; margin-left:10px;}
 
@@ -218,14 +218,14 @@ width: 137px;}
 .histogram1{ border-bottom:1px solid #e8e7e5;}
 .histogram1 .histlist{ margin-top:34px;}
 .histogram1 .histlist li .gbox{ height:290px; margin-top:5px;}
-.histogram1 .gender{ font-size:18px; font-family:"黑体";text-align: center}
+.histogram1 .gender{ font-size:18px; text-align: center}
 
 .histogram2{ border-bottom:1px solid #e8e7e5; font-size:14px; color:#999;}
 .histogram2 .missionlist li{ float:left; width:38%; margin-right:8%;}
 .histogram2 .missionlist li:last-child{ margin-right:0;}
 .histogram2 .missionlist li .figure{ height:240px; margin:20px 0px 8px 0;}
 .histogram2 .missionlist li .inphi-5b{ width:50%;}
-.histogram2 .missionlist li h2{ font-size:18px; color:#333; font-family:"黑体"; position:relative;}
+.histogram2 .missionlist li h2{ font-size:18px; color:#333; position:relative;}
 .histogram2 .missionlist li h2 .info{ font-size:14px; display:inline-block; position:absolute; right:0px; top:2px;}
 .histogram2 .missionlist li h2 .info input{ position:relative; top:1px; margin-right:5px;}
 .histogram2 .missionlist li h2 .info em{ font-style:normal;}
@@ -302,7 +302,7 @@ width: 137px;}
 .w1200{ width:1200px; margin:0px auto;}
 .w1280{ width:1280px; margin:0px auto;}
 .borbom{ border-bottom: 1px solid #e8e7e5; padding-bottom:27px; margin-bottom:20px;}
-.presentation{ padding-top:120px; font-family:"黑体";margin-bottom: 45px}
+.presentation{ padding-top:120px; margin-bottom: 45px}
 .presentation .part1{ border-bottom:1px solid #e8e7e5; padding-bottom:8px; margin-bottom:8px; position:relative;}
 .presentation .part1 h1{ font-size:34px; padding:10px 0 13px 0;}
 .presentation .part1 .timed{ color:#999;}
@@ -384,7 +384,7 @@ transform:scale(1.05);
 .cozyPrompt{ color:#ec870b; background:#ffefdb; height:28px; line-height:28px; margin-top:10px; padding-left:11px; width:625px;}
 .cozyPrompt .tip{ display:inline-block; width:15px; height:15px; background:url(../images/icos.png) -73px -62px no-repeat; position:relative; top:2px; margin-right:4px;}
 
-.peroration{ padding:65px 0; font-family:"黑体";background: #f6f6f6}
+.peroration{ padding:65px 0; background: #f6f6f6}
 .peroration .pleft{ width:148px; height:148px; border-radius:100%; font-size:26px; color:#fff; text-align:center; line-height:148px; margin-left:444px;}
 .peroration .pright{ margin:25px 0 0 16px;}
 .peroration .pright h1{ font-size:22px; color:#333; padding-bottom:13px;}
@@ -395,7 +395,7 @@ transform:scale(1.05);
 .footer .f p{ font-size:12px; color:#666; line-height:20px; padding-top:18px;}
 .footer .f .logo2{ position:absolute; right:0; top:20px;}
 
-.mannerLump{ font-size:16px; text-align:center; color:#333; font-family:"黑体"; width:482px; height:308px; border-radius:3px; background:#fff; position:absolute; left:50%; top:50%; margin-left:-241px; margin-top:-154px; font-family:"黑体"; display:none; z-index:99;}
+.mannerLump{ font-size:16px; text-align:center; color:#333; width:482px; height:308px; border-radius:3px; background:#fff; position:absolute; left:50%; top:50%; margin-left:-241px; margin-top:-154px; display:none; z-index:99;}
 .mannerLump .del{ display:inline-block; width:110px; height:110px; background:url(../images/icos2.png) 0 0 no-repeat; margin:40px 0 10px 0;}
 .mannerLump .success{ display:inline-block; width:110px; height:110px; background:url(../images/icos2.png) -112px 0 no-repeat; margin:40px 0 10px 0;}
 .mannerLump .fail{ display:inline-block; width:110px; height:110px; background:url(../images/icos2.png) -224px 0 no-repeat; margin:40px 0 10px 0;}
