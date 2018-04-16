@@ -450,8 +450,16 @@
 		</div>
 	</div>
 <script>
-	var h = $(document).height();
-	$(".bodyLeft").height(h);
+	$(function(){
+		function rsz(){
+			var h = $(window).height()-$('.header').height();
+			$(".bodyLeft").height(h>$('.bodyRight').height()?h:$('.bodyRight').height());
+		}
+		rsz();
+		$(window).resize(function(){
+			rsz();
+		})
+	})
     jQuery(".picScroll").slide({ mainCell:"ul",autoPlay:false,effect:"left", vis:6, scroll:2, autoPage:true, pnLoop:false });
 </script>
 
