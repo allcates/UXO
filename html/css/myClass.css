@@ -467,14 +467,14 @@ transform:scale(1.05);
 .main-nav{ position: fixed;top:10%;right:33px;z-index: 9;display: none;width: 10px; }
 .main-nav-con{ margin: 0 auto;}
 .main-nav-con h3{font-size: 18px;margin-right: 8px; cursor: pointer; text-align:right;position: relative;}
-.main-nav-con h3 em{ white-space: nowrap; font-size:12px; background:#23aade; color:#fff; padding:0 10px 0 10px; font-style:normal; position: absolute; right: 15px;top: -4px; height: 20px;line-height: 24px;display:none; border-radius: 2px 0 0 2px;}
+.main-nav-con h3 em{ white-space: nowrap; font-size:12px; background:#23aade; color:#fff; padding:0 10px 0 10px; font-style:normal; position: absolute; right: 15px;top: -4px; height: 22px;line-height: 22px;display:none; border-radius: 2px 0 0 2px;}
 .main-nav-con h3 em .arrow-right{ width:0; height:0;  border-top:11px solid transparent;border-bottom: 11px solid transparent; border-left: 11px solid #27c8d6; position:absolute; right:-11px; top:0;}
 .main-nav-con h3.on em{ display: inline-block;}
 .main-nav-con h3.on{position: relative;color: #27c9d5;font-weight: bold}
 .main-nav-con h3 .dot{ width:16px; height:16px; background:#ddd; border-radius:100%; display:inline-block;}
 .main-nav-con h3.on .dot{background:#27c5d6;}
 .main-nav-con p{font-size: 14px;display:none; margin: 2px 0 4px 0;}
-.main-nav-con p span em{white-space: nowrap; font-style:normal; font-size:12px; background:#23aade; color:#fff; padding:0 8px 0 10px;height: 22px;display: none;line-height: 22px; position: absolute;top: 1px;right: 19px; border-radius:2px 0 0 2px;}
+.main-nav-con p span em{white-space: nowrap; font-style:normal; font-size:12px; background:#23aade; color:#fff; padding:0 8px 0 10px;height: 22px;display: none;line-height: 22px; position: absolute;top: -3px;right: 19px; border-radius:2px 0 0 2px;}
 .main-nav-con p span em .arrow-right{ width:0; height:0;  border-top:11px solid transparent;border-bottom: 11px solid transparent; border-left: 11px solid #27c8d6; position:absolute; right:-11px; top:0;}
 .main-nav-con h3 .gradient{ filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#23aade,endcolorstr=#27c9d5,gradientType=1);
     -ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#23aade,endcolorstr=#27c9d5,gradientType=1);	
@@ -492,7 +492,7 @@ transform:scale(1.05);
 .main-nav-con p .dot-i{ width:8px; height:8px; background:#ddd; border-radius:100%; display:inline-block; position: relative;left: -4px;}
 .main-nav-con p.on{width: auto; display:block;}
 .main-nav-con b{font-size: 12px;line-height: 20px;float: left;font-weight: normal;margin-right: 16px;padding: 25px 0;}
-.main-nav-con p span{margin:0 8px 0 8px; cursor: pointer; text-align:right; display:block;}
+.main-nav-con p span{margin:0 8px 0 8px; cursor: pointer; text-align:right; display:block;position: relative;}
 .main-nav-con p span.on{color:#27c9d5; }
 .main-nav-con p span.on .dot-i{background:#27c5d6;}
 .main-nav-con p b{float: left;margin-right: 0px;padding: 0;}
