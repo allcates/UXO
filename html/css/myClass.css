@@ -39,11 +39,13 @@ input[type='button']{border:0;}
 .bodyRight{margin-left:210px; padding-right: 10px }
 .bodyBox{ position:relative;}
 .add-products{ display:inline-block; border:1px solid #b8eaec; border-radius:4px; position:fixed; bottom:15px; left:15px; padding:10px 46px; background:#fff;}
+.add-products:hover{ opacity:0.8; }
 
 .listRight{position: relative;top:60px;}
 .crumb{ border-bottom:3px solid #e8e7e5; padding-top:30px; height:43px; position:relative;}
 .crumb h1{ font-size:24px; color:#333;position:relative; top:10px;}
 .crumb .newcase{ background:#27c6d6; font-size:14px; color:#fff; padding:10px 20px; border-radius:3px; margin:0px 0px 10px 10px;}
+.crumb .newcase:hover{ opacity:0.8;}
 
 .crumb .back{ position:absolute; left:0; color:#666; font-size:14px; top:12px;}
 .crumb .back .b{ display:inline-block; width:6px; height:11px; background:url(../images/icos.png) -156px -2px no-repeat; margin-right:5px;}
@@ -79,7 +81,9 @@ input[type='button']{border:0;}
 .tasklist h2 i{ display:inline-block; width:4px; height:21px; background:#28ccd4; position:relative; top:4px; margin-right:5px;}
 .tasklist .r-right{ position:absolute; right:0; bottom:9px;}
 .tasklist .aboutTask{ border:1px solid #2ac7ca; border-radius:3px; padding:8px 12px; padding-right: 25px; display:inline-block; margin-left:5px; }
+.tasklist .aboutTask:hover{ background:#fafafa;}
 .tasklist .drop-down{ position:relative; cursor:pointer;}
+.tasklist .drop-down:hover{ background:#fafafa;}
 .tasklist .drop-down .downmould{ position:absolute; left:-1px; top:30px; background:#c9f1f1;border:1px solid #aae9ea; width:100%; height:28px; color:#666; font-weight:normal; border-radius:0px 0px 3px 3px; text-align:center; line-height:24px; display:none;}
 .tasklist .drop-down .downmould a{color:#22bdc0; position:relative; top:2px;}
 .tasklist .aboutTask .drop-down{ width:26px; height:25px; display:inline-block; background:url(../images/icos_s3.png) center center no-repeat; position: absolute; right:0; top:0; }
@@ -95,6 +99,7 @@ input[type='button']{border:0;}
 .tasklist-plan2new .aboutTask{ padding:10px 20px; border:1px solid #aae9ea; width:117px;}
 .tasklist-plan2new .r-right{ right:80px;top:0}
 .tasklist-plan2new .delete{ position:absolute; right:0; display:inline-block; padding:10px 20px; border:1px solid #aae9ea; border-radius:3px; cursor:pointer;top:0}
+.tasklist-plan2new .delete:hover{ background:#fafafa;}
 .tasklist-plan2new .aboutTask i.drop-down{width:34px; height:34px; }
 .tasklist-plan2new .drop-down .downmould{ top:34px; height:33px; line-height:33px; color:#22bdc0;text-align: left;padding-left: 20px;
 width: 137px;}
@@ -162,6 +167,7 @@ width: 137px;}
 .bombBox .botton-a{ margin-top:43px;}
 .bombBox .botton .conserve, .bombBox .botton .cancel{ width:100px; line-height:36px; height:36px; text-align:center; border-radius:3px; color:#fff; margin:0 5px; cursor:pointer;}
 .bombBox .botton .cancel{ background:#b2b7bd;}
+.bombBox .botton .conserve:hover, .bombBox .botton .cancel:hover{ opacity:0.8;}
 
 .bombBox .info-t{ margin-top:20px;}
 .bombBox .info-t li{ margin-bottom:10px;}
@@ -173,6 +179,7 @@ width: 137px;}
 .bombBox-3{ width:484px; margin-left:-242px; height:296px; margin-top:-148px;}
 .bombBox-3 .info{ margin-top:20px; position:relative;}
 .bombBox-3 .info .addpro{ height:36px; line-height:36px; border:1px solid #aae9ea; border-radius:3px; width:98px; margin-left:20px; cursor:pointer;}
+.bombBox-3 .info .addpro:hover{ background:#fafafa;}
 .bombBox-3 .info .email{ font-weight:bold; position:absolute; top:10px; left:253px;}
 .bombBox-3 .info .inp{ width:240px; padding-right:83px;}
 .bombBox .info-4 li .proname{ width:60px;}
@@ -291,8 +298,10 @@ width: 137px;}
 
 .button-pattern{ float:right; position:relative; top:-10px;}
 .info-a{ color:#2ac7ca; font-size:14px; border:1px solid #aae9ea; border-radius:3px; padding:9px 30px; display:inline-block; position:relative;}
+.info-a:hover{ background:#fafafa;}
 .info-a .uploads{ border:1px solid #f00; position:absolute; width:100%; height:100%; left:0; top:0; cursor:pointer; opacity:0;}
 .emptybtn[type='button']{ color:#2ac7ca; font-size:14px; border:1px solid #aae9ea; padding:9px 30px; display:inline-block; border-radius:3px; margin-left:7px;}
+.emptybtn[type='button']:hover{ background:#fafafa;}
 .ico-add{ display:inline-block; width:10px; height:10px; background:url(../images/icos.png) 0px -66px no-repeat;}
 
 .height50{ height:50px;}
@@ -307,6 +316,7 @@ width: 137px;}
 .presentation .part1 h1{ font-size:34px; padding:10px 0 13px 0;}
 .presentation .part1 .timed{ color:#999;}
 .presentation .part1 .email{ color:#fff; padding:10px 20px; border-radius:3px; font-size:14px; position:absolute; right:0; top:22px;}
+.presentation .part1 .email:hover{ opacity:0.8;}
 .presentation .part2{ padding-bottom:8px;}
 .presentation .part2 li{ padding-bottom:9px; color:#666;}
 .presentation .whole-style2 .name{ padding-left:20px;}
@@ -371,6 +381,7 @@ transform:scale(1.05);
 .chart .block{ display:inline-block; width:97px; line-height:84px; text-align:center; position:relative;}
 .chart .block em{ position:absolute; bottom:-15px; left:50%; font-style:normal; color:#666; height:10px; display:inline-block;  line-height:normal; margin-left:-4px;}
 .chart .block i{ width:100%; height:84px; line-height:84px; color:#fff; text-align:center; display: block;cursor: pointer;background:#665bdd; }
+.chart .block i:hover{ opacity:0.8;}
 .description-word{ line-height:20px; position:relative; padding-left:23px; color:#999;}
 
 .hotWords-box{ padding-top:20px;margin: 0 auto}
@@ -424,6 +435,7 @@ transform:scale(1.05);
 
 .batchFm{width: 100%;height:100%; position: absolute;top:0;left: 0;cursor: pointer}
 .batchFm input{width: 100%;height:100%; display: block; opacity: 0; cursor: pointer}
+.batchFm input:hover{ background:#fafafa;}
 
 
 .main-whole{width:1200px;margin: 0 auto;}
@@ -455,7 +467,7 @@ transform:scale(1.05);
 .main-nav{ position: fixed;top:10%;right:33px;z-index: 9;display: none; }
 .main-nav-con{ margin: 0 auto;}
 .main-nav-con h3{font-size: 18px;margin-right: 8px; cursor: pointer; text-align:right;}
-.main-nav-con h3 em{ opacity:0; font-size:12px; background:#23aade; color:#fff; padding:3px 10px 2px 10px; font-style:normal; position:relative; right: 15px;top: -4px; opacity:0;}
+.main-nav-con h3 em{ opacity:0; font-size:12px; background:#23aade; color:#fff; padding:0 10px 0 10px; font-style:normal; position:relative; right: 15px;top: -4px; opacity:0; height: 20px;line-height: 24px;display: inline-block; border-radius: 2px 0 0 2px;}
 .main-nav-con h3 em .arrow-right{ width:0; height:0;  border-top:11px solid transparent;border-bottom: 11px solid transparent; border-left: 11px solid #27c8d6; position:absolute; right:-11px; top:0;}
 .main-nav-con h3.on em{ opacity:1;}
 .main-nav-con h3.on{position: relative;color: #27c9d5;font-weight: bold}
