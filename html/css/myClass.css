@@ -38,7 +38,7 @@ input[type='button']{border:0;}
 .bodyLeft .menulist li .redot{ display:inline-block; width:4px; height:4px; border-radius:100%; background:#ee3e36; position:relative; top:-8px; left:7px;}
 .bodyRight{margin-left:210px; padding-right: 10px }
 .bodyBox{ position:relative;}
-.add-products{ display:inline-block; border:1px solid #b8eaec; border-radius:4px; position:fixed; bottom:15px; left:15px; padding:10px 46px; background:#fff;}
+.add-products{ display:inline-block; border:1px solid #b8eaec; border-radius:4px; position:fixed; bottom:15px; left:7px; padding:10px 46px; background:#fff;}
 .add-products:hover{ opacity:0.8; }
 
 .listRight{position: relative;top:60px;}
