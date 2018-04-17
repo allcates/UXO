@@ -28,7 +28,7 @@ input[type='button']{border:0;}
 .bodyLeft .menulist li{ padding:0 0 0 10px; height:40px; line-height:40px; cursor:pointer; position:relative;}
 .bodyLeft .menulist li:hover{background: #efefef}
 .bodyLeft .menulist li a{ display: block;width: 170px;height: 40px; color: #666}
-.bodyLeft .menulist li a span{float: left; width: 106px;overflow: hidden;height: 40px; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.bodyLeft .menulist li a span{float: left; width: 96px;overflow: hidden;height: 40px; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .bodyLeft .menulist li .icon-num{float: left; width:4px; height:21px; background:#27c9d5; margin-right:10px; position:relative; top:10px; opacity:0;}
 .bodyLeft .menulist li .icon-edit{ position:absolute; right:27px; top:13px; display:none;}
 .bodyLeft .menulist li .icon-close{ position:absolute; right:6px; top:12px; display:none;}
@@ -80,13 +80,13 @@ input[type='button']{border:0;}
 .tasklist h2{ font-size:20px; color:#333; }
 .tasklist h2 i{ display:inline-block; width:4px; height:21px; background:#28ccd4; position:relative; top:4px; margin-right:5px;}
 .tasklist .r-right{ position:absolute; right:0; bottom:9px;}
-.tasklist .aboutTask{ border:1px solid #2ac7ca; border-radius:3px; padding:8px 12px; padding-right: 25px; display:inline-block; margin-left:5px; }
+.tasklist .aboutTask{ border:1px solid #2ac7ca; border-radius:3px; padding:8px 12px; display:inline-block; margin-left:5px; }
 .tasklist .aboutTask:hover{ background:#fafafa;}
-.tasklist .drop-down{ position:relative; cursor:pointer;}
+.tasklist .drop-down{ position:relative; cursor:pointer; padding-right:25px;}
 .tasklist .drop-down:hover{ background:#fafafa;}
 .tasklist .drop-down .downmould{ position:absolute; left:-1px; top:30px; background:#c9f1f1;border:1px solid #aae9ea; width:100%; height:28px; color:#666; font-weight:normal; border-radius:0px 0px 3px 3px; text-align:center; line-height:24px; display:none;}
 .tasklist .drop-down .downmould a{color:#22bdc0; position:relative; top:2px;}
-.tasklist .aboutTask .drop-down{ width:26px; height:25px; display:inline-block; background:url(../images/icos_s3.png) center center no-repeat; position: absolute; right:0; top:0; }
+.tasklist .aboutTask .drop-down{ width:26px; height:25px; display:inline-block; background:url(../images/icos_s3.png) center center no-repeat; position: absolute; right:3px; top:-10px; }
 .tasklist .aboutTask .drop-down-on{ background:url(../images/icos_s4.png) center center no-repeat;}
 .tasklist-plan2{ margin-top:0; border-bottom:0; font-size:14px; top:-20px;}
 .tasklist-plan2 .aboutTask{ padding:10px 20px; border:1px solid #aae9ea;}
