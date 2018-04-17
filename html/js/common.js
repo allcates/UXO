@@ -228,8 +228,8 @@ $(function () {
         var pos=$('.bodyLeft').scrollTop();
         localStorage.setItem('pos',pos);
     })
-    if(localStorage.getItem(pos)){
-        $('.bodyLeft').scrollTop(localStorage.getItem(pos));
+    if(localStorage.getItem('pos')){
+        $('.bodyLeft').scrollTop(localStorage.getItem('pos'));
     }
 })
 
