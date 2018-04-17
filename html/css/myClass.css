@@ -492,7 +492,7 @@ transform:scale(1.05);
 .main-nav-con p .dot-i{ width:8px; height:8px; background:#ddd; border-radius:100%; display:inline-block; position: relative;left: -4px;}
 .main-nav-con p.on{width: auto; display:block;}
 .main-nav-con b{font-size: 12px;line-height: 20px;float: left;font-weight: normal;margin-right: 16px;padding: 25px 0;}
-.main-nav-con p span{margin:0 8px 0 8px; cursor: pointer; text-align:right; display:block;position: relative;}
+.main-nav-con p span{margin:5px 8px 0 8px; cursor: pointer; text-align:right; display:block;position: relative;}
 .main-nav-con p span.on{color:#27c9d5; }
 .main-nav-con p span.on .dot-i{background:#27c5d6;}
 .main-nav-con p b{float: left;margin-right: 0px;padding: 0;}
