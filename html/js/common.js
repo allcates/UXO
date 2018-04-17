@@ -165,7 +165,7 @@ $(function () {
                 $('.main-nav').hide();
             }
             $('.main-div').each(function () {
-                if ($(window).scrollTop() >= ($(this).offset().top - $('.main-nav').height()) && $(window).scrollTop() <= ($(this).offset().top - $('.main-nav').height() + $(this).height())) {
+                if ($(window).scrollTop() >= ($(this).offset().top - $('.main-nav').height() - 80) && $(window).scrollTop() < ($(this).offset().top - $('.main-nav').height() + $(this).height())) {
                     var idx = $('.main-div').index($(this));
                     $('.main-nav-con p span').removeClass('on');
                     $('.main-nav-con p span').eq(idx).addClass('on');
