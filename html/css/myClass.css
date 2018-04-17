@@ -96,11 +96,11 @@ input[type='button']{border:0;}
 .tasklist-plan2 .drop-down .downmould a{ color:#666}
 .tasklist-plan2new{ margin-top:10px;margin-bottom: 20px; border-bottom:0; font-size:14px;height:36px;}
 .tasklist-plan2new .tip{ color: #666;line-height: 36px;}
-.tasklist-plan2new .aboutTask{ padding:10px 20px; border:1px solid #aae9ea; width:117px;}
+.tasklist-plan2new .aboutTask{ padding:10px 20px; border:1px solid #aae9ea; width:102px;}
 .tasklist-plan2new .r-right{ right:80px;top:0}
 .tasklist-plan2new .delete{ position:absolute; right:0; display:inline-block; padding:10px 20px; border:1px solid #aae9ea; border-radius:3px; cursor:pointer;top:0}
 .tasklist-plan2new .delete:hover{ background:#fafafa;}
-.tasklist-plan2new .aboutTask i.drop-down{width:34px; height:34px; }
+.tasklist-plan2new .aboutTask i.drop-down{width:34px; height:34px; top: 0px;}
 .tasklist-plan2new .drop-down .downmould{ top:34px; height:33px; line-height:33px; color:#22bdc0;text-align: left;padding-left: 20px;
 width: 137px;}
 
