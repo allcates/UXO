@@ -223,14 +223,27 @@ $(function () {
             return false
         });
     })
+
+
+    function rsz() {
+        var h = $(window).height() - $('.header').height();
+        $(".bodyLeft").height(h > $('.bodyRight').height() ? h : $('.bodyRight').height());
+    }
+    rsz();
+    $(window).resize(function () {
+        rsz();
+    })
+
+
     //左侧导航定位
     $('.bodyLeft .menulist li a').on('click',function(){
-        var pos=$('.bodyLeft').scrollTop();
-        localStorage.setItem('pos',pos);
+        var pos = $('.bodyLeft').scrollTop();
+        sessionStorage.setItem('pos', pos);
     })
-    if(localStorage.getItem('pos')){
+
+    if (sessionStorage.getItem('pos')) {
         $('.bodyLeft').scrollTop(localStorage.getItem('pos'));
-    }
+     }
 })
 
 function initScroll(ss) {
@@ -266,7 +279,6 @@ function initScroll(ss) {
         }
     })
 }
-
 
 
 
