@@ -223,7 +223,14 @@ $(function () {
             return false
         });
     })
-
+    //左侧导航定位
+    $('.bodyLeft .menulist li a').on('click',function(){
+        var pos=$('.bodyLeft').scrollTop();
+        localStorage.setItem('pos',pos);
+    })
+    if(localStorage.getItem(pos)){
+        $('.bodyLeft').scrollTop(localStorage.getItem(pos));
+    }
 })
 
 function initScroll(ss) {
