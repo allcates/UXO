@@ -138,7 +138,7 @@ $(function () {
         $(this).next('p').addClass('on');
         var ft = $('.main-div').eq(-1).offset().top;
         if ($('.main-nav h3').index($(this)) == $('.main-nav h3').length - 1) {
-            $('html,body').animate({ scrollTop: ft - 80 });
+            $('html,body').animate({ scrollTop: ft - 79 });
             $('.main-nav p span').removeClass('on');
         }
     })
@@ -148,7 +148,7 @@ $(function () {
         var ft = $('.main-div').eq(idx).offset().top;
         $('.main-nav p span .dot-i').removeClass('on');
         $(this).addClass('on');
-        $('html,body').animate({ scrollTop: ft - 80 });
+        $('html,body').animate({ scrollTop: ft - 81 });
     })
 
     $('.main-nav').on('mouseleave', function () {
