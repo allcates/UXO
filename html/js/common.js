@@ -148,7 +148,7 @@ $(function () {
         var ft = $('.main-div').eq(idx).offset().top;
         $('.main-nav p span .dot-i').removeClass('on');
         $(this).addClass('on');
-        $('html,body').animate({ scrollTop: ft - 81 });
+        $('html,body').animate({ scrollTop: ft - 79 });
     })
 
     $('.main-nav').on('mouseleave', function () {
