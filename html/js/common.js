@@ -132,10 +132,7 @@ $(function () {
 
     //导航
     $('.main-nav h3').on('click', function () {
-        $(this).siblings('h3').removeClass('on');
-        $(this).addClass('on');
-        $(this).siblings('p').removeClass('on');
-        $(this).next('p').addClass('on');
+        $(this).next('p').find('span').eq(0).click();
         var ft = $('.main-div').eq(-1).offset().top;
         if ($('.main-nav h3').index($(this)) == $('.main-nav h3').length - 1) {
             $('html,body').animate({ scrollTop: ft-10 });
@@ -143,18 +140,16 @@ $(function () {
         }
     })
 
-    $('.main-nav p span .dot-i').on('click', function () {
-        var idx = $('.main-nav p span .dot-i').index($(this));
+    $('.main-nav p span').on('click', function () {
+        var idx = $('.main-nav p span').index($(this));
         var ft = $('.main-div').eq(idx).offset().top;
-        $('.main-nav p span .dot-i').removeClass('on');
-        $(this).addClass('on');
         $('html,body').animate({ scrollTop: ft-10 });
     })
 
-    $('.main-nav').on('mouseleave', function () {
+    /*$('.main-nav').on('mouseleave', function () {
         $('.main-nav-con p span.on').parent('p').prev('h3').addClass('on').siblings('h3').removeClass('on');
         $('.main-nav-con p span.on').parent('p').addClass('on').siblings('p').removeClass('on');
-    })
+    })*/
 
     //滚动
     if ($('.main-nav').length > 0) {
