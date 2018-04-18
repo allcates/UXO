@@ -138,7 +138,7 @@ $(function () {
         $(this).next('p').addClass('on');
         var ft = $('.main-div').eq(-1).offset().top;
         if ($('.main-nav h3').index($(this)) == $('.main-nav h3').length - 1) {
-            $('html,body').animate({ scrollTop: ft - 30 });
+            $('html,body').animate({ scrollTop: ft+10 });
             $('.main-nav p span').removeClass('on');
         }
     })
@@ -148,7 +148,7 @@ $(function () {
         var ft = $('.main-div').eq(idx).offset().top;
         $('.main-nav p span .dot-i').removeClass('on');
         $(this).addClass('on');
-        $('html,body').animate({ scrollTop: ft - 30 });
+        $('html,body').animate({ scrollTop: ft +10 });
     })
 
     $('.main-nav').on('mouseleave', function () {
@@ -165,7 +165,7 @@ $(function () {
                 $('.main-nav').hide();
             }
             $('.main-div').each(function () {
-                if ($(window).scrollTop() >= ($(this).offset().top - $('.main-nav').height() - 80) && $(window).scrollTop() < ($(this).offset().top - $('.main-nav').height() + $(this).height())) {
+                if ($(window).scrollTop() >= ($(this).offset().top) && $(window).scrollTop() < ($(this).offset().top + $(this).height())) {
                     var idx = $('.main-div').index($(this));
                     $('.main-nav-con p span').removeClass('on');
                     $('.main-nav-con p span').eq(idx).addClass('on');
