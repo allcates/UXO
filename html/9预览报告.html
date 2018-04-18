@@ -608,24 +608,17 @@
 						name: '性别占比',
 						type: 'pie',
 						hoverOffset: 1,
-						radius: [50, 125],
-						center: ['50%', '45%'],
+						radius: [60, 160],
+						center: ['50%', '50%'],
 						roseType: 'radius',
 						clockwise: false,
 						label: {
 							normal: {
-								show: false
-							},
-							emphasis: {
-								show: false
-							}
-						},
-						lableLine: {
-							normal: {
-								show: false
-							},
-							emphasis: {
-								show: true
+								show: true,
+								position:'inside',
+								formatter:'{d}%',
+								fontSize:16,
+								fontFamily:'Arial'
 							}
 						},
 						data: [
@@ -683,7 +676,19 @@
 						data: [
 							{ value: 10, name: '组1' },
 							{ value: 9, name: '组2' }
-						]
+						],
+						itemStyle: {
+							normal: {
+								label: {
+									show: true,
+									position: 'inner',
+									formatter: '{c} ({d}%)'
+								},
+								labelLine: {
+									show: false
+								}
+							}
+						}
 					}
 				],
 				color: ['#ffbf00', '#26c1d8']
