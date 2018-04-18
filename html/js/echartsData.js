@@ -343,8 +343,8 @@ function hotLook() {
     var myChart = echarts.init(document.getElementById('hotLook'));
 
     var data = [
-        [13, 50, 1000000000, 'China', 1990],
-        [5, 70, 2000000000, 'China', 2015]
+        [2,5,4,"词AAA",1990],
+        [3,6,5,"词BBB",1990]
     ];
 
     option = {
@@ -353,14 +353,27 @@ function hotLook() {
             data: ['1990', '2015']
         },*/
         grid: {
-            left: '3%',
-            right: '5%',
+            left: '4%',
+            right: '10%',
             top: '15%',
-            bottom: '5%',
+            bottom: '10%',
             containLabel: true
         },
+        tooltip: {
+            trigger: 'item',
+            formatter: function (params) {
+                return '首次注视时长：'+ params.value[0] + 's<br/>回视：' + params.value[2] + 's<br/>注视时长：' + params.value[1]+'s';
+            }
+        },
         xAxis: {
+            name:'注视时长（s）',
+            nameLocation:'end',
+            nameTextStyle:{
+                color:'#666666',
+                fontSize:'14'
+            },
             splitLine: {
+                show:false,
                 lineStyle: {
                     type: 'dashed'
                 }
@@ -370,12 +383,27 @@ function hotLook() {
             },
             axisTick: {
                 show: false
+            },
+            axisLabel:{
+                margin:20,
+                fontSize:14,
+                color:'#666666',
+                fontFamily:'Arial'
             }
         },
         yAxis: {
+            name:'首次注视时长（s）',
+            nameLocation:'end',
+            nameGap:15,
+            nameTextStyle:{
+                color:'#666666',
+                fontSize:'14',
+                align:'left'
+            },
             splitLine: {
                 lineStyle: {
-                    type: 'dashed'
+                    type: 'solid',
+                    color:'#ebebeb'
                 }
             },
             scale: true,
@@ -384,6 +412,12 @@ function hotLook() {
             },
             axisTick: {
                 show: false
+            },
+            axisLabel:{
+                margin:20,
+                fontSize:14,
+                color:'#666666',
+                fontFamily:'Arial'
             }
         },
         series: [{
@@ -391,7 +425,7 @@ function hotLook() {
             data: data,
             type: 'scatter',
             symbolSize: function (data) {
-                return Math.sqrt(data[2]) / 5e2;
+                return Math.sqrt(data[2]) * 25;
             },
             label: {
                 normal: {
