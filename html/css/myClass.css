@@ -547,3 +547,18 @@ transform:scale(1.05);
      background-color: rgba(213,213,213,0.73);
      border-radius: 5px;
  }
+ 
+
+.newUpimg{ height:auto; padding-bottom:25px; margin-top: -181px;}
+.newUpimg .uplogo{ text-align:center; position:relative;}
+.newUpimg .uplogo .imgbro{ width:69px; height:69px; border:1px solid #27c8d6; border-radius:15px; margin:30px 0 0 177px; background:#f3fcfd; background:url(../images/upimg.png) no-repeat; cursor:pointer; position:relative;}
+.newUpimg .uplogo .imgbro .logo-hov{ position:absolute; left:-1px; top:0; cursor:pointer; z-index:2; display:none;}
+.newUpimg .uplogo .imgbro:hover .logo-hov{ display:block; }
+.newUpimg .uplogo .imgbro .file{ border:1px solid #f00; position:absolute; left:0; top:0; width:69px; height:69px; font-size:20px; cursor:pointer; opacity:0; z-index:9;}
+.newUpimg .uplogo .t{ font-size:14px; color:#bababa; margin-top:10px;}
+.newUpimg .uplogo .logo{ position:absolute; left:-1px; top:-1px; cursor:pointer; z-index:2;}
+.newUpimg .uplogo .logo:hover{background:url(../images/upimg-logo.png) -79px 0 no-repeat; }
+.newUpimg .botton-a{ margin-top:23px;}
+.newUpimg .error{ position:static; margin:20px 0 0 20px;}
+
+

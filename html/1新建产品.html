@@ -46,10 +46,17 @@
 	
 	
 	<!--弹框-->
-	<div class="mask"></div>
-	<div class="bombBox" id="newPdc">
+	<div class="mask" style="display:block"></div>
+	<div class="bombBox newUpimg" id="newPdc" style="display:block">
 		<h2 class="gradient">新建产品</h2>
 		<p class="error"><i class="err"></i>测试项目名称不能为空！</p>
+		<div class="uplogo">
+			<div class="imgbro" style="background-image:url(images/upimg-logo.png);">
+				<img src="images/upimg-hov.png" class="logo-hov" />
+				<input type="file" class="file" title="上传logo" />
+			</div>
+			<p class="t">上传产品logo</p>
+		</div>
 		<div class="info clearBoth">
 			<span class="f_l proname">产品名称</span> 
 			<input type="text" placeholder="产品名称" class="inp f_l" />
