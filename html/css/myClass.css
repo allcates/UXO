@@ -451,11 +451,11 @@ transform:scale(1.05);
 .main-div-left:nth-child(even){margin-left: 100px}
 .main-div-left p{font-size:24px; line-height: 1.5; min-height:126px; padding-bottom:10px;}
 .main-div-left .ipt{font-size:14px; padding: 10px 5px; line-height: 16px;height: 16px;color: #999;margin-bottom: 55px}
-.main-div-left .ipt .inpnumlimit{ color:#666; height:18px; padding:8px; width:465px; position: relative;top: -9px; border: 1px solid #e8e7e5;}
+.main-div-left .ipt .inpnumlimit{ color:#666; height:48px; line-height:16px; padding:8px; width:465px; position: relative;top: -9px; border: 1px solid #e8e7e5;}
 .main-div-right{ width:550px; float: right}
 .main-div-right p{font-size:24px; line-height: 1.5;height: 126px}
 .main-div-right .ipt{font-size:14px; padding: 10px 5px; line-height: 16px;height: 16px;color: #999;margin-bottom: 55px}
-.main-div-right .ipt .inpnumlimit{ color:#666; height:18px; padding:8px; width:465px;position: relative;top: -9px; border: 1px solid #e8e7e5;}
+.main-div-right .ipt .inpnumlimit{ color:#666; height:48px; line-height:16px; padding:8px; width:465px;position: relative;top: -9px; border: 1px solid #e8e7e5;}
 .main-div-con p{ font-size:24px; line-height: 1.5;margin-bottom: 50px; word-wrap:break-word}
 .main-div-con .ipt{font-size:14px; padding: 10px 5px; line-height: 16px;height: 16px;color: #999;margin-bottom: 55px}
 .main-div-con .ipt .inpnumlimit{ height:37px; position: relative;top: -9px; border: 1px solid #e8e7e5;}
