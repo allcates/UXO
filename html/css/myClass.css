@@ -442,8 +442,8 @@ transform:scale(1.05);
 .main-whole{width:1200px;margin: 0 auto;}
 .main-whole-fst{margin: 0 auto;}
 .main-tt{ text-align: center; color: #111;}
-.main-tt p{font:22px/30px 'å¾®è½¯é›…é»‘'}
-.main-tt h2{font:64px/100px 'å¾®è½¯é›…é»‘'}
+.main-tt p{font-size: 22px;line-height: 30px}
+.main-tt h2{font-size:64px;line-height:100px}
 .main-div{margin-bottom: 100px}
 .main-div h5{background: url(../images/tt.jpg) no-repeat left center;font-size: 16px; line-height: 16px;padding-left: 10px; margin-bottom: 30px; display:inline-block;}
 .main-div-txt{font-size:26px; line-height: 40px; color:#111}
