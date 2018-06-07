@@ -889,7 +889,18 @@
 						name: '任务用时(min)',
 						type: 'bar',
 						barWidth: '60%',
-						data: [10, 52, 200, 334, 390, 330, 220, 52, 200, 334, 390, 330, 220]
+						data: [10, 52, 200, 334, 390, 330, 220, 52, 200, 334, 390, 330, 220],
+						markLine:{
+							silent:true,
+							symbol:'pin',
+							data: [
+								{
+									name: '平均线',
+									// 支持 'average', 'min', 'max'
+									type: 'average'
+								}
+							]
+						}
 					}
 				]
 			};
