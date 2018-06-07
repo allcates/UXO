@@ -449,7 +449,7 @@ transform:scale(1.05);
 .main-div-txt{font-size:26px; line-height: 40px; color:#111}
 .main-div-left{ width:550px; float: left;margin-bottom: 100px;}
 .main-div-left:nth-child(even){margin-left: 100px}
-.main-div-left p{font-size:24px; line-height: 1.5; min-height:126px; padding-bottom:10px;}
+.main-div-left p{font-size:24px; line-height: 1.5;height:180px; margin-bottom:10px;overflow: hidden;}
 .main-div-left .ipt{font-size:14px; padding: 10px 5px; line-height: 16px;height: 16px;color: #999;margin-bottom: 55px}
 .main-div-right .ipt .inpnumlimit{ color:#666; height:48px; line-height:16px; padding:8px; width:465px;position: relative;top: -9px; border: 1px solid #e8e7e5;}
 .main-div-left .ipt .txtarea,.main-div-right .ipt .txtarea{ color:#666; height:60px; line-height:20px; padding:8px; width:465px; position: relative;top: -9px; border: 1px solid #e8e7e5;}
