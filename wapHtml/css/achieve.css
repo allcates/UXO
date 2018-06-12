@@ -36,7 +36,6 @@ body{ background:#fff;font-family:"Microsoft Yahei", "Helvetica Neue", Helvetica
 .indexbox .footer img{ width:2.32rem; height:.48rem;}
 
 .chunk{ background:#fff; border-radius:4px; margin:.27rem .23rem 0 .23rem; padding:.3rem; color:#808080; position:relative;}
-.chunk-no{ background:#f8f8f8;}
 .chunk h1{ color:#333; font-size:.34rem;}
 .chunk p{ padding-bottom:.12rem;}
 .chunk .version{ padding:.1rem 0 .2rem 0;}
@@ -48,6 +47,10 @@ body{ background:#fff;font-family:"Microsoft Yahei", "Helvetica Neue", Helvetica
 .chunk .ico1{ background:url(../images/ico1.png) no-repeat; background-size:100% 100%;}
 .chunk .ico2{ background:url(../images/ico2.png) no-repeat; background-size:100% 100%;}
 .chunk .ico3{ height:.25rem; background:url(../images/ico3.png) no-repeat; background-size:100% 100%;}
+.chunk-no{ background:#f8f8f8; color:#ccc;}
+.chunk-no h1{ color:#a8a8a8;}
+.chunk-no p{ color:#c2c2c2;}
+.chunk-no p .r{ color:#b8b8b8;}
 
 .report-menu{ font-size:.3rem; color:#666; display: -webkit-box; overflow-x:scroll; }
 .report-menu li{ position:relative; padding:.25rem 0;}
@@ -64,28 +67,31 @@ body{ background:#fff;font-family:"Microsoft Yahei", "Helvetica Neue", Helvetica
 .bgfff .block h2{ font-size:.26rem; color:#333; margin-bottom:.3rem;}
 .bgfff .block h2 i{ display:inline-block; width:.04rem; height:.22rem; background:#25bcd9; margin-right:.1rem;}
 .bgfff .block .list2{ overflow:hidden;}
-.bgfff .block .list2 li{ text-align:center; width:3.15rem; float:left; margin-right:.3rem; margin-bottom:.4rem;}
+.bgfff .block .list2 li{ text-align:center; width:3.15rem; float:left; margin-right:.3rem; margin-bottom:.4rem; overflow:hidden;}
 .bgfff .block .list2 li:last-child{ margin-right:0;}
-.bgfff .block .list2 li h3{ font-size:.22rem; color:#333; padding-bottom:.22rem;}
+.bgfff .block .list2 li h3{ font-size:.24rem; color:#333;text-align:left; background:#25bcd9; color:#fff; padding:.03rem .1rem .05rem .15rem; border-radius:15px; float:left; margin-bottom:.22rem;}
 .bgfff .block .list2 li .img{ width:2.25rem; height:2.22rem;}
 .bgfff .block .list2 li .img img{ height:2.22rem;}
-.bgfff .block .list2 li .describe{ text-align:left; font-size:.26rem; color:#5a5a5a; line-height:.4rem; margin-top:.2rem;}
+.bgfff .block .list2 li .describe{ text-align:left; font-size:.26rem; color:#5a5a5a; line-height:.4rem; margin-top:.2rem; }
 .bgfff .block .list2 li.whole{ width:100%; margin-bottom:.5rem;}
 .bgfff .block .list2 li.whole:last-child{ margin-bottom:0;}
 .bgfff .block .list2 li.whole .img{ width:100%; height:3.1rem;}
 .bgfff .block .list2 li.whole .img img{ height:3.1rem;}
+.bgfff .block .list2 li.whole h3{ font-size:.26rem; text-align:center; color:#333; display:inline-block; background:none; float:none;}
+.bgfff .block .list2 li.whole .describe{ background:#f8f8f8; border-radius:3px; padding:.1rem .1rem .1rem .2rem;}
 
 .bgfff .block .chart{ text-align:center; margin-bottom:.8rem;}
 .bgfff .block .chart .blc{ position:relative; text-align:center; height:1.45rem; display:inline-block; font-size:.25rem; color:#fff;}
 .bgfff .block .chart .blc i{ display:inline-block; height:1.45rem; line-height:1.45rem; text-align:center; background:#5dced6; font-style:normal;}
-.bgfff .block .chart .blc em{ position:absolute; bottom:-.45rem; color:#666; left:30%;}
+.bgfff .block .chart .blc em{ color:#666; margin-top: .1rem;display: inline-block;}
 .bgfff .block .hot-word{ padding-bottom:.35rem;}
-.model-text{ font-size:.26rem; color:#5a5a5a;}
+.model-text{ font-size:.26rem; color:#5a5a5a; background:#f8f8f8; border-radius:3px; padding:.1rem .1rem .1rem .2rem;}
 .model-text p{ line-height:.4rem;}
+.model-text{ background:none; border-radius:3px; padding:.1rem .1rem .1rem .2rem;}
 .line{ width:100%; overflow:hidden; height:.15rem; background:#ededed;}
 
 .proposal{ font-size:.26rem; color:#5a5a5a; padding:.3rem; margin-top:.2rem;}
-.proposal p{ line-height:.4rem;}
+.proposal p{ line-height:.46rem;}
 
 .r-footer{ padding:.54rem 0 .68rem .8rem; overflow:hidden;}
 .r-footer .end{ width:1.5rem; height:1.5rem; border-radius:100%; color:#fff; font-size:.37rem; text-align:center; line-height:1.5rem;}
@@ -130,7 +136,7 @@ to {width:3.77rem; height:3.79rem; bottom:2.19rem; right:-1.3rem; opacity:1;}
 
 .bgfff .block0{ padding:.4rem 0 .3rem;}
 .bgfff .block0 h2{ padding-left:.3rem;}
-.bgfff .block0 .model-text{ padding:0.3rem;}
+.bgfff .block0 .model-text{ margin:0.3rem; }
 
 .picPop-up{ position:absolute; left:0; top:0; z-index:9; display:none;}
 .picPop-up img{ width:6rem;}
