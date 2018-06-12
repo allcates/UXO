@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="screen-orientation" content="portrait">
+	<meta itemprop="name" content="123" />
+	<meta itemprop="description" name="description" content="321" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/achieve.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="js/layer/skin/layer.css" />
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/layer/layer.js"></script>
+	<script src="js/navfix.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="http://xytest.staff.xdf.cn/xueo/content/js/echarts.min.js"></script>
+	<script type="text/javascript">
+		document.documentElement.style.fontSize = 100 / 750 * (window.innerWidth < 750 ? window.innerWidth : 750) + 'px';
+	</script>
+</head>
+
+<body class="bgc">
+
+	<div class="top-title gradient">
+		<div class="back"></div>
+		乐词用户体验报告
+		<i class="tips"></i>
+		<div class="tips-info">
+			<span class="arrow"></span>
+			<p>产品名称：乐词 v1.0</p>
+			<p>测试开始时间：2018.04.01</p>
+			<p>测试完成时间：2018.04.12</p>
+			<p>发起人：逄博</p>
+			<p>用研专员：周翔然</p>
+			<p>备注：如有疑问，请随时沟通~</p>
+		</div>
+	</div>
+	<div id="mynav">
+		<ul class="report-menu">
+			<li class="on">
+				<a class="anchor">整体数据</a>
+				<em></em>
+			</li>
+			<li>
+				<a class="anchor">品牌实力</a>
+				<em></em>
+			</li>
+			<li>
+				<a class="anchor">精选校区</a>
+				<em></em>
+			</li>
+			<li>
+				<a class="anchor">猜你喜欢</a>
+				<em></em>
+			</li>
+			<li>
+				<a class="anchor">购课</a>
+				<em></em>
+			</li>
+			<li>
+				<a class="anchor">结论与建议</a>
+				<em></em>
+			</li>
+		</ul>
+	</div>
+
+	<div class="bgfff">
+		<a id="anchor1"></a>
+		<div class="bigTitle">
+			<div class="big-title">
+				<em>整体数据</em>
+			</div>
+			<div class="block">
+				<h2>
+					<i></i>属性占比</h2>
+				<ul class="list2">
+					<li>
+						<h3>性别占比</h3>
+						<div class="main-fm">
+							<div id="pieChartSex" style="width:100%;height:3.5rem;background:url(../../content/images/piebg1.png) no-repeat center center;background-size:contain;">
+							</div>
+						</div>
+						<p class="describe">此次参与测试的用户中男女比例对半。</p>
+					</li>
+					<li>
+						<h3>年龄占比</h3>
+						<div class="main-fm">
+							<div id="pieChartAge" style="width:100%;height:3.5rem;background:url(../../content/images/piebg1.png) no-repeat center center;">
+							</div>
+						</div>
+						<p class="describe">年龄分布中20-30岁的占比最大。</p>
+					</li>
+				</ul>
+			</div>
+			<div class="block">
+				<h2><i></i>总体任务数据</h2>
+				<ul class="list2">
+					<li class="whole">
+						<h3>任务用时（不同性别）</h3>
+						<div class="img">
+							<div class="main-fm">
+								<div id="chartBarTimeSex" style="width:100%;height:3.1rem;background:url(../../content/images/vsbg1.png) no-repeat center center;">
+								</div>
+							</div>
+	
+						</div>
+					</li>
+					<li class="whole">
+						<h3>任务用时（不同年龄）</h3>
+						<div class="img">
+							<div class="main-fm">
+								<div id="chartBarTimeAge" style="width:100%;height:3.1rem;background:url(../../content/images/vsbg1.png) no-repeat center center;">
+								</div>
+							</div>
+	
+						</div>
+					</li>
+					<li class="whole">
+						<h3>任务错误数（不同性别）</h3>
+						<div class="img">
+							<div class="main-fm">
+								<div id="chartBarErrorSex" style="width:100%;height:3.1rem;background:url(../../content/images/vsbg1.png) no-repeat center center;">
+								</div>
+							</div>
+	
+						</div>
+						<p class="describe">
+							在三项任务重，男性用户的任务用时都略长于女性用户用时。
+							<br> 在三项任务重，男性用户的任务用时都略长于女性用户用时。
+							<br> 在三项任务重，男性用户的任务用时都略长户用时。
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="block block0">
+				<h2><i></i>兴趣区热力图</h2>
+				<div class="list3 swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" data-id="530" data-imgtype="1" data-name="001.jpg" data-url="http://xytest.staff.xdf.cn/xueo/uploads/interest/2018/05/15/da46967e-7252-443e-87d8-65985a3bea02.jpg"  style="background-image:url(images/img6.jpg)"></div>
+						<div class="swiper-slide" data-id="531" data-imgtype="2" data-name="002.jpg" data-url="http://xytest.staff.xdf.cn/xueo/uploads/interest/2018/05/15/da46967e-7252-443e-87d8-65985a3bea02.jpg"  style="background-image:url(images/img6.jpg)"></div>
+						<div class="swiper-slide" data-id="532" data-imgtype="3" data-name="003.jpg" data-url="http://xytest.staff.xdf.cn/xueo/uploads/interest/2018/05/15/da46967e-7252-443e-87d8-65985a3bea02.jpg"  style="background-image:url(images/img6.jpg)"></div>
+					</div>
+				</div>
+				<div class="chart">
+					<span class="blc" style="width:3%;" data-name="001.jpg">
+						<i style="width:100%; opacity:0.2">15″</i>
+						<em>1</em>
+					</span>
+					<span class="blc" style="width:16%;" data-name="002.jpg">
+						<i style="width:100%; opacity:0.84">1′15″</i>
+						<em>2</em>
+					</span>
+					<span class="blc" style="width:19%;" data-name="003.jpg">
+						<i style="width:100%; opacity:1">1′30″</i>
+						<em>3</em>
+					</span>
+					<span class="blc" style="width:4%;" data-name="004.jpg">
+						<i style="width:100%; opacity:0.25">20″</i>
+						<em>4</em>
+					</span>
+					<span class="blc" style="width:13%;" data-name="005.jpg">
+						<i style="width:100%; opacity:0.68">1′0″</i>
+						<em>5</em>
+					</span>
+					<span class="blc" style="width:9%;" data-name="006.jpg">
+						<i style="width:100%; opacity:0.52">45″</i>
+						<em>6</em>
+					</span>
+					<span class="blc" style="width:6%;" data-name="007.jpg">
+						<i style="width:100%; opacity:0.36">30″</i>
+						<em>7</em>
+					</span>
+					<span class="blc" style="width:9%;" data-name="008.jpg">
+						<i style="width:100%; opacity:0.52">45″</i>
+						<em>8</em>
+					</span>
+
+				</div>
+				<div class="model-text">
+					<p>在三项任务重，男性用户的任务用时都略长于女性用户用时。
+						<br/> 在三项任务重，男性用户的任务用时都略长户用时。
+					</p>
+				</div>
+			</div>
+			<div class="block block0">
+				<h2>
+					<i></i>注视热力图</h2>
+				<div class="list3 swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+					</div>
+				</div>
+				<div class="chart">
+					<span class="blc" style="width:.32rem;">
+						<i>1″</i>
+						<em>1</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>2</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>3</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>4</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>5</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>6</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>7</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>8</em>
+					</span>
+				</div>
+				<div class="model-text">
+					<p>在三项任务重，男性用户的任务用时都略长于女性用户用时。
+						<br/> 在三项任务重，男性用户的任务用时都略长户用时。
+					</p>
+				</div>
+			</div>
+			<div class="block">
+				<h2>
+					<i></i>注视热词图</h2>
+				<div class="hot-word">
+					<div class="" id="hotLook" style="height: 5rem;">
+						<img src="../../content/images/hotLookbg.jpg" />
+					</div>
+	
+				</div>
+				<div class="model-text">
+					<p>在三项任务重，用户的任务用时都略长于女性用户用时。
+						<br/> 在三项任务重，男性用户的任务用时都略长户用时。
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="line"></div>
+
+		<a id="anchor2"></a>
+		<div class="bigTitle">
+			<div class="big-title">
+				<em>品牌实力</em>
+			</div>
+			<div class="block">
+				<h2>
+					<i></i>任务描述</h2>
+				<div class="model-text">
+					<p>此次参与测试的用户中男女比例对半。</p>
+				</div>
+			</div>
+			<div class="block">
+				<h2>
+					<i></i>任务用时</h2>
+					<div class="main-fm">
+						<div id="r2b0" style="width:100%;height:3.5rem;background:url(../../content/images/vsbg1.png) no-repeat center center;">
+						</div>
+					</div>
+	
+				<div class="model-text">
+					<p>在三项任务重，男性用户的任务用时都略长于女性用户用时。
+						<br> 在三项任务重，男性用户的任务用时都略长户用时。。
+					</p>
+				</div>
+			</div>
+			<div class="block">
+				<h2>
+					<i></i>任务错误数</h2>
+					<div class="main-fm">
+						<div id="r2b1" style="width:100%;height:3.5rem;background:url(../../content/images/vsbg1.png) no-repeat center center;">
+						</div>
+					</div>
+	
+				<div class="model-text">
+					<p>在三项任务重，男性用户的任务用时都略长于女性用户用时。
+						<br> 在三项任务重，男性用户的任务用时都略长户用时。。
+					</p>
+				</div>
+			</div>
+			<div class="block block0">
+				<h2>
+					<i></i>注视热力图</h2>
+				<div class="list3 swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+					</div>
+				</div>
+				<div class="chart">
+					<span class="blc" style="width:.32rem;">
+						<i>1″</i>
+						<em>1</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>2</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>3</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>4</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>5</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>6</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>7</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>8</em>
+					</span>
+				</div>
+				<div class="model-text">
+					<p>在三项任务重，男性用户的任务用时都略长于女性用户用时。
+						<br/> 在三项任务重，男性用户的任务用时都略长户用时。
+					</p>
+				</div>
+			</div>
+			<div class="block block0">
+				<h2>
+					<i></i>眼动轨迹图</h2>
+				<div class="list3 swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+					</div>
+				</div>
+				<div class="chart">
+					<span class="blc" style="width:.32rem;">
+						<i>1″</i>
+						<em>1</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>2</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>3</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>4</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>5</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>6</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>7</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>8</em>
+					</span>
+				</div>
+				<div class="model-text">
+					<p>在三项任务重，男性用户的任务用时都略长于女性用户用时。
+						<br/> 在三项任务重，男性用户的任务用时都略长户用时。
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="line"></div>
+		
+		<div class="bigTitle">
+			<div class="big-title">
+				<em>精选校区</em>
+			</div>
+			<div class="block">
+				<h2>
+					<i></i>任务描述</h2>
+				<div class="model-text">
+					<p>此次参与测试的用户中男女比例对半。</p>
+				</div>
+			</div>
+			<div class="block">
+				<h2>
+					<i></i>任务用时</h2>
+					<div class="main-fm">
+						<div id="r2b0" style="width:100%;height:3.5rem;background:url(../../content/images/vsbg1.png) no-repeat center center;">
+						</div>
+					</div>
+	
+				<div class="model-text">
+					<p>在三项任务重，男性用户的任务用时都略长于女性用户用时。
+						<br> 在三项任务重，男性用户的任务用时都略长户用时。。
+					</p>
+				</div>
+			</div>
+			<div class="block">
+				<h2>
+					<i></i>任务错误数</h2>
+					<div class="main-fm">
+						<div id="r2b1" style="width:100%;height:3.5rem;background:url(../../content/images/vsbg1.png) no-repeat center center;">
+						</div>
+					</div>
+	
+				<div class="model-text">
+					<p>在三项任务重，男性用户的任务用时都略长于女性用户用时。
+						<br> 在三项任务重，男性用户的任务用时都略长户用时。。
+					</p>
+				</div>
+			</div>
+			<div class="block block0">
+				<h2>
+					<i></i>注视热力图</h2>
+				<div class="list3 swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+					</div>
+				</div>
+				<div class="chart">
+					<span class="blc" style="width:.32rem;">
+						<i>1″</i>
+						<em>1</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>2</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>3</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>4</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>5</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>6</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>7</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>8</em>
+					</span>
+				</div>
+				<div class="model-text">
+					<p>在三项任务重，男性用户的任务用时都略长于女性用户用时。
+						<br/> 在三项任务重，男性用户的任务用时都略长户用时。
+					</p>
+				</div>
+			</div>
+			<div class="block block0">
+				<h2>
+					<i></i>眼动轨迹图</h2>
+				<div class="list3 swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+					</div>
+				</div>
+				<div class="chart">
+					<span class="blc" style="width:.32rem;">
+						<i>1″</i>
+						<em>1</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>2</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>3</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>4</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>5</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>6</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>7</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>8</em>
+					</span>
+				</div>
+				<div class="model-text">
+					<p>在三项任务重，男性用户的任务用时都略长于女性用户用时。
+						<br/> 在三项任务重，男性用户的任务用时都略长户用时。
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="bigTitle">
+			<div class="big-title">
+				<em>猜你喜欢</em>
+			</div>
+			<div class="block">
+				<h2>
+					<i></i>任务描述</h2>
+				<div class="model-text">
+					<p>此次参与测试的用户中男女比例对半。</p>
+				</div>
+			</div>
+			<div class="block">
+				<h2>
+					<i></i>任务用时</h2>
+					<div class="main-fm">
+						<div id="r2b0" style="width:100%;height:3.5rem;background:url(../../content/images/vsbg1.png) no-repeat center center;">
+						</div>
+					</div>
+	
+				<div class="model-text">
+					<p>在三项任务重，男性用户的任务用时都略长于女性用户用时。
+						<br> 在三项任务重，男性用户的任务用时都略长户用时。。
+					</p>
+				</div>
+			</div>
+			<div class="block">
+				<h2>
+					<i></i>任务错误数</h2>
+					<div class="main-fm">
+						<div id="r2b1" style="width:100%;height:3.5rem;background:url(../../content/images/vsbg1.png) no-repeat center center;">
+						</div>
+					</div>
+	
+				<div class="model-text">
+					<p>在三项任务重，男性用户的任务用时都略长于女性用户用时。
+						<br> 在三项任务重，男性用户的任务用时都略长户用时。。
+					</p>
+				</div>
+			</div>
+			<div class="block block0">
+				<h2>
+					<i></i>注视热力图</h2>
+				<div class="list3 swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+					</div>
+				</div>
+				<div class="chart">
+					<span class="blc" style="width:.32rem;">
+						<i>1″</i>
+						<em>1</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>2</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>3</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>4</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>5</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>6</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>7</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>8</em>
+					</span>
+				</div>
+				<div class="model-text">
+					<p>在三项任务重，男性用户的任务用时都略长于女性用户用时。
+						<br/> 在三项任务重，男性用户的任务用时都略长户用时。
+					</p>
+				</div>
+			</div>
+			<div class="block block0">
+				<h2>
+					<i></i>眼动轨迹图</h2>
+				<div class="list3 swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+					</div>
+				</div>
+				<div class="chart">
+					<span class="blc" style="width:.32rem;">
+						<i>1″</i>
+						<em>1</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>2</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>3</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>4</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>5</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>6</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>7</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>8</em>
+					</span>
+				</div>
+				<div class="model-text">
+					<p>在三项任务重，男性用户的任务用时都略长于女性用户用时。
+						<br/> 在三项任务重，男性用户的任务用时都略长户用时。
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="line"></div>
+		
+		<div class="bigTitle">
+			<div class="big-title">
+				<em>购课</em>
+			</div>
+			<div class="block">
+				<h2>
+					<i></i>任务描述</h2>
+				<div class="model-text">
+					<p>此次参与测试的用户中男女比例对半。</p>
+				</div>
+			</div>
+			<div class="block">
+				<h2>
+					<i></i>任务用时</h2>
+					<div class="main-fm">
+						<div id="r2b0" style="width:100%;height:3.5rem;background:url(../../content/images/vsbg1.png) no-repeat center center;">
+						</div>
+					</div>
+	
+				<div class="model-text">
+					<p>在三项任务重，男性用户的任务用时都略长于女性用户用时。
+						<br> 在三项任务重，男性用户的任务用时都略长户用时。。
+					</p>
+				</div>
+			</div>
+			<div class="block">
+				<h2>
+					<i></i>任务错误数</h2>
+					<div class="main-fm">
+						<div id="r2b1" style="width:100%;height:3.5rem;background:url(../../content/images/vsbg1.png) no-repeat center center;">
+						</div>
+					</div>
+	
+				<div class="model-text">
+					<p>在三项任务重，男性用户的任务用时都略长于女性用户用时。
+						<br> 在三项任务重，男性用户的任务用时都略长户用时。。
+					</p>
+				</div>
+			</div>
+			<div class="block block0">
+				<h2>
+					<i></i>注视热力图</h2>
+				<div class="list3 swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+					</div>
+				</div>
+				<div class="chart">
+					<span class="blc" style="width:.32rem;">
+						<i>1″</i>
+						<em>1</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>2</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>3</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>4</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>5</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>6</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>7</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>8</em>
+					</span>
+				</div>
+				<div class="model-text">
+					<p>在三项任务重，男性用户的任务用时都略长于女性用户用时。
+						<br/> 在三项任务重，男性用户的任务用时都略长户用时。
+					</p>
+				</div>
+			</div>
+			<div class="block block0">
+				<h2>
+					<i></i>眼动轨迹图</h2>
+				<div class="list3 swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+						<div class="swiper-slide" imgurl="images/img6.jpg" style="background-image:url(images/img6.jpg)"></div>
+					</div>
+				</div>
+				<div class="chart">
+					<span class="blc" style="width:.32rem;">
+						<i>1″</i>
+						<em>1</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>2</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>3</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>4</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>5</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>6</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>7</em>
+					</span>
+					<span class="blc" style="width:.7rem;">
+						<i>12″</i>
+						<em>8</em>
+					</span>
+				</div>
+				<div class="model-text">
+					<p>在三项任务重，男性用户的任务用时都略长于女性用户用时。
+						<br/> 在三项任务重，男性用户的任务用时都略长户用时。
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="line"></div>
+
+		<a id="anchor3"></a>
+		<div class="bigTitle">
+			<div class="big-title">
+				<em>结论与建议</em>
+			</div>
+			<div class="proposal">
+				<p>在三项任务重，男性用户的任务用时都略长于女性用户用时。
+					<br/> 在三项任务重，男性用户的任务用时都略长户用时。
+				</p>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="r-footer clear">
+		<div class="fl end gradient">结束语</div>
+		<div class="fl right">
+			<span class="ths">谢谢查看</span>
+			<p>
+				希望我们的报告能对您的产品优化 带来帮助，如有问题，请联系用户 体验设计中心用研专员。
+				<br> 邮箱：zhouxiangran@xdf.cn；
+				<br> 电话：010-60908221，再次感谢！
+			</p>
+		</div>
+
+	</div>
+
+
+	<div class="mask"></div>
+	<div class="backTop"></div>
+	<div class="allMenu"></div>
+	<div class="allMenu-unfold">
+		<div class="un1 menu"><i>1</i>属性占比</div>
+		<div class="un2 menu"><i>2</i>总体任务<br>数据</div>
+		<div class="un3 menu"><i>3</i>兴趣区<br>热力图</div>
+		<div class="un4 menu"><i>4</i>注视<br>热力图</div>
+		<div class="un5 menu"><i>5</i>注视<br>热词图</div>
+		<div class="menu-mid"></div>
+	</div>
+
+	<!--图片弹框-->
+	<div class="proFrame">
+		<img src="images/img6.jpg" class="openimg" style="width:80%;" />
+		<div class="description">
+			<p>
+				1、停留时长：10″<br>
+				2、停留时长：10″<br>
+				3、停留时长：10″
+			</p>
+		</div>
+	</div>
+	<style>
+		.swiper-container{width:100%;padding-top:.3rem;padding-bottom:.54rem; }
+		.swiper-slide{background-position:center;background-size:cover;width:4.43rem;height:7.88rem; }
+	</style>
+	<script type="text/javascript">
+		$(function () {
+			//导航浮动
+			$(window).scroll(function(){
+				var nowTop = $(document).scrollTop();
+				if(nowTop>50){
+					$("#mynav").css({position:'fixed', top:0})
+					$("#mynav").show();
+				}else{
+					$("#mynav").css({position:'static', top:0, left:'auto'})
+					$("#mynav").show();
+				}
+				
+			})
+			
+			
+			//体验报告说明
+			$(document).on('touchend', '.tips', function () {
+				$(this).next().fadeIn();
+				$(".mask").fadeIn();
+			});
+			$(document).on('touchend', '.mask', function () {
+				$(".tips-info").fadeOut();
+				$(".mask").fadeOut();
+			});
+			//返回顶部
+			$(document).on('touchend', '.backTop', function () {
+				$('body,html').animate({ scrollTop: 0 }, 1000);
+				return false;
+			});
+			$(window).scroll(function () {
+				if ($(window).scrollTop() > 100) {
+					$(".backTop").fadeIn(1000);
+				}
+				else {
+					$(".backTop").fadeOut(1000);
+				}
+			});
+
+			//横菜单
+			$(document).on('touchend', '.anchor', function () {
+				$("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top - 20 + "px" }, 500);
+				return false;
+			});
+			//主菜单
+			$(document).on('touchend','.allMenu',function(){				
+				$(".allMenu-unfold").addClass("allMenu-unfold-hov");
+				$(".allMenu").fadeOut(400);
+				//$(".allMenu-unfold .menu").fadeIn(600);
+			});
+			$(document).on('touchend','.allMenu-unfold .menu-mid',function(){
+				$(".allMenu-unfold").removeClass("allMenu-unfold-hov");
+				$(".allMenu").show();
+				//$(".allMenu-unfold .menu").fadeOut(600);
+			});
+			$(document).on('touchend', '.mask', function () {
+				$(".mask").fadeOut();
+				$(".proFrame").fadeOut();
+			});
+			
+			//一级菜单对应效果
+			$(document).on('mousedown', '#mynav li a', function () {
+				var idx = $('.report-menu li a').index($(this)); 
+				var ft = $('.bigTitle').eq(idx).offset().top;
+				$('html,body').animate({ scrollTop: ft - 35 });
+			});
+			//图片弹框
+			/*$(document).on('touchend', '.proFrame .openimg', function () {
+				$(".mask").fadeOut();
+				$(".proFrame").fadeOut();
+				$(".proFrame .openimg").fadeOut();
+				$(".proFrame .description").fadeOut();
+			});*/
+			
+			
+			
+			
+			
+			
+			//图片弹框
+			$(document).on('touchend', '.mask', function () {
+				$(".mask").fadeOut();
+				$(".proFrame").fadeOut();
+				$(".proFrame .openimg").fadeOut();
+				$(".proFrame .description").fadeOut();
+			});
+			//图片弹框
+			$(document).on('mousedown', '.list3 .swiper-slide', function () {
+				$(".mask").css("top","0").fadeIn();
+				$(".proFrame").fadeIn();
+				$(".proFrame .openimg").fadeIn();
+				$(".proFrame .description").fadeIn();
+			});
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			//导航浮动
+			//$('#mynav').navfix(0, 5);
+			$(document).on('touchend', '.report-menu .anchor', function () {
+				$(this).parent().addClass("on").siblings().removeClass("on");
+			});
+			//图片左右滑动
+			var swiper = new Swiper('.swiper-container', {
+				effect: 'coverflow',
+				grabCursor: true,
+				centeredSlides: true,
+				slidesPerView: 'auto',
+				coverflowEffect: {
+					rotate: 50,
+					stretch: 0,
+					depth: 100,
+					modifier: 1,
+					slideShadows: true,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+				},
+			});
+			
+			//一级标题对应 滚动
+			function scFun(){  
+				$('.bigTitle').each(function () {
+					if ($(window).scrollTop() >= ($(this).offset().top-50) && $(window).scrollTop() < ($(this).offset().top + $(this).height()-50)) {
+						var idx = $('.bigTitle').index($(this));
+						$('.report-menu li').removeClass('on');
+						$('.report-menu li').eq(idx).addClass('on');
+					}
+				})
+				if ($(window).scrollTop() + $(window).height() >= $(document).height()) {
+                    $('.report-menu li').removeClass('on');
+                }
+                if (($(window).scrollTop() + $(window).height() + $('#div_suggestion').height()) >= $(document).height()) {
+                    $('.report-menu li:last-child').addClass('on');
+                    $('.allMenu').hide();
+                    $('.allMenu-unfold-hov').removeClass('allMenu-unfold-hov');
+                } else {
+                    $(".allMenu").show();
+                }
+
+			}
+			scFun();
+			$(window).scroll(function () {
+				scFun();
+				
+				if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+					$('.report-menu li:last-child').addClass('on');
+					$(".allMenu").hide();
+				}else{
+					$(".allMenu").show();
+				}
+			});
+
+			// 热力图与区块的关联
+			$('.chart .blc').on('click', function () {
+				var $this = $(this);
+				var $ulbox = $this.parents('.block').find('.swiper-wrapper');
+				var imgname = $this.attr('data-name');
+				var $onli = $ulbox.find('.swiper-slide[data-name="' + imgname + '"]');
+				var index = $onli.index();
+				
+				//console.log(index);
+				if (((index) * $onli.outerWidth(true)) < ($ulbox.position().left * -2)) {
+					$ulbox.stop().animate({ 'left': (index * $onli.outerWidth(true)) * -2 });
+				}
+				else if (index >= 1) {
+					$ulbox.stop().animate({ 'left': ((index - 1) * $onli.outerWidth(true)) * -2 });
+				}
+				$ulbox.find('.swiper-wrapper .on').removeClass('on');
+				$onli.addClass('on').siblings().removeClass('on');
+				console.log($ulbox.position().left); 
+			})
+			
+			
+			
+			
+			
+		});
+	</script>
+<script>
+	function hotLook() {
+
+	var myChart = echarts.init(document.getElementById('hotLook'));
+
+	var data = [
+		[2,5,4,"词AAA",1990],
+		[3,6,5,"词BBB",1990]
+	];
+
+	option = {
+		/*legend: {
+			right: 10,
+			data: ['1990', '2015']
+		},*/
+		grid: {
+			left: '4%',
+			right: '10%',
+			top: '15%',
+			bottom: '10%',
+			containLabel: true
+		},
+		tooltip: {
+			trigger: 'item',
+			formatter: function (params) {
+				return '首次注视时长：'+ params.value[0] + 's<br/>回视：' + params.value[2] + 's<br/>注视时长：' + params.value[1]+'s';
+			}
+		},
+		xAxis: {
+			name:'注视时长（s）',
+			nameLocation:'end',
+			nameTextStyle:{
+				color:'#666666',
+				fontSize:'14'
+			},
+			splitLine: {
+				show:false,
+				lineStyle: {
+					type: 'dashed'
+				}
+			},
+			axisLine: {
+				show: false
+			},
+			axisTick: {
+				show: false
+			},
+			axisLabel:{
+				margin:20,
+				fontSize:14,
+				color:'#666666',
+				fontFamily:'Arial'
+			}
+		},
+		yAxis: {
+			name:'首次注视时长（s）',
+			nameLocation:'end',
+			nameGap:15,
+			nameTextStyle:{
+				color:'#666666',
+				fontSize:'14',
+				align:'left'
+			},
+			splitLine: {
+				lineStyle: {
+					type: 'solid',
+					color:'#ebebeb'
+				}
+			},
+			scale: true,
+			axisLine: {
+				show: false
+			},
+			axisTick: {
+				show: false
+			},
+			axisLabel:{
+				margin:20,
+				fontSize:14,
+				color:'#666666',
+				fontFamily:'Arial'
+			}
+		},
+		series: [{
+			name: '热词',
+			data: data,
+			type: 'scatter',
+			symbolSize: function (data) {
+				return Math.sqrt(data[2]) * 25;
+			},
+			label: {
+				normal: {
+					color: '#fff',
+					show: true,
+					formatter: function (param) {
+						return param.data[3];
+					},
+					position: 'inside'
+				}
+			},
+			itemStyle: {
+				normal: {
+					color: new echarts.graphic.RadialGradient(0.4, 0.3, 1, [{
+						offset: 0,
+						color: 'rgb(251, 118, 123)'
+					}, {
+						offset: 1,
+						color: 'rgb(204, 46, 72)'
+					}])
+				}
+			}
+		}]
+	};
+
+	myChart.setOption(option);
+
+	}
+
+	hotLook();
+	</script>
+	<script>
+			function singleFmEnd() {
+			option = {
+				color: ['#26bed8'],
+				tooltip: {
+					trigger: 'axis',
+					axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+						type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+					}
+				},
+				grid: {
+					left: '3%',
+					right: '11%',
+					bottom: '3%',
+					top: '15%',
+					containLabel: true
+				},
+				xAxis: [
+					{
+						type: 'category',
+						data: ['p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9', 'p10', 'p11', 'p12', 'p13'],
+						axisLine: {
+							show: false
+						},
+						axisTick: {
+							show: false
+						}
+					}
+				],
+				yAxis: [
+					{
+						type: 'value',
+						name: '用时(s)',
+						axisLine: {
+							show: false
+						},
+						axisTick: {
+							show: false
+						}
+					}
+				],
+				series: [
+					{
+						name: '任务用时(min)',
+						type: 'bar',
+						barWidth: '60%',
+						data: [10, 52, 200, 334, 390, 330, 220, 52, 200, 334, 390, 330, 220],
+						markLine:{
+							silent:true,
+							symbol:'pin',
+							data: [
+								{
+									name: '平均线',
+									// 支持 'average', 'min', 'max'
+									type: 'average'
+								}
+							]
+						}
+					}
+				]
+			};
+			// 基于准备好的dom，初始化echarts实例
+			// 使用刚指定的配置项和数据显示图表。
+			echarts.init(document.getElementById('r2b0')).setOption(option);
+			var option1 = option;
+			option1.yAxis[0].name = '数量(个)'
+			option1.series[0].name = '错误数'
+			echarts.init(document.getElementById('r2b1')).setOption(option1);
+			echarts.init(document.getElementById('r3b0')).setOption(option);
+			echarts.init(document.getElementById('r3b1')).setOption(option1);
+		}
+		singleFmEnd()
+</script>
+	<script type="text/javascript">
+
+		var sexPieOption = { "tooltip": { "trigger": "item", "formatter": "{a} <br/>{b} : {c} ({d}%)", "axisPointer": { "type": "shadow" } }, "legend": { "type": "plain", "orient": "vertical", "x": "right", "y": "top", "right": "0", "data": [{ "name": "男", "icon": "circle" }, { "name": "女", "icon": "circle" }], "itemWidth": "25", "itemHeight": "14" }, "series": [{ "type": "pie", "name": "性别占比", "hoverOffset": 1, "radius": ["20%", "85%"], "center": ["45%", "50%"], "roseType": "radius", "clockwise": false, "label": { "normal": { "show": true, "position": "inside", "formatter": "{d}%", "fontSize": 12, "fontFamily": "Arial" } }, "lableLine": { "normal": { "show": false }, "emphasis": { "show": false } }, "data": [{ "name": "男", "value": 14.0 }, { "name": "女", "value": 16.0 }] }], "animation": true, "color": ["#26c1d8", "#ffbf00"] };
+		var sexPieChart = echarts.init(document.getElementById('pieChartSex'));
+		sexPieChart.setOption(sexPieOption);
+
+
+		var agePieOption = { "tooltip": { "trigger": "item", "formatter": "{a} <br/>{b} : {c} ({d}%)", "axisPointer": { "type": "shadow" } }, "legend": { "type": "plain", "orient": "vertical", "x": "right", "y": "top", "right": "0", "data": [{ "name": "20-30岁", "icon": "circle" }, { "name": "30-40岁", "icon": "circle" }, { "name": "40-50岁", "icon": "circle" }], "itemWidth": "25", "itemHeight": "14" }, "series": [{ "type": "pie", "name": "年龄占比", "hoverOffset": 1, "radius": ["20%", "85%"], "center": ["45%", "50%"], "roseType": "radius", "clockwise": false, "label": { "normal": { "show": true, "position": "inside", "formatter": "{d}%", "fontSize": 12, "fontFamily": "Arial" } }, "lableLine": { "normal": { "show": false }, "emphasis": { "show": false } }, "data": [{ "name": "20-30岁", "value": 21.0 }, { "name": "30-40岁", "value": 6.0 }, { "name": "40-50岁", "value": 3.0 }] }], "animation": true, "color": ["#ffbf00", "#26c1d8", "#c23531", "#2f4554", "#61a0a8"] };
+		var agePieChart = echarts.init(document.getElementById('pieChartAge'));
+		agePieChart.setOption(agePieOption);
+
+
+		var pieCustomOption_1 = { "tooltip": { "trigger": "item", "formatter": "{a} <br/>{b} : {c} ({d}%)", "axisPointer": { "type": "shadow" } }, "legend": { "type": "plain", "orient": "vertical", "x": "right", "y": "center", "right": "35", "data": [{ "name": "无购课经历", "icon": "circle" }, { "name": "有购课经历", "icon": "circle" }], "itemWidth": "25", "itemHeight": "14" }, "series": [{ "type": "pie", "name": "组别0", "hoverOffset": 1, "radius": ["65", "165"], "center": ["40%", "50%"], "roseType": "radius", "clockwise": false, "label": { "normal": { "show": true, "position": "inside", "formatter": "{d}%", "fontSize": 16, "fontFamily": "Arial" } }, "lableLine": { "normal": { "show": false }, "emphasis": { "show": false } }, "data": [{ "name": "无购课经历", "value": 22.0 }, { "name": "有购课经历", "value": 8.0 }] }], "animation": true, "color": ["#ffbf00", "#26c1d8"] };
+		var pieCustomChart_1 = echarts.init(document.getElementById('piechart_custom_1'));
+		pieCustomChart_1.setOption(pieCustomOption_1);
+
+
+		var pieCustomOption_2 = { "tooltip": { "trigger": "item", "formatter": "{a} <br/>{b} : {c} ({d}%)", "axisPointer": { "type": "shadow" } }, "legend": { "type": "plain", "orient": "vertical", "x": "right", "y": "center", "right": "35", "data": [{ "name": "家长", "icon": "circle" }, { "name": "学员", "icon": "circle" }], "itemWidth": "25", "itemHeight": "14" }, "series": [{ "type": "pie", "name": "组别1", "hoverOffset": 1, "radius": ["65", "165"], "center": ["40%", "50%"], "roseType": "radius", "clockwise": false, "label": { "normal": { "show": true, "position": "inside", "formatter": "{d}%", "fontSize": 16, "fontFamily": "Arial" } }, "lableLine": { "normal": { "show": false }, "emphasis": { "show": false } }, "data": [{ "name": "家长", "value": 8.0 }, { "name": "学员", "value": 22.0 }] }], "animation": true, "color": ["#ffbf00", "#26c1d8"] };
+		var pieCustomChart_2 = echarts.init(document.getElementById('piechart_custom_2'));
+		pieCustomChart_2.setOption(pieCustomOption_2);
+
+
+
+
+	</script>
+
+	<script type="text/javascript">
+
+		var timeSexBarChartOption = { "tooltip": { "trigger": "axis", "formatter": "", "axisPointer": { "type": "shadow" } }, "legend": { "type": "plain", "orient": "vertical", "x": "right", "y": "center", "right": "auto", "data": [{ "name": "男", "icon": "rect" }, { "name": "女", "icon": "rect" }], "itemWidth": "10", "itemHeight": "10" }, "series": [{ "type": "bar", "name": "男", "barGap": "0.1", "data": ["686", "55", "116", "118"] }, { "type": "bar", "name": "女", "barGap": "0.1", "data": ["683", "51", "121", "101"] }], "xAxis": { "type": "category", "data": ["任务1", "任务2", "任务3", "任务4"] }, "yAxis": { "type": "value", "name": "任务平均用时(s)", "minInterval": 1.0 }, "grid": { "left": "8%", "right": "15%", "top": "17%", "bottom": "5%", "containLabel": true }, "animation": true, "color": ["#ffbf00", "#26c1d8"] };
+		var timeSexChartBar = echarts.init(document.getElementById('chartBarTimeSex'));
+		timeSexChartBar.setOption(timeSexBarChartOption);
+
+
+		var timeAgeBarChartOption = { "tooltip": { "trigger": "axis", "formatter": "", "axisPointer": { "type": "shadow" } }, "legend": { "type": "plain", "orient": "vertical", "x": "right", "y": "center", "right": "auto", "data": [{ "name": "20-30岁", "icon": "rect" }, { "name": "30-40岁", "icon": "rect" }, { "name": "40-50岁", "icon": "rect" }], "itemWidth": "10", "itemHeight": "10" }, "series": [{ "type": "bar", "name": "20-30岁", "barGap": "0.1", "data": ["658", "52", "123", "105"] }, { "type": "bar", "name": "30-40岁", "barGap": "0.1", "data": ["778", "54", "111", "115"] }, { "type": "bar", "name": "40-50岁", "barGap": "0.1", "data": ["682", "60", "102", "128"] }], "xAxis": { "type": "category", "data": ["任务1", "任务2", "任务3", "任务4"] }, "yAxis": { "type": "value", "name": "任务平均用时(s)", "minInterval": 1.0 }, "grid": { "left": "8%", "right": "15%", "top": "17%", "bottom": "5%", "containLabel": true }, "animation": true, "color": ["#ffbf00", "#26c1d8", "#c23531"] };
+		var timeAgeChartBar = echarts.init(document.getElementById('chartBarTimeAge'));
+		timeAgeChartBar.setOption(timeAgeBarChartOption);
+
+
+		var errorSexBarChartOption = { "tooltip": { "trigger": "axis", "formatter": "", "axisPointer": { "type": "shadow" } }, "legend": { "type": "plain", "orient": "vertical", "x": "right", "y": "center", "right": "auto", "data": [{ "name": "男", "icon": "rect" }, { "name": "女", "icon": "rect" }], "itemWidth": "10", "itemHeight": "10" }, "series": [{ "type": "bar", "name": "男", "barGap": "0.1", "data": ["0.6", "0.0", "0.7", "0.5"] }, { "type": "bar", "name": "女", "barGap": "0.1", "data": ["0.6", "0.0", "0.5", "0.2"] }], "xAxis": { "type": "category", "data": ["任务1", "任务2", "任务3", "任务4"] }, "yAxis": { "type": "value", "name": "任务平均错误数(个)", "minInterval": 0.1 }, "grid": { "left": "8%", "right": "15%", "top": "17%", "bottom": "5%", "containLabel": true }, "animation": true, "color": ["#ffbf00", "#26c1d8"] };
+		var errorSexChartBar = echarts.init(document.getElementById('chartBarErrorSex'));
+		errorSexChartBar.setOption(errorSexBarChartOption);
+
+
+		var errorAgeBarChartOption = { "tooltip": { "trigger": "axis", "formatter": "", "axisPointer": { "type": "shadow" } }, "legend": { "type": "plain", "orient": "vertical", "x": "right", "y": "center", "right": "auto", "data": [{ "name": "20-30岁", "icon": "rect" }, { "name": "30-40岁", "icon": "rect" }, { "name": "40-50岁", "icon": "rect" }], "itemWidth": "10", "itemHeight": "10" }, "series": [{ "type": "bar", "name": "20-30岁", "barGap": "0.1", "data": ["0.6", "0.0", "0.6", "0.3"] }, { "type": "bar", "name": "30-40岁", "barGap": "0.1", "data": ["0.5", "0.0", "0.7", "0.3"] }, { "type": "bar", "name": "40-50岁", "barGap": "0.1", "data": ["0.7", "0.0", "0.7", "0.3"] }], "xAxis": { "type": "category", "data": ["任务1", "任务2", "任务3", "任务4"] }, "yAxis": { "type": "value", "name": "任务平均错误数(个)", "minInterval": 0.1 }, "grid": { "left": "8%", "right": "15%", "top": "17%", "bottom": "5%", "containLabel": true }, "animation": true, "color": ["#ffbf00", "#26c1d8"] };
+		var errorAgeChartBar = echarts.init(document.getElementById('chartBarErrorAge'));
+		errorAgeChartBar.setOption(errorAgeBarChartOption);
+
+
+		var timeCustomBarChartOption_1 = { "tooltip": { "trigger": "axis", "formatter": "", "axisPointer": { "type": "shadow" } }, "legend": { "type": "plain", "orient": "vertical", "x": "right", "y": "center", "right": "auto", "data": [{ "name": "无购课经历", "icon": "rect" }, { "name": "有购课经历", "icon": "rect" }], "itemWidth": "10", "itemHeight": "10" }, "series": [{ "type": "bar", "name": "无购课经历", "barGap": "0.1", "data": ["741", "53", "122", "106"] }, { "type": "bar", "name": "有购课经历", "barGap": "0.1", "data": ["529", "52", "110", "117"] }], "xAxis": { "type": "category", "data": ["任务1", "任务2", "任务3", "任务4"] }, "yAxis": { "type": "value", "name": "任务平均用时(s)", "minInterval": 1.0 }, "grid": { "left": "8%", "right": "15%", "top": "17%", "bottom": "5%", "containLabel": true }, "animation": true, "color": ["#ffbf00", "#26c1d8"] };
+		var timeCustomBarChart_1 = echarts.init(document.getElementById('barchart_time_custom_1'));
+		timeCustomBarChart_1.setOption(timeCustomBarChartOption_1);
+
+
+		var timeCustomBarChartOption_2 = { "tooltip": { "trigger": "axis", "formatter": "", "axisPointer": { "type": "shadow" } }, "legend": { "type": "plain", "orient": "vertical", "x": "right", "y": "center", "right": "auto", "data": [{ "name": "家长", "icon": "rect" }, { "name": "学员", "icon": "rect" }], "itemWidth": "10", "itemHeight": "10" }, "series": [{ "type": "bar", "name": "家长", "barGap": "0.1", "data": ["722", "53", "118", "125"] }, { "type": "bar", "name": "学员", "barGap": "0.1", "data": ["671", "53", "119", "103"] }], "xAxis": { "type": "category", "data": ["任务1", "任务2", "任务3", "任务4"] }, "yAxis": { "type": "value", "name": "任务平均用时(s)", "minInterval": 1.0 }, "grid": { "left": "8%", "right": "15%", "top": "17%", "bottom": "5%", "containLabel": true }, "animation": true, "color": ["#ffbf00", "#26c1d8"] };
+		var timeCustomBarChart_2 = echarts.init(document.getElementById('barchart_time_custom_2'));
+		timeCustomBarChart_2.setOption(timeCustomBarChartOption_2);
+
+
+		var errorCustomBarChartOption_1 = { "tooltip": { "trigger": "axis", "formatter": "", "axisPointer": { "type": "shadow" } }, "legend": { "type": "plain", "orient": "vertical", "x": "right", "y": "center", "right": "auto", "data": [{ "name": "无购课经历", "icon": "rect" }, { "name": "有购课经历", "icon": "rect" }], "itemWidth": "10", "itemHeight": "10" }, "series": [{ "type": "bar", "name": "无购课经历", "barGap": "0.1", "data": ["0.7", "0.0", "0.6", "0.3"] }, { "type": "bar", "name": "有购课经历", "barGap": "0.1", "data": ["0.1", "0.0", "0.6", "0.4"] }], "xAxis": { "type": "category", "data": ["任务1", "任务2", "任务3", "任务4"] }, "yAxis": { "type": "value", "name": "任务平均错误数(个)", "minInterval": 0.1 }, "grid": { "left": "8%", "right": "15%", "top": "17%", "bottom": "5%", "containLabel": true }, "animation": true, "color": ["#ffbf00", "#26c1d8"] };
+		var errorCustomBarChart_1 = echarts.init(document.getElementById('barchart_error_custom_1'));
+		errorCustomBarChart_1.setOption(errorCustomBarChartOption_1);
+
+
+		var errorCustomBarChartOption_2 = { "tooltip": { "trigger": "axis", "formatter": "", "axisPointer": { "type": "shadow" } }, "legend": { "type": "plain", "orient": "vertical", "x": "right", "y": "center", "right": "auto", "data": [{ "name": "家长", "icon": "rect" }, { "name": "学员", "icon": "rect" }], "itemWidth": "10", "itemHeight": "10" }, "series": [{ "type": "bar", "name": "家长", "barGap": "0.1", "data": ["0.5", "0.0", "0.8", "0.5"] }, { "type": "bar", "name": "学员", "barGap": "0.1", "data": ["0.6", "0.0", "0.5", "0.3"] }], "xAxis": { "type": "category", "data": ["任务1", "任务2", "任务3", "任务4"] }, "yAxis": { "type": "value", "name": "任务平均错误数(个)", "minInterval": 0.1 }, "grid": { "left": "8%", "right": "15%", "top": "17%", "bottom": "5%", "containLabel": true }, "animation": true, "color": ["#ffbf00", "#26c1d8"] };
+		var errorCustomBarChart_2 = echarts.init(document.getElementById('barchart_error_custom_2'));
+		errorCustomBarChart_2.setOption(errorCustomBarChartOption_2);
+
+
+		var taskTimeBarChartOption_1 = { "tooltip": { "trigger": "axis", "formatter": "", "axisPointer": { "type": "shadow" } }, "legend": { "type": "plain", "orient": "vertical", "x": "right", "y": "center", "right": "auto", "data": [], "itemWidth": "0", "itemHeight": "0" }, "series": [{ "type": "bar", "name": "任务平均用时(s)", "barGap": "30%", "data": ["169", "90", "49", "120", "169", "115", "60", "132", "109", "90", "70", "120", "78", "170", "105", "132", "90", "50", "120", "170", "128", "105", "96", "110", "90", "70", "110", "78", "170", "105"] }], "xAxis": { "type": "category", "data": ["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20", "p21", "p22", "p23", "p24", "p25", "p26", "p27", "p28", "p29", "p30"] }, "yAxis": { "type": "value", "name": "用时(s)", "minInterval": 1.0 }, "grid": { "left": "8%", "right": "15%", "top": "17%", "bottom": "5%", "containLabel": true }, "animation": true, "color": ["#26c1d8"] };
+		var taskTimeBarChart_1 = echarts.init(document.getElementById('task_time_barchart_1'));
+		taskTimeBarChart_1.setOption(taskTimeBarChartOption_1);
+
+
+		var taskTimeBarChartOption_2 = { "tooltip": { "trigger": "axis", "formatter": "", "axisPointer": { "type": "shadow" } }, "legend": { "type": "plain", "orient": "vertical", "x": "right", "y": "center", "right": "auto", "data": [], "itemWidth": "0", "itemHeight": "0" }, "series": [{ "type": "bar", "name": "任务平均用时(s)", "barGap": "30%", "data": ["150", "120", "150", "72", "108", "120", "150", "154", "70", "144", "130", "120", "90", "100", "108", "150", "120", "150", "90", "108", "120", "150", "155", "48", "144", "130", "120", "100", "90", "100"] }], "xAxis": { "type": "category", "data": ["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20", "p21", "p22", "p23", "p24", "p25", "p26", "p27", "p28", "p29", "p30"] }, "yAxis": { "type": "value", "name": "用时(s)", "minInterval": 1.0 }, "grid": { "left": "8%", "right": "15%", "top": "17%", "bottom": "5%", "containLabel": true }, "animation": true, "color": ["#26c1d8"] };
+		var taskTimeBarChart_2 = echarts.init(document.getElementById('task_time_barchart_2'));
+		taskTimeBarChart_2.setOption(taskTimeBarChartOption_2);
+
+
+		var taskTimeBarChartOption_3 = { "tooltip": { "trigger": "axis", "formatter": "", "axisPointer": { "type": "shadow" } }, "legend": { "type": "plain", "orient": "vertical", "x": "right", "y": "center", "right": "auto", "data": [], "itemWidth": "0", "itemHeight": "0" }, "series": [{ "type": "bar", "name": "任务平均用时(s)", "barGap": "30%", "data": ["45", "30", "40", "30", "78", "48", "60", "60", "72", "45", "36", "55", "49", "78", "64", "45", "30", "40", "40", "78", "48", "60", "60", "72", "45", "36", "55", "50", "78", "65"] }], "xAxis": { "type": "category", "data": ["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20", "p21", "p22", "p23", "p24", "p25", "p26", "p27", "p28", "p29", "p30"] }, "yAxis": { "type": "value", "name": "用时(s)", "minInterval": 1.0 }, "grid": { "left": "8%", "right": "15%", "top": "13%", "bottom": "5%", "containLabel": true }, "animation": true, "color": ["#26c1d8"] };
+		var taskTimeBarChart_3 = echarts.init(document.getElementById('task_time_barchart_3'));
+		taskTimeBarChart_3.setOption(taskTimeBarChartOption_3);
+
+
+		var taskTimeBarChartOption_4 = { "tooltip": { "trigger": "axis", "formatter": "", "axisPointer": { "type": "shadow" } }, "legend": { "type": "plain", "orient": "vertical", "x": "right", "y": "center", "right": "auto", "data": [], "itemWidth": "0", "itemHeight": "0" }, "series": [{ "type": "bar", "name": "任务平均用时(s)", "barGap": "30%", "data": ["255", "960", "660", "480", "480", "670", "618", "420", "912", "430", "1560", "435", "1140", "650", "860", "300", "260", "800", "1260", "858", "835", "540", "610", "930", "375", "410", "810", "885", "709", "420"] }], "xAxis": { "type": "category", "data": ["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20", "p21", "p22", "p23", "p24", "p25", "p26", "p27", "p28", "p29", "p30"] }, "yAxis": { "type": "value", "name": "用时(s)", "minInterval": 1.0 }, "grid": { "left": "8%", "right": "15%", "top": "13%", "bottom": "5%", "containLabel": true }, "animation": true, "color": ["#26c1d8"] };
+		var taskTimeBarChart_4 = echarts.init(document.getElementById('task_time_barchart_4'));
+		taskTimeBarChart_4.setOption(taskTimeBarChartOption_4);
+
+
+		var taskErrorBarChartOption_1 = { "tooltip": { "trigger": "axis", "formatter": "", "axisPointer": { "type": "shadow" } }, "legend": { "type": "plain", "orient": "vertical", "x": "right", "y": "center", "right": "auto", "data": [], "itemWidth": "0", "itemHeight": "0" }, "series": [{ "type": "bar", "name": "错误数(个)", "barGap": "30%", "data": ["1", "0", "0", "0", "1", "0", "0", "1", "0", "0", "1", "1", "0", "1", "0", "1", "0", "0", "0", "1", "1", "0", "0", "0", "0", "0", "0", "0", "1", "0"] }], "xAxis": { "type": "category", "data": ["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20", "p21", "p22", "p23", "p24", "p25", "p26", "p27", "p28", "p29", "p30"] }, "yAxis": { "type": "value", "name": "错误数(个)", "minInterval": 1.0 }, "grid": { "left": "8%", "right": "15%", "top": "13%", "bottom": "5%", "containLabel": true }, "animation": true, "color": ["#ffbf00"] };
+		var taskErorBarChart_1 = echarts.init(document.getElementById('task_error_barchart_1'));
+		taskErorBarChart_1.setOption(taskErrorBarChartOption_1);
+
+
+		var taskErrorBarChartOption_2 = { "tooltip": { "trigger": "axis", "formatter": "", "axisPointer": { "type": "shadow" } }, "legend": { "type": "plain", "orient": "vertical", "x": "right", "y": "center", "right": "auto", "data": [], "itemWidth": "0", "itemHeight": "0" }, "series": [{ "type": "bar", "name": "错误数(个)", "barGap": "30%", "data": ["2", "0", "1", "0", "0", "0", "1", "1", "0", "1", "1", "1", "0", "1", "0", "2", "1", "1", "0", "0", "1", "0", "1", "0", "1", "1", "1", "0", "0", "0"] }], "xAxis": { "type": "category", "data": ["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20", "p21", "p22", "p23", "p24", "p25", "p26", "p27", "p28", "p29", "p30"] }, "yAxis": { "type": "value", "name": "错误数(个)", "minInterval": 1.0 }, "grid": { "left": "8%", "right": "15%", "top": "13%", "bottom": "5%", "containLabel": true }, "animation": true, "color": ["#ffbf00"] };
+		var taskErorBarChart_2 = echarts.init(document.getElementById('task_error_barchart_2'));
+		taskErorBarChart_2.setOption(taskErrorBarChartOption_2);
+
+
+		var taskErrorBarChartOption_3 = { "tooltip": { "trigger": "axis", "formatter": "", "axisPointer": { "type": "shadow" } }, "legend": { "type": "plain", "orient": "vertical", "x": "right", "y": "center", "right": "auto", "data": [], "itemWidth": "0", "itemHeight": "0" }, "series": [{ "type": "bar", "name": "错误数(个)", "barGap": "30%", "data": ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"] }], "xAxis": { "type": "category", "data": ["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20", "p21", "p22", "p23", "p24", "p25", "p26", "p27", "p28", "p29", "p30"] }, "yAxis": { "type": "value", "name": "错误数(个)", "minInterval": 1.0 }, "grid": { "left": "8%", "right": "15%", "top": "13%", "bottom": "5%", "containLabel": true }, "animation": true, "color": ["#ffbf00"] };
+		var taskErorBarChart_3 = echarts.init(document.getElementById('task_error_barchart_3'));
+		taskErorBarChart_3.setOption(taskErrorBarChartOption_3);
+
+
+		var taskErrorBarChartOption_4 = { "tooltip": { "trigger": "axis", "formatter": "", "axisPointer": { "type": "shadow" } }, "legend": { "type": "plain", "orient": "vertical", "x": "right", "y": "center", "right": "auto", "data": [], "itemWidth": "0", "itemHeight": "0" }, "series": [{ "type": "bar", "name": "错误数(个)", "barGap": "30%", "data": ["0", "0", "1", "0", "1", "0", "2", "1", "0", "0", "2", "0", "1", "1", "0", "0", "0", "1", "1", "0", "1", "0", "0", "2", "0", "0", "0", "3", "0", "0"] }], "xAxis": { "type": "category", "data": ["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20", "p21", "p22", "p23", "p24", "p25", "p26", "p27", "p28", "p29", "p30"] }, "yAxis": { "type": "value", "name": "错误数(个)", "minInterval": 1.0 }, "grid": { "left": "8%", "right": "15%", "top": "13%", "bottom": "5%", "containLabel": true }, "animation": true, "color": ["#ffbf00"] };
+		var taskErorBarChart_4 = echarts.init(document.getElementById('task_error_barchart_4'));
+		taskErorBarChart_4.setOption(taskErrorBarChartOption_4);
+
+
+
+	</script>
+
+</body>
+
+</html>
