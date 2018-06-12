@@ -63,9 +63,9 @@ body{ background:#fff;font-family:"Microsoft Yahei", "Helvetica Neue", Helvetica
 .bgfff{ background:#fff; margin-top:.2rem; overflow:hidden; padding-bottom:.4rem;}
 .big-title{ font-size:.36rem; color:#0dadcc; width:2.5rem; height:.4rem; margin:0 auto; border-bottom:1px solid #86d6e5; text-align:center; padding-top:.3rem;}
 .big-title em{ display:inline-block; padding:0 .2rem; background:#fff; position:relative; top:.15rem;}
-.bgfff .block{ border-bottom:1px solid #efeeee; padding:.4rem .3rem .3rem .3rem;}
+.bgfff .block{ border-bottom:1px solid #e9e8e8; padding:.4rem .3rem .3rem .3rem;}
 .bgfff .block h2{ font-size:.26rem; color:#333; margin-bottom:.3rem;}
-.bgfff .block h2 i{ display:inline-block; width:.04rem; height:.22rem; background:#25bcd9; margin-right:.1rem;}
+.bgfff .block h2 i{ display:inline-block; width:.04rem; height:.26rem; background:#25bcd9; margin-right:.1rem; position:relative; top:.03rem;}
 .bgfff .block .list2{ overflow:hidden;}
 .bgfff .block .list2 li{ text-align:center; width:3.15rem; float:left; margin-right:.3rem; margin-bottom:.4rem; overflow:hidden;}
 .bgfff .block .list2 li:last-child{ margin-right:0;}
