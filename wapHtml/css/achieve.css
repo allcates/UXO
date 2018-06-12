@@ -120,7 +120,6 @@ from { width:.81rem; height:.81rem; bottom:3.7rem; right:.16rem; opacity:0; }
 to {width:3.77rem; height:3.79rem; bottom:2.19rem; right:-1.3rem; opacity:1;}
 }
 
-.allMenu-unfold .menu{ /*display:none;*/}
 .allMenu-unfold .un1, .allMenu-unfold .un2, .allMenu-unfold .un3, .allMenu-unfold .un4, .allMenu-unfold .un5{ position:absolute; color:#fff; font-size:.2rem; line-height:.28rem;}
 .allMenu-unfold .un1 i, .allMenu-unfold .un2 i, .allMenu-unfold .un3 i, .allMenu-unfold .un4 i, .allMenu-unfold .un5 i{ display:block; width:.23rem; height:.23rem; border-radius:100%; text-align:center; line-height:.24rem; background:#949494; color:#4c4c4c; font-style:normal; margin-bottom:.1rem; margin-left:.1rem;}
 .allMenu-unfold .un1{ top:.15rem; right:1.5rem; width:.48rem;}
@@ -150,7 +149,7 @@ to {width:3.77rem; height:3.79rem; bottom:2.19rem; right:-1.3rem; opacity:1;}
 	background:-webkit-linear-gradient(left,#27c8d6,#23aade);
     background:-o-linear-gradient(left, rgba(39,201,214,1), rgba(35, 170, 222, 1));}
 	
-#mynav{ position:relative; z-index:5; width:100%; background:#fff; /*z-index: 99999999;*/}	
+#mynav{ position:relative; z-index:5; width:100%; background:#fff; }	
 
 .find_nav_left { height:1.8rem;position: relative; margin-left:3.3rem;}
 .find_nav_list {position: absolute;left: 0; font-size:12px;}
@@ -162,9 +161,8 @@ to {width:3.77rem; height:3.79rem; bottom:2.19rem; right:-1.3rem; opacity:1;}
 
 .proFrame{ position:fixed; top:0; left:0; z-index:10; display:none;}
 .proFrame .openimg{ width:100%; margin: auto;left: 0;right: 0;top: 0;bottom: 0;position: fixed;}
-.proFrame .description{ background:#000; opacity:.7; border-radius:5px; z-index:1; color:#fff; padding:.2rem .25rem; /*position:absolute; bottom:.3rem; left:.3rem;*/ position:fixed; left:.5rem; top:.5rem;}
+.proFrame .description{ background:#000; opacity:.7; border-radius:5px; z-index:1; color:#fff; padding:.2rem .25rem; position:fixed; left:.5rem; top:.5rem;}
 .proFrame .description p{ line-height:.5rem;}
-/*webkit,::-webkit-scrollbar{width:0;}*/
 
 .main-fm{ padding-bottom:.3rem;}
 .swiper-wrapper .on{}
