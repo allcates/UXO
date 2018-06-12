@@ -164,6 +164,6 @@ to {width:3.77rem; height:3.79rem; bottom:2.19rem; right:-1.3rem; opacity:1;}
 .proFrame .description{ background:#000; opacity:.7; border-radius:5px; z-index:1; color:#fff; padding:.2rem .25rem; position:fixed; left:.5rem; top:.5rem;}
 .proFrame .description p{ line-height:.5rem;}
 
-.main-fm{ padding-bottom:.3rem;}
+.main-fm{ padding-bottom:.3rem; margin-bottom: .55rem;}
 .swiper-wrapper .on{}
 
