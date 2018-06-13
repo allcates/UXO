@@ -53,12 +53,12 @@ body{ background:#fff;font-family:"Microsoft Yahei", "Helvetica Neue", Helvetica
 .chunk-no p .r{ color:#b8b8b8;}
 .chunk-no .last{ color:#f9767b;}
 
-.report-menu{ font-size:.3rem; color:#666; display: -webkit-box; overflow-x:scroll; }
+.report-menu{ font-size:.3rem; color:#666; display: -webkit-box; overflow-x:scroll; border-bottom:1px solid #898888;}
 .report-menu li{ position:relative; padding:.25rem 0;}
 
 .report-menu li a{ color:#666; text-decoration:none; display:inline-block; padding:0 .18rem;}
 .report-menu li.on a{ color:#0dadcc;}
-.report-menu li em{ display:inline-block; width:.66rem; height:.02rem; background:#0dadcc; position:absolute; bottom:0rem; left:50%; margin-left:-.33rem; display:none; }
+.report-menu li em{ display:inline-block; width:.66rem; height:.02rem; background:#0dadcc; position:absolute; bottom:0rem; left:50%; margin-left:-.33rem; display:none; z-index:1;}
 .report-menu li.on em{ display:block;border:.015rem solid #0dadcc;}
 
 .bgfff{ background:#fff; margin-top:.2rem; overflow:hidden; padding-bottom:.4rem;}
@@ -68,7 +68,7 @@ body{ background:#fff;font-family:"Microsoft Yahei", "Helvetica Neue", Helvetica
 .bgfff .block h2{ font-size:.3rem; color:#333; margin-bottom:.3rem;}
 .bgfff .block h2 i{ display:inline-block; width:.04rem; height:.26rem; background:#25bcd9; margin-right:.1rem; position:relative; top:.03rem;}
 .bgfff .block .list2{ overflow:hidden;}
-.bgfff .block .list2 li{ text-align:center; width:3.15rem; float:left; margin-right:.3rem; margin-bottom:.4rem; overflow:hidden;}
+.bgfff .block .list2 li{ text-align:center; width:3.15rem; float:left; margin-right:.3rem; margin-bottom:.4rem;/* overflow:hidden;*/}
 .bgfff .block .list2 li:last-child{ margin-right:0;}
 .bgfff .block .list2 li h3{ font-size:.24rem; color:#333;text-align:left; background:#25bcd9; color:#fff; padding:.03rem .14rem .04rem .15rem; border-radius:15px; float:left; margin-bottom:.22rem;}
 .bgfff .block .list2 li .img{ width:2.25rem; height:2.22rem;}
@@ -97,8 +97,8 @@ body{ background:#fff;font-family:"Microsoft Yahei", "Helvetica Neue", Helvetica
 .r-footer{ padding:.54rem 0 .68rem .8rem; overflow:hidden;}
 .r-footer .end{ width:1.5rem; height:1.5rem; border-radius:100%; color:#fff; font-size:.37rem; text-align:center; line-height:1.5rem;}
 .r-footer .right{ width:4.2rem; margin-left:.3rem; font-size:.26rem;}
-.r-footer .right .ths{ font-size:.3rem; color:#333; padding-bottom:.2rem; display:inline-block;}
-.r-footer .right p{ line-height:.4rem;}
+.r-footer .right .ths{ font-size:.3rem; color:#686868; padding-bottom:.2rem; display:inline-block;}
+.r-footer .right p{ line-height:.4rem; color:#898888;}
 
 .backTop{ width:.81rem; height:.81rem; border-radius:100%; background:url(../images/top.png) no-repeat; background-size:100% 100%; position:fixed; bottom:.52rem; right:.13rem; display:none; z-index:10;}
 .allMenu{ width:.81rem; height:.81rem; border-radius:100%; background:url(../images/allmenu.png) no-repeat; background-size:100% 100%; position:fixed; bottom:3.68rem; right:.17rem; z-index:10; }
