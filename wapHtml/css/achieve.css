@@ -53,7 +53,7 @@ body{ background:#fff;font-family:"Microsoft Yahei", "Helvetica Neue", Helvetica
 .chunk-no p .r{ color:#b8b8b8;}
 .chunk-no .last{ color:#f9767b;}
 
-.report-menu{ font-size:.3rem; color:#666; display: -webkit-box; overflow-x:scroll; border-bottom:1px solid #898888;}
+.report-menu{ font-size:.3rem; color:#666; display: -webkit-box; overflow-x:scroll; border-bottom:1px solid #898888; background:#fff;}
 .report-menu li{ position:relative; padding:.25rem 0;}
 
 .report-menu li a{ color:#666; text-decoration:none; display:inline-block; padding:0 .18rem;}
@@ -150,7 +150,7 @@ to {width:3.77rem; height:3.79rem; bottom:2.19rem; right:-1.3rem; opacity:1;}
 	background:-webkit-linear-gradient(left,#27c8d6,#23aade);
     background:-o-linear-gradient(left, rgba(39,201,214,1), rgba(35, 170, 222, 1));}
 	
-#mynav{ position:relative; z-index:5; width:100%; background:#fff; }	
+#mynav{ position:relative; z-index:5; width:100%;}	
 
 .find_nav_left { height:1.8rem;position: relative; margin-left:3.3rem;}
 .find_nav_list {position: absolute;left: 0; font-size:12px;}
