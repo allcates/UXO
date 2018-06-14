@@ -22,6 +22,7 @@ body{ background:#fff;font-family:"Microsoft Yahei", "Helvetica Neue", Helvetica
 .indexbox .title{ margin:.9rem .5rem 0 .5rem; border-top:1px solid #d0d0d0; color:#999; font-size:.24rem; text-align:center;}
 .indexbox .title span{ position:relative; background:#fff; top:-.2rem; padding:0 .23rem;}
 
+.indexbox .applombo{ padding-bottom:.6rem;}
 .indexbox .applombo .list1{ color:#808080; font-size:.26rem; overflow:hidden;}
 .indexbox .applombo .list1 .li_list{ float:left;}
 .indexbox .applombo .li-ip{ text-align:center; float:left; margin:.5rem 0 0 .68rem; position:relative; width:1.6rem;}
@@ -32,8 +33,8 @@ body{ background:#fff;font-family:"Microsoft Yahei", "Helvetica Neue", Helvetica
 .indexbox .applombo .cur li a{ display:inline-block; width:.2rem; height:.2rem; border-radius:100%; background:#ededed; margin-right:.1rem;}
 .indexbox .applombo .cur li a.active{ background:#d9d9d9;}
 
-.indexbox .footer{ position: absolute;bottom: .4rem;left: 50%;margin-left: -1.16rem;}
-.indexbox .footer img{ width:2.32rem; height:.48rem;}
+.footer{ /*position: absolute;bottom: .4rem;left: 50%;margin-left: -1.16rem;*/ text-align:center; padding-bottom:.4rem;}
+.footer img{ width:2.32rem; height:.48rem;}
 
 .chunk{ background:#fff; border-radius:4px; margin:.27rem .23rem 0 .23rem; padding:.3rem; color:#808080; position:relative;}
 .chunk h1{ color:#333; font-size:.34rem;}
